@@ -2,9 +2,9 @@
 
 ## Clarifications/Corrections
 
-* September 9: Updated test.py. For those who have been getting errors of the type "jupyter not recognized" when running it, please re-download.
+None yet.
 
-## Step 0: Setting up your environment 
+## Step 0: Setting up your environment
 
 **Important:** Before proceeding, install Python 3 on your laptop.
 We've created videos showing how to do this on
@@ -20,7 +20,7 @@ download project files, create a Python notebook, run tests, and turn
 in your project.
 
 In subsequent projects, you'll need to very carefully follow [course
-policy](https://tyler.caraza-harter.com/cs301/fall19/syllabus.html) to
+policy](http://msyamkumar.com/cs220/s20/syllabus.html) to
 avoid academic misconduct, but for this project, we just want to walk
 everybody through the process.  So feel free to get any kind of help
 from anybody (fellow students or otherwise) for P1.
@@ -29,7 +29,7 @@ from anybody (fellow students or otherwise) for P1.
 
 The first thing you're going to need to decide is where to keep your
 project work this semester.  If you don't have a preference, we
-recommend creating a folder named `cs301` under `Documents`.  How to
+recommend creating a folder named `cs220` under `Documents`.  How to
 find the Documents folder may vary from computer to computer.  On a
 Windows machine, you might find it like this in File Explorer:
 
@@ -39,7 +39,7 @@ On a Mac, you might find it in Finder here:
 
 <img src="mac-documents.png" width="200">
 
-Inside the new `cs301` folder you created under `Documents`, we
+Inside the new `cs220` folder you created under `Documents`, we
 recommend you create a sub-folder called `p1` and use it for all your
 files related to this project.  This way, you can keep files for
 different projects separate (you'll create a `p2` sub-folder for the
@@ -77,8 +77,8 @@ Now it gets a little tricky.  You need to figure out the path of your
 for a file or folder.  This is useful: if you have more than one `p1`
 folder on your computer, how do you distinguish between them?  You
 need a full pathname, something like
-`/Users/harter/Documents/cs301/p1` (Mac) or
-`C:\Users\harter\Documents\cs301\p1` (Windows).  The pathname of `p1`
+`/Users/meena/Documents/cs220/p1` (Mac) or
+`C:\Users\meena\Documents\cs220\p1` (Windows).  The pathname of `p1`
 may be slightly different on your computer, but you can figure it out
 with these steps:
 
@@ -209,7 +209,7 @@ If everything is setup properly and your notebook is correct, you'll see somethi
 ```
 [NbConvertApp] Converting notebook main.ipynb to notebook
 [NbConvertApp] Executing notebook with kernel: python3
-[NbConvertApp] Writing 1211 bytes to cs-301-test.ipynb
+[NbConvertApp] Writing 1214 bytes to cs-220-test.ipynb
 Checking 1
 Checking 2
 {
@@ -261,11 +261,11 @@ partner).
 To hand in the notebook, complete the following steps:
 
 1. save and run through the tests one last time (after you added your Net ID info)
-2. go to [https://tyler.caraza-harter.com/cs301/fall19/submission.html](https://tyler.caraza-harter.com/cs301/fall19/submission.html)
+2. go to [http://msyamkumar.com/cs220/s20/submission.html](http://msyamkumar.com/cs220/s20/submission.html)
 3. select "Project 1"
 4. click "Choose File" and find your main.ipynb file
 5. click "Submit"
 6. check the "Submission Status" below; it is normal to see some "info:" messages, but make sure you correct any "error:" messages
 7. click "View Submissions" to make sure your submission looks correct
 
-Congrats on finishing your first CS 301 project!
+Congrats on finishing your first CS 220 project!
