@@ -37,7 +37,7 @@ Next, you will need to download a file named "hello.py" to your "lab1"
 folder.  At the top of this page, you'll see a list of files,
 something like this:
 
-<img src="github.PNG" width="800">
+<img src="github.png" width="800">
 
 Downloading files from GitHub (the site hosting this document) is a
 little tricky for those new to it.  Follow these steps careful:
