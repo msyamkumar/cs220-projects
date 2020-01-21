@@ -24,7 +24,7 @@ def extract_question_num(cell):
             return int(m.group(1))
     return None
 
-# find correct python command based on version 
+# find correct python command based on version
 def get_python_cmd():
     cmds = ['py', 'python3', 'python']
     for cmd in cmds:
@@ -41,7 +41,7 @@ def get_python_cmd():
 
 # rerun notebook and return parsed JSON
 def rerun_notebook(orig_notebook):
-    new_notebook = 'cs-301-test.ipynb'
+    new_notebook = 'cs-220-test.ipynb'
 
     # re-execute it from the beginning
     py_cmd = get_python_cmd()

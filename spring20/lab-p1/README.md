@@ -19,7 +19,7 @@ have any questions, though.  Don't be shy!
 
 The first thing you're going to need to decide is where to keep your
 work this semester.  If you don't have a preference, we recommend
-creating a folder named "cs301" under "Documents".  How to find the
+creating a folder named "cs220" under "Documents".  How to find the
 Documents folder may vary from computer to computer.  On a Windows
 machine, you might find it like this in File Explorer:
 
@@ -29,7 +29,7 @@ On a Mac, you might find it in Finder here:
 
 <img src="mac-documents.png" width="200">
 
-Inside the new "cs301" folder you created under "Documents", we
+Inside the new "cs220" folder you created under "Documents", we
 recommend you create a sub-folder called "lab1" and use it for all
 your files related to this lab.
 
@@ -272,4 +272,4 @@ Here are a few things to ponder/try about this program:
 2. what happens if you try to cheat?
 3. can you exit before losing by typing "q"?  What about a capital "Q"?
 
-Congrats on finishing your first CS 301 lab!
+Congrats on finishing your first CS 220 lab!

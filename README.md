@@ -1,2 +1,2 @@
-# cs301-projects
-Location for CS301 Project Scaffolding and Tests
+# cs220-projects
+Location for CS220 Project Scaffolding and Tests
