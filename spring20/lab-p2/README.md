@@ -22,13 +22,9 @@ Run `python --version` in the terminal.  You might see something like this:
 Python 3.7.6
 ```
 
-If it says 3.8.1, either switch over to an earlier version or follow
-the steps from [here](https://piazza.com/class/k5mgsy8l52027p?cid=8)
-before proceeding.
-If instead it says something like 2.X.X, try running
-`python3 --version` instead. If you need to run the latter, please
-use `python3` whenever we say `python` in the directions this
-semester.
+If it says something like 2.X.X, try running `python3 --version` instead.
+If you need to run the latter, please use `python3` whenever we say `python`
+in the directions this semester.
 
 From the `lab2` directory, do the following.  Run `pwd` in the
 terminal (this is a shell command in both bash and PowerShell). Then
@@ -37,8 +33,7 @@ type `python` and hit ENTER.
 You should see something roughly like this (details will vary):
 
 ```
-Python 3.7.6 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)
-[Clang 6.0 (clang-600.0.57)] on darwin
+Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
