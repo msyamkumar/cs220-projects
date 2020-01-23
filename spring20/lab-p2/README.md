@@ -1,13 +1,13 @@
 # Lab 2: Python Modes and Programming
 
-In Wed lecture, we learned about three ways to run Python: interactive
-mode, script mode, and notebook "mode" (people outside of 301 won't
-use that vocabulary for notebooks, hence the quotes).  In this
-lab, you'll practice those three modes.  You'll also get practice
-with operators, modular arithmetic, and Boolean logic.
+In the Wednesday lecture, we learned about three ways to run Python: interactive
+mode, script mode, and notebook "mode" (people outside of 220 won't
+use that vocabulary for notebooks, hence the quotes). In this
+lab, you'll practice those three modes. You'll also get practice
+with operators, modular arithmetic and Boolean logic.
 
 To get started, please create a `lab2` directory inside your
-previously created course directory (named `cs301` or similar).  Then,
+previously created course directory (named `cs220` or similar).  Then,
 open a terminal and use `cd` to navigate to `lab2` (you may need to
 review the steps in the first lab document to remember how to find the
 pathname of the `lab2` directory).
@@ -19,11 +19,14 @@ pathname of the `lab2` directory).
 Run `python --version` in the terminal.  You might see something like this:
 
 ```
-Python 3.7.2
+Python 3.7.6
 ```
 
-As long as it some form of 3.X.X, you're fine.  If not, try running
-`python3 --version` instead.  If you need to run the latter, please
+If it says 3.8.1, either switch over to an earlier version or follow
+the steps from [here](https://piazza.com/class/k5mgsy8l52027p?cid=8)
+before proceeding.
+If instead it says something like 2.X.X, try running
+`python3 --version` instead. If you need to run the latter, please
 use `python3` whenever we say `python` in the directions this
 semester.
 
@@ -34,10 +37,10 @@ type `python` and hit ENTER.
 You should see something roughly like this (details will vary):
 
 ```
-Python 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)
+Python 3.7.6 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)
 [Clang 6.0 (clang-600.0.57)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 ```
 
 Those `>>>` symbols are a Python prompt.  This means you can type
@@ -106,7 +109,7 @@ this:
 ```
 
 Run run your code again (e.g., with `F5`).  Notice how it doesn't show
-any of your output?  In interactive mode, prints usually aren't
+any of your output? In interactive mode, prints usually aren't
 necessary, but they are in script mode.
 
 Add back the print, then close any idle windows that are open.  Now
