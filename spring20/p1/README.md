@@ -20,7 +20,7 @@ download project files, create a Python notebook, run tests, and turn
 in your project.
 
 In subsequent projects, you'll need to very carefully follow [course
-policy](http://msyamkumar.com/cs220/s20/syllabus.html) to
+policy](https://www.msyamkumar.com/cs220/s20/syllabus.html) to
 avoid academic misconduct, but for this project, we just want to walk
 everybody through the process.  So feel free to get any kind of help
 from anybody (fellow students or otherwise) for P1.
@@ -261,7 +261,7 @@ partner).
 To hand in the notebook, complete the following steps:
 
 1. save and run through the tests one last time (after you added your Net ID info)
-2. go to [http://msyamkumar.com/cs220/s20/submission.html](http://msyamkumar.com/cs220/s20/submission.html)
+2. go to [https://www.msyamkumar.com/cs220/s20/submission.html](https://www.msyamkumar.com/cs220/s20/submission.html)
 3. select "Project 1"
 4. click "Choose File" and find your main.ipynb file
 5. click "Submit"
