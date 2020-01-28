@@ -227,11 +227,11 @@ Extrapolate to 2019 from the data between 2015 and 2018.
 
 ### Q16: how much will library spend in 2100?
 
-Extrapolate from the data between 2016 and 2018.
+Extrapolate from the data between 2015 and 2018.
 
 ### Q17: how much will library spend in 2100?
 
-Extrapolate from the data between 2017 and 2018.
+Extrapolate from the data between 2016 and 2018.
 
 ### Function 6: `extrapolate_error`
 
