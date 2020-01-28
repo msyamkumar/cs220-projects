@@ -7,6 +7,11 @@ import csv
 _pokemons = []
 
 def init(filename='pokemon_data.csv'):
+    """
+    Initialises dataset and loads it in a convenient Data Structure
+    Parameters:
+    filename: path to the csv file being used
+    """
     if filename != 'pokemon_data.csv':
         print("WARNING! Recommended that you open data.csv for the current assignment")
     with open(filename, mode='r', encoding='utf-8') as csv_file:
@@ -15,6 +20,9 @@ def init(filename='pokemon_data.csv'):
             _pokemons.append(row)
 
 def get_pokemon_stats(id=1):
+    """
+    Returns a Dictionary that compiles all the statistics for a given pokemon
+    """
     pokemon = _pokemons[id-1]
     stats = {
                 'Name': pokemon['Name'].lower(),
@@ -31,6 +39,9 @@ def get_pokemon_stats(id=1):
     return stats
 
 def get_name(id=1):
+    """
+    Return Name of Pokemon with ID = id
+    """
     return get_pokemon_stats(id=id)['Name']
 
 def get_hp(id=1):
