@@ -227,7 +227,7 @@ Extrapolate to 2019 from the data between 2015 and 2018.
 
 ### Q16: how much will library spend in 2100?
 
-Extrapolate from the data between 2015 and 2018.
+Extrapolate from the data between 2016 and 2018.
 
 ### Q17: how much will library spend in 2100?
 
@@ -252,7 +252,9 @@ decision!
 
 ### Q18: what is the error if we extrapolate to 2018 from the 2015-to-2017 data for police?
 
-### Q19: what is the error if we extrapolate to 2018 from the 2015-to-2016 data for streets?
+### Q19: what is the percent error if we extrapolate to 2018 from the 2015-to-2016 data for streets?
+
+Percent error = extrapolate_error*100/actual_spending_of_the_agency_for_the_extrapolated_year
 
 ### Q20: what is the standard deviation for library spending over the 4 years?
 
