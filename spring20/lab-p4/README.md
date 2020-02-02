@@ -4,7 +4,7 @@ In P4, you will be playing with some Pokémon and you will simulate simple Poké
 
 ## Learning the API
 
-First download [project.py](https://github.com/msyamkumar/cs220-projects/blob/p4_spring20/spring20/lab-p4/project.py) and [pokemon_stats.csv](https://github.com/msyamkumar/cs220-projects/blob/p4_spring20/spring20/lab-p4/pokemon_stats.csv) to a `lab4` directory. All the data that we need for P4 is stored in `pokemon_stats.csv`. Open it with Microsoft Excel or any other Spreadsheet software, and take a look at it. You will see a list of Pokémon along with certain statistics for each of those Pokémon. Each Pokémon comes from a certain 'Region', and has one or two 'Types'. A Pokémon with only one Type has 'None' as its value for 'Type 2'. Moreover, each Pokémon has six other statistics, namely:
+First download [`project.py`](https://github.com/msyamkumar/cs220-projects/blob/p4_spring20/spring20/lab-p4/project.py) and [`pokemon_stats.csv`](https://github.com/msyamkumar/cs220-projects/blob/p4_spring20/spring20/lab-p4/pokemon_stats.csv) to a `lab4` directory. All the data that we need for P4 is stored in `pokemon_stats.csv`. Open it with Microsoft Excel or any other Spreadsheet software, and take a look at it. You will see a list of Pokémon along with certain statistics for each of those Pokémon. Each Pokémon comes from a certain 'Region', and has one or two 'Types'. A Pokémon with only one Type has 'None' as its value for 'Type 2'. Moreover, each Pokémon has six other statistics, namely:
 
 1. HP (short for Hit Points)
 2. Attack (short for Physical Attack)
@@ -13,7 +13,7 @@ First download [project.py](https://github.com/msyamkumar/cs220-projects/blob/p4
 5. Sp. Def (short for Special Defense)
 6. Speed (which is self explanatory)
 
-If you are feeling brave, take a look at (gen_csv.ipynb)[https://github.com/msyamkumar/cs220-projects/blob/p4_spring20/spring20/lab-p4/gen_csv.ipynb] to see how this file `pokemon_stats.csv` was generated. Don't worry if it doesn't make much sense at this point. By the end of CS220, you will be able to understand everything that is happening there. For now, you can try to figure out what is happening in each of the cells.
+If you are feeling brave, take a look at [`gen_csv.ipynb`](https://github.com/msyamkumar/cs220-projects/blob/p4_spring20/spring20/lab-p4/gen_csv.ipynb) to see how this file `pokemon_stats.csv` was generated. Don't worry if it doesn't make much sense at this point. By the end of CS220, you will be able to understand everything that is happening there. For now, you can try to figure out what is happening in each of the cells.
 
 `project.py` is designed to give you access to the data in `pokemon_stats.csv`. First, we need to check the `project.py` API just like we did in P3. Enter the Python Interactive Mode and type:
 
