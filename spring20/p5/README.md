@@ -48,9 +48,9 @@ function that you need to solve a particular problem.
 
 ### Q1: How many records are in the dataset?
 
-### Q2: What is the name of the hurricane at index 10?
+### Q2: What is the name of the hurricane at last index?
 
-### Q3: How many deaths were caused by the hurricane at the last index?
+### Q3: How many deaths were caused by the hurricane at index 10?
 
 ### Q4:Is there a hurricane named Bob?
 
@@ -75,15 +75,29 @@ Write your code such that it counts all the variants (e.g., "Florence",
 
 ### Q7: What is the name of that fastest hurricane?
 
-### Q8: How much damage (in dollars) was done by the hurricane Dolphin?
+### Q8: What is the damage (in dollars) caused by the fastest hurricane?
 
-Be careful! In the data, the number was formatted with a suffix, but
-you'll need to do some processing to convert it to this: `13500000`.
+Be careful! In the data, the number was formatted with a suffix (like "K", "M" or "B"), but
+you'll need to do some processing to convert it to this: `13500000` (an integer)
 
-While not required, you may wish to write a general function that
+You need to write a general function that
 handles "K", "M", and "B" suffixes (it will be handy later).
+Remember that "K" stands for thousand, "M" stands for million, and "B"
+stands for billion!
+For e.g. your function should convert a string from "13.5M" to 13500000,
+"6.9K" to 6900 and so on.
 
-### Q9: How many total deaths are represented in the dataset?
+
+### Q9: How much faster was the fastest hurricane compared to the average speed of all the hurricanes in the dataset?
+
+You need to calculate the average mph speed of all hurricanes and subtract it from fastest mph speed.
+
+
+<!-- ### Q10: How much damage (in dollars) was done by the hurricane Sandy? -->
+
+
+
+### Q10: What is the total number of deaths by all the hurricanes in the dataset?
 
 ### Function Suggestion:
 
@@ -105,22 +119,18 @@ def deadliest_in_range(year1, year2):
 Hint: You can copy the `get_month`, `get_day`, and `get_year`
 functions you created in lab to your project notebook if you like.
 
-### Q10: What was the deadliest hurricane between 2010 and 2019 (inclusive)?
+### Q11: What was the deadliest hurricane between 2010 and 2020 (inclusive)?
 
 For this and the following, count a hurricane as being in the year it
 was formed (not dissipated).
 
-### Q11: What was the deadliest hurricane of the 20th century (1901 to 2000, inclusive)?
+### Q12: What was the deadliest hurricane of the 20th century (1901 to 2000, inclusive)?
 
-### Q12: In what year did the most deadly hurricane in the dataset form?
+### Q13: In what year did the most deadly hurricane in the dataset form?
 
-### Q13: How much damage (in dollars) was done by the deadliest hurricane of the 20th century?
+### Q14: How much damage (in dollars) was done by the deadliest hurricane of the 21th century?
 
-### Q14: What were the total damages across all hurricanes in the dataset, in dollars?
-
-Remember that "K" stands for thousand, "M" stands for million, and "B"
-stands for billion!  These may appear in the dataset, but the answer
-you compute (`864230464997`) should not use them.
+### Q15: What were the total damages across all hurricanes in the dataset, in dollars?
 
 ### Function Suggestion:
 
@@ -137,20 +147,26 @@ def hurricanes_in_month(mm):
     return num_of_hurricanes
 ```
 
-### Q15: How many hurricanes were formed in the month of July?
-
-### Q16: How many hurricanes were formed in the month of December?
+### Q16: How many hurricanes were formed in the month of June?
 
 ### Q17: How many hurricanes were formed in the month of January?
 
-### Q18: How many hurricanes were formed in the month of May?
+### Q18: How many hurricanes were formed in the decade of 1990-1999 (inclusive)?
 
-## Challenge Questions
+### Q19: How many hurricanes were formed in the decade of 1960-1969 (inclusive)?
+
+
+<!-- ### Q18: How many hurricanes were formed in the month of May? -->
 
 ### Q19: Which month experienced the formation of the most number of hurricanes?
 
 Answer with a number (e.g., 1 for Jan, etc.).
 
-### Q20: How many years experienced the formation of at least four hurricanes?
+<!-- ### Q19: Which decade experienced the formation of the most number of hurricanes?
+
+Answer with a number (e.g., 1980 for the decade of 1980-1989). -->
+
+
+### Q21: How many years experienced the formation of more than 3 hurricanes?
 
 ### Good luck with your hurricanes project! :)
