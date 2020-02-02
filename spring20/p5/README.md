@@ -158,7 +158,7 @@ def hurricanes_in_month(mm):
 
 <!-- ### Q18: How many hurricanes were formed in the month of May? -->
 
-### Q19: Which month experienced the formation of the most number of hurricanes?
+### Q20: Which month experienced the formation of the most number of hurricanes?
 
 Answer with a number (e.g., 1 for Jan, etc.).
 
@@ -166,7 +166,6 @@ Answer with a number (e.g., 1 for Jan, etc.).
 
 Answer with a number (e.g., 1980 for the decade of 1980-1989). -->
 
-
-### Q21: How many years experienced the formation of more than 3 hurricanes?
+<!-- ### Q21: How many years experienced the formation of more than 3 hurricanes? -->
 
 ### Good luck with your hurricanes project! :)
