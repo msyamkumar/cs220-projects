@@ -39,7 +39,7 @@ consider the Pokémon Charmander and Chimchar. Both of them have the same stat t
 of 309. In such cases, we want our function to return the string `'Draw'` instead of
 choosing between the two Pokémon.
 
-### Q3: What is the output of `simple_battle('Charizard', 'Infernape')`?
+### Q3: What is the output of `simple_battle('Chikorita', 'Turtwig')`?
 
 Our function `simple_battle` is quite rudimentary. All it does is compare the stat
 totals of different Pokémon. Although it can predict effectively when the stat
@@ -49,7 +49,7 @@ two numbers are close to each other. Modify `simple_battle` so that it returns
 
 ### Q4: What is the output of `simple_battle('Kingler', 'Staraptor')`?
 
-### Q5: What is the output of `simple_battle('Chikorita', 'Snivy')`?
+### Q5: What is the output of `simple_battle('Heracross', 'Krookodile')`?
 
 Our function `simple_battle` is a good start, but we can make our battles a bit
 more interesting. Let us set up some rules for our battles.
@@ -118,9 +118,9 @@ Verify that `most_damage('Scraggy', 'Tranquill')` returns `12.0967`.
 
 ### Q7: What is the damage that will be done by Naganadel to Rockruff?
 
-### Q8: What is the damage that will be done by Aipom to Donphan?
+### Q8: What is the damage that will be done by Taillow to Swellow?
 
-### Q9: What is the damage that will be done by Donphan to Aipom?
+### Q9: What is the damage that will be done by Swellow to Taillow?
 
 Now that we have a way of calculating the damage done by the Pokémon during
 battle, we have to calculate how many hits each Pokémon can take before fainting.
@@ -158,7 +158,7 @@ def battle(pkmn1, pkmn2):
     # string 'Draw'
 ```
 
-### Q13: What is the outcome of `battle('Pikachu', 'Charizard')`?
+### Q13: What is the outcome of `battle('Infernape', 'Torterra')`?
 
 ### Q14: What is the outcome of `battle('Torkoal', 'Sceptile')`?
 
@@ -179,7 +179,7 @@ then the battle should be a `'Draw'`.
 
 ### Q17: What is the outcome of `battle('Greninja', 'Hawlucha')`?
 
-### Q18: What is the outcome of `battle('Snorlax', 'Lapras')`?
+### Q18: What is the outcome of `battle('Snorlax', 'Charizard')`?
 
 Our function `battle` is now working just as intended. But let us build some checks
 and balances into the function, to make it more reasonable. We will assume that
