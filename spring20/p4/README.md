@@ -1,16 +1,17 @@
-# Project 5: Pokémon Simulation
+# Project 5: Pokémon Simulation (UNDER CONSTRUCTION. DO NOT START.)
 
 ## Corrections/Clarifications
-
+None yet.
 
 ## Overview
 
 For this project, you'll be using the data from `pokemon_stats.csv` to
-simulate Pokémon battles. This project will focus on **conditional
-statements**. To start, download `project.py`, `test.py` and `pokemon_stats.csv`.
-You'll do your work in a Jupyter Notebook, producing a `main.ipynb` file.
-You'll test as usual by running `python test.py` to test a
-`main.ipynb` file.
+simulate Pokémon battles. This data was gathered by the Python program
+`gen_csv.ipynb` from the website https://www.pokemondb.net/.  This project will
+focus on **conditional statements**. To start, download `project.py`,
+`test.py` and `pokemon_stats.csv`. You'll do your work in a Jupyter Notebook,
+producing a `main.ipynb` file. You'll test as usual by running `python test.py`
+to test a `main.ipynb` file.
 
 We won't explain how to use the `project` module here (the code in the
 `project.py` file). The lab this week is designed to teach you how it
@@ -26,14 +27,14 @@ cell should contain `#q13`.
 
 For the first few questions, we will try to simulate a very simple 'battle'.
 Create a function `simple_battle(pkmn1, pkmn2)` which simply returns the name of
-the Pokémon with the highest total stats.
+the Pokémon with the highest stat total.
 
 **Hint: In Lab P4, you created a helper function which could be very useful here**
 ### Q1: What is the output of `simple_battle('Gligar', 'Pidgeotto')`?
 
 ### Q2: What is the output of `simple_battle('Gligar', 'Pidgeot')`?
 
-While we are off to a good start, the function is not quite complete yet. For instance,
+While we are off to a good start, the function is not quite finished yet. For instance,
 consider the Pokémon Charmander and Chimchar. Both of them have the same stat total
 of 309. In such cases, we want our function to return the string `'Draw'` instead of
 choosing between the two Pokémon.
@@ -105,13 +106,15 @@ Copy/paste the following code in a new cell of your notebook and fill in the det
 
 ```python
 def most_damage(attacker, defender):
-    #TODO: Return the most damage (from physical or special move) that can
-    # be caused by attacker to defender
+    if ???:
+        return 10 * project.get_attack(attacker)/project.get_defense(defender)
+    else:
+        ???
 ```
 
 Verify that `most_damage('Scraggy', 'Tranquill')` returns `12.0967`.
 
-### Q6: What is the damage that will be done by Caterpie to Gliscor?
+### Q6: What is the damage that will be done by Caterpie to Incineroar?
 
 ### Q7: What is the damage that will be done by Naganadel to Rockruff?
 
@@ -124,21 +127,20 @@ battle, we have to calculate how many hits each Pokémon can take before faintin
 
 Going back to our previous example, we saw that Scraggy does `12.0967` damage to
 Tranquill, each turn. Since Tranquill has HP `62`, it can take a total of `62/12.0697
-= 5.125` hits, which is rounded up to `6` hits, before fainting. So, Tranquill
+= 5.125` hits, which is rounded up to `6` hits. So, Tranquill
 can take `6` hits from Scraggy before it faints.
 
 Copy/paste the following code in a new cell of your notebook and fill in the details.
 
 ```python
 def num_hits(attacker, defender):
-    #TODO: Return the number of hits that defender can take from attacker before
-    # fainting
+    return math.ceil(project.get_hp(???)/???)
 ```
 
 **Hint: You might want to use the method [math.ceil()](https://docs.python.org/3/library/math.html) here. First import the module math
 and then look up the documentation of math.ceil to see how you could use it.**
 
-### Q10: How many hits can Donphan take from Heracross?
+### Q10: How many hits can Goomy take from Gible?
 
 ### Q11: How many hits can Donphan take from Aipom?
 
@@ -175,16 +177,16 @@ then the battle should be a `'Draw'`.
 
 ### Q16: What is the outcome of `battle('Bulbasaur', 'Squirtle')`?
 
-### Q17: What is the outcome of `battle('Greninja', 'Talonflame')`?
+### Q17: What is the outcome of `battle('Greninja', 'Hawlucha')`?
 
-### Q18: What is the outcome of `battle('Snorlax', 'Dragonite')`?
+### Q18: What is the outcome of `battle('Snorlax', 'Lapras')`?
 
 Our function `battle` is now working just as intended. But let us build some checks
 and balances into the function, to make it more reasonable. We will assume that
-Pokémon from different regions cannot battle each other, since they can't both be at
-the same place.
+Pokémon from different regions cannot battle each other, since they can't both meet
+each other.
 
-Create a new function `final_battle(pkmn1, pkmn2)` so that if two Pokémon from
+Create a new function `final_battle(attacker, defender)` so that if two Pokémon from
 different regions try to fight each other, the function returns `'Cannot battle'`.
 If both Pokémon are from the same region, the battle proceeds as before.
 
@@ -194,7 +196,7 @@ This restriction however, is a little too harsh. We can assume that Pokémon who
 type (Type 1 or Type 2) is `Flying` can reach other regions by flying there.
 
 Modify `final_battle` so that even if the two Pokémon are from different regions, if the
-Type 1 or Type 2 of **either** of those Pokémon is 'Flying', then the battle can
+Type 1 **or** Type 2 of the Attacker is 'Flying', then the battle can
 take place as before.
 
 ### Q20: What is the outcome of `final_battle('Dragonite', 'Goodra')`?
