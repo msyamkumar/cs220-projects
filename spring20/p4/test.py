@@ -42,21 +42,21 @@ expected_json = {
     "1": "Gligar",
     "2": "Pidgeot",
     "3": "Draw",
-    "4": "Staraptor",
-    "5": "Chikorita",
-    "6": "2.6666666666666665",
+    "4": "Draw",
+    "5": "Draw",
+    "6": "3.3333333333333335,
     "7": "31.75",
     "8": "6.666666666666666",
     "9": "21.818181818181817",
-    "10": "9",
+    "10": "3",
     "11": "14",
     "12": "3",
     "13": "Charizard",
     "14": "Sceptile",
     "15": "Tepig",
     "16": "Bulbasaur",
-    "17": "Talonflame",
-    "18": "Dragonite",
+    "17": "Greninja",
+    "18": "Snorlax",
     "19": "Cannot battle",
     "20": "Dragonite",
 }
@@ -75,7 +75,7 @@ def extract_question_num(cell):
 
 # rerun notebook and return parsed JSON
 def rerun_notebook(orig_notebook):
-    new_notebook = 'cs-301-test.ipynb'
+    new_notebook = 'cs-220-test.ipynb'
 
     # re-execute it from the beginning
     with open(orig_notebook) as f:
