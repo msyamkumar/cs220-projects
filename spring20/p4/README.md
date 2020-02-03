@@ -1,4 +1,4 @@
-# Project 5: Pokémon Simulation (UNDER CONSTRUCTION. DO NOT START.)
+# Project 4: Pokémon Simulation (UNDER CONSTRUCTION. DO NOT START.)
 
 ## Corrections/Clarifications
 None yet.
