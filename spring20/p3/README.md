@@ -73,16 +73,16 @@ you did it produced the correct answer.
 
 ## Questions and Functions
 
-### Q1: What is the agency ID of the parks agency?
+### Q1: What is the agency ID of the library agency?
 
-Hint: use `project.get_id("parks")`
+Hint: use `project.get_id("library")`
 
-### Q2: How much did the agency with ID 6 spend in 2018?
+### Q2: How much did the agency with ID 5 spend in 2018?
 
-It is OK to hardcode `6` in this case since we asked directly about
-agency 6 (instead of about "fire").
+It is OK to hardcode `5` in this case since we asked directly about
+agency 5 (instead of about "police").
 
-### Q3: How much did "streets" spend in 2017?
+### Q3: How much did "streets" spend in 2016?
 
 Hint: instead of repeatedly calling `project.get_id("streets")` (or
 similar) for each function, you may wish to make these calls once at
@@ -99,7 +99,7 @@ fire_id = project.get_id("fire")
 ### Function 1: `year_max(year)`
 
 This function will compute the maximum spending of any one agency in a
-given year.  We'll give this one to you directly (you'll have to wriet
+given year.  We'll give this one to you directly (you'll have to write
 the code for the subsequent functions yourself).  Copy/paste this into
 a cell in your notebook:
 
@@ -116,7 +116,7 @@ def year_max(year):
     return max(police_spending, fire_spending, library_spending, parks_spending, streets_spending)
 ```
 
-### Q4: What was the most spent by a single agency in 2015?
+### Q4: What was the most spent by a single agency in 2017?
 
 Use `year_max` to answer this.
 
@@ -142,7 +142,7 @@ def agency_min(agency):
 This function will compute the minimum the given agency ever spent
 over the course of a year.
 
-### Q6: What was the least the police ever spent in a year?
+### Q6: What was the least the fire agency ever spent in a year?
 
 Use your `agency_min` function.
 
@@ -163,7 +163,7 @@ compute the average of these by adding, then dividing by 4.
 
 Use your `agency_avg` function.
 
-### Q10: How much is spent per year on fire, on average?
+### Q10: How much is spent per year on parks, on average?
 
 ### Q11: How much did the police spend above their average in 2018?
 
@@ -193,12 +193,12 @@ here; you just need to compute the difference between spending in the
 last year and the first year, then divide by the number of elapsed
 years.
 
-### Q12: how much has spending increased per year (on average) for police from 2015 to 2018?
+### Q12: how much has spending increased per year (on average) for parks from 2015 to 2018?
 
 Use the default arguments (your call to `change_per_year` should only
 pass one argument explicitly).
 
-### Q13: how much has spending increased per year (on average) for police from 2017 to 2018?
+### Q13: how much has spending increased per year (on average) for streets from 2017 to 2018?
 
 Use the default argument for the `end_year` parameter (your call to
 `change_per_year` should only pass two arguments explicitly).
@@ -231,7 +231,7 @@ Extrapolate from the data between 2015 and 2018.
 
 ### Q17: how much will library spend in 2100?
 
-Extrapolate from the data between 2017 and 2018.
+Extrapolate from the data between 2016 and 2018.
 
 ### Function 6: `extrapolate_error`
 
@@ -252,7 +252,9 @@ decision!
 
 ### Q18: what is the error if we extrapolate to 2018 from the 2015-to-2017 data for police?
 
-### Q19: what is the error if we extrapolate to 2018 from the 2015-to-2016 data for streets?
+### Q19: what is the percent error if we extrapolate to 2018 from the 2015-to-2016 data for streets?
+
+Percent error = extrapolate_error*100/actual_spending_of_the_agency_for_the_extrapolated_year
 
 ### Q20: what is the standard deviation for library spending over the 4 years?
 
