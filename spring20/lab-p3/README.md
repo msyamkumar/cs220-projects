@@ -35,12 +35,12 @@ that person must be your project partner until the next project; you
 are not allowed to start working on P3 with one person during lab,
 then finish the project with a different partner.  Now may be a good
 time to review [our course
-policies](https://tyler.caraza-harter.com/cs301/fall19/syllabus.html).
+policies](https://www.msyamkumar.com/cs220/s20/syllabus.html).
 
 ## Setup
 
 Create a `lab3` directory and download `lab.csv` above.  Also download
-these files from the [P3 posting](https://github.com/tylerharter/cs301-projects/tree/master/fall19/p3)
+these files from the [P3 posting](https://github.com/msyamkumar/cs220-projects/tree/master/spring20/p3)
 to the `lab3` directory:
 * `madison.csv`
 * `project.py`
