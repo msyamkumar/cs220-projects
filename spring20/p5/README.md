@@ -93,7 +93,7 @@ For e.g. your function should convert a string from "13.5M" to 13500000,
 # return index of deadliest hurricane over the given date range
 def format_damage(damage):
   # TODO check the last character of the string
-  # and then convert it to appropriate number in integer
+  # and then convert it to appropriate integer by slicing and type casting
   pass
 ```
 
@@ -131,13 +131,13 @@ functions you created in lab to your project notebook if you like.
 For this and the following, count a hurricane as being in the year it
 was formed (not dissipated).
 
-### Q12: What was the deadliest hurricane of the 20th century (1901 to 2000, inclusive)?
+### Q11: What was the deadliest hurricane of the 20th century (1901 to 2000, inclusive)?
 
-### Q13: In what year did the most deadly hurricane in the dataset form?
+### Q12: In what year did the most deadly hurricane in the dataset form?
 
-### Q14: How much damage (in dollars) was done by the deadliest hurricane of the 21th century?
+### Q13: How much damage (in dollars) was done by the deadliest hurricane of the 21th century?
 
-### Q15: What were the total damages across all hurricanes in the dataset, in dollars?
+### Q14: What were the total damages across all hurricanes in the dataset, in dollars?
 
 ### Function Suggestion:
 
@@ -154,7 +154,9 @@ def hurricanes_in_month(mm):
     return num_of_hurricanes
 ```
 
-### Q16: How many hurricanes were formed in the month of June?
+### Q15: How many hurricanes were formed in the month of June?
+
+### Q16: How many hurricanes were formed in the month of January?
 
 ### Q17: Which month experienced the formation of the most number of hurricanes?
 
