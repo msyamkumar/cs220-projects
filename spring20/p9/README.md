@@ -1,4 +1,6 @@
 # Project 9: Amazon Reviews
+## Under Construction. Dont start working on it before release
+
 
 ## Clarifications/Corrections/Hints:
 * Nov 7: Added hints for Q7
@@ -41,6 +43,6 @@ Note: Make sure `data`, `main.ipynb` and `test.py` are in same directory.  Other
 
 ## Linting
 
-We are now introducing linting as a way to help you write better code. Please check it out 
-and try running it on your code! Everything you need to know to get started is explained 
+We are now introducing linting as a way to help you write better code. Please check it out
+and try running it on your code! Everything you need to know to get started is explained
 [here](../../linter/README.md).

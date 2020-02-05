@@ -1,10 +1,12 @@
 # Project 10: Geography, and the World Wide Web
+## Under Construction. Dont start working on it before release
+
 
 ## Clarifications/Corrections
 
-* Dec 2: Fixed small test.py bug as found in [this piazza post](https://piazza.com/class/jzkcu4am8lmc3?cid=828), 
+* Dec 2: Fixed small test.py bug as found in [this piazza post](https://piazza.com/class/jzkcu4am8lmc3?cid=828),
 thanks for finding it! You might want to re-download test.py if you are having issues with it.
-* Note: If you have experienced problems with the linter, please re-download 
+* Note: If you have experienced problems with the linter, please re-download
 a newer version [here](../../linter/lint.py).
 
 ## Introduction
@@ -56,7 +58,7 @@ must have the correct values at each index/column location shown in
 
 For P10, `test.py` is pickier than it has been. In addition to
 checking for incorrect answers, it will also check for a few common
-kinds of bad coding style. You should look for linting messages at the bottom 
+kinds of bad coding style. You should look for linting messages at the bottom
 of the output, for example:
 
 ```
@@ -65,12 +67,12 @@ Linting Summary:
     cell: 1, line: 4 - Redefining built-in 'id'
     cell: 1, line: 3 - Reimport 'numpy' (imported line 2)
     cell: 1, line: 5 - Unnecessary pass statement
-    cell: 1, line: 2 - Unused import numpy 
+    cell: 1, line: 2 - Unused import numpy
 ```
 
-In this case, `test.py` will deduct 1 point per linter message because of 
-bad style, and at most deduct 10 points. For more information about the linter 
-as well as how to run the full linter to see all of the automatically generated 
+In this case, `test.py` will deduct 1 point per linter message because of
+bad style, and at most deduct 10 points. For more information about the linter
+as well as how to run the full linter to see all of the automatically generated
 advice and feedback, please check out the [linting README](../../linter).
 
 
