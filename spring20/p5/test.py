@@ -39,7 +39,7 @@ question_nums = set([q.number for q in questions])
 
 # JSON and plaintext values
 expected_json = {
-    "1": "132",
+    "1": "133",
     "2": "'Omar'",
     "3": "72",
     "4": "True",
