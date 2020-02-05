@@ -129,13 +129,13 @@ functions you created in lab to your project notebook if you like.
 For this and the following, count a hurricane as being in the year it
 was formed (not dissipated).
 
-### Q11: What was the deadliest hurricane of the 20th century (1901 to 2000, inclusive)?
+### Q12: What was the deadliest hurricane of the 20th century (1901 to 2000, inclusive)?
 
-### Q12: In what year did the most deadly hurricane in the dataset form?
+### Q13: In what year did the most deadly hurricane in the dataset form?
 
-### Q13: How much damage (in dollars) was done by the deadliest hurricane of the 21th century?
+### Q14: How much damage (in dollars) was done by the deadliest hurricane of the 21th century?
 
-### Q14: What were the total damages across all hurricanes in the dataset, in dollars?
+### Q15: What were the total damages across all hurricanes in the dataset, in dollars?
 
 ### Function Suggestion:
 
@@ -152,20 +152,14 @@ def hurricanes_in_month(mm):
     return num_of_hurricanes
 ```
 
-### Q15: How many hurricanes were formed in the month of June?
-
-### Q16: How many hurricanes were formed in the month of January?
+### Q16: How many hurricanes were formed in the month of June?
 
 ### Q17: Which month experienced the formation of the most number of hurricanes?
-
-Answer with a number (e.g., 1 for Jan, etc.).
 
 ### Q18: How many hurricanes were formed in the decade of 1990-1999 (inclusive)?
 
 ### Q19: How many years in the history experienced a hurricane that caused more than 200 in deaths?
 
 ### Q20: How many years in the history experienced a hurricane that caused more than 10 Billion in damage?
-
-<!-- ### Q21: How many years experienced the formation of more than 3 hurricanes? -->
 
 ### Good luck with your hurricanes project! :)
