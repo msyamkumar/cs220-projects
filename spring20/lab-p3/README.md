@@ -1,5 +1,18 @@
 # Lab 3: Learning an API
 
+## Corrections
+
+STES TO RENAME .txt FILES to .csv FILES:
+1. Open a terminal.
+2. Navigate to the directory where you have saved these files
+3. rename with the mv command:
+
+mv lab.txt lab.csv
+
+mv madison.txt madison.csv
+
+## Description
+
 For many projects this semester, we'll provide you with a *module* (a
 collection of functions) named `project`, in a file named
 `project.py`.  This module will provide functions that will help you
