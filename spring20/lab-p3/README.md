@@ -9,6 +9,8 @@ STES TO RENAME .txt FILES to .csv FILES:
     mv lab.txt lab.csv
     mv madison.txt madison.csv
 
+## Description
+
 For many projects this semester, we'll provide you with a *module* (a
 collection of functions) named `project`, in a file named
 `project.py`.  This module will provide functions that will help you
