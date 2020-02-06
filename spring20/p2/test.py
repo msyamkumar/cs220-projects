@@ -25,7 +25,7 @@ questions = [
     Question(number=17, weight=1, format=TEXT_FORMAT),
     Question(number=18, weight=1, format=TEXT_FORMAT),
     Question(number=19, weight=1, format=TEXT_FORMAT),
-    Question(number=20, weight=1, format=TEXT_FORMAT),    
+    Question(number=20, weight=1, format=TEXT_FORMAT),
 ]
 question_nums = set([q.number for q in questions])
 
@@ -40,17 +40,17 @@ expected_json = {
     "7": "str",
     "8": "bool",
     "9": "bool",
-    "10": "301",
-    "11": ":):):):):):):):):):)",
+    "10": "220",
+    "11": ":):):):):)",
     "12": "42",
-    "13": "125",
-    "14": "800",
+    "13": "216",
+    "14": "1620",
     "15": "False",
     "16": "True",
     "17": "True",
     "18": "True",
     "19": "True",
-    "20": "150.72",
+    "20": "100.48",
 }
 
 
@@ -65,7 +65,7 @@ def extract_question_num(cell):
     return None
 
 
-# find correct python command based on version 
+# find correct python command based on version
 def get_python_cmd():
     cmds = ['py', 'python3', 'python']
     for cmd in cmds:
@@ -82,7 +82,7 @@ def get_python_cmd():
 
 # rerun notebook and return parsed JSON
 def rerun_notebook(orig_notebook):
-    new_notebook = 'cs-301-test.ipynb'
+    new_notebook = 'cs-220-test.ipynb'
 
     # re-execute it from the beginning
     py_cmd = get_python_cmd()
