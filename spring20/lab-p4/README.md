@@ -109,7 +109,7 @@ To verify that your functions are correct, check that `get_stat_total('Heracross
 
 ## More Advanced Conditional Statements
 
-So far, we have only used if statements to compare two numbers. Let us do something more fancy now. Copy/paste the following code in a new cell.
+So far, we have only used if statements to compare two numbers. Let us do something more fancy now. As you might have seen in the database, a Pokémon might have one or more types. For instance, Pikachu has just one type: Electric, whereas Charizard has two: Fire and Flying. Copy/paste the following code in a new cell.
 
 ```python
 def get_num_types(pkmn):
@@ -121,14 +121,14 @@ def get_num_types(pkmn):
         return 2
 ```
 
-Play with the function to understand what it is doing. Finally, let us create a function that checks how if any two Pokémon have the same type.
+Play with the function to understand what it is doing. Finally, let us create a function that checks how if any two Pokémon have the same type. 
 
 ```python
 def same_types(pkmn1, pkmn2):
-    if project.get_type1(pkmn1) == project.get_type1(pkmn2) and project.get_type2(pkmn1) == project.get_type2(pkmn2):
-        return True
-    else:
-        return False
+    if project.get_type1(pkmn1) == project.get_type1(pkmn2):
+        if project.get_type2(pkmn1) == project.get_type2(pkmn2):
+            return True
+    return False
 ```
 So far, the function looks good, but there is something wrong with it. To see it, find the output of the following cell:
 
@@ -140,12 +140,12 @@ Take a look at `pokemon_stats.csv` to see why it went wrong. Fix the code by fil
 
 ```python
 def same_types(pkmn1, pkmn2):
-    if project.get_type1(pkmn1) == project.get_type1(pkmn2) and project.get_type2(pkmn1) == project.get_type2(pkmn2):
-        return True
-    else:
-        if ???:
+    if project.get_type1(pkmn1) == project.get_type1(pkmn2):
+        if project.get_type2(pkmn1) == project.get_type2(pkmn2):
             return True
-        else:
-            return False
+    if project.get_type1(pkmn1) == project.get_type2(pkmn2):
+        if project.get_type2(pkmn1) == project.get_type1(pkmn2):
+            return True
+    return False
 ```
 You can now get started with P4. You can use any helper function that you have created here in P4. Good luck and have fun!
