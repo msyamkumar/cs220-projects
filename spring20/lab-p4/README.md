@@ -76,10 +76,10 @@ As you might expect, the above code checks the HP of both the Pokémon and print
 
 ```python
 def compare_hp(pkmn1, pkmn2):
-    if project.get_hp(pkmn1) >= project.get_hp(???):
+    if project.get_hp(???) >= project.get_hp(???):
         return ???
     else:
-        return pkmn2
+        return ???
 ```
 
 You will have to replace the `???` with the appropriate variables. Such a function that performs a small task and can be used by other functions to perform more complicated tasks is called a 'helper function'. Let us create more helper functions, which will be useful for P4.
