@@ -67,8 +67,8 @@ The damage caused by a Pokémon's Physical move is `10 * Attack stat of
 Attacker / Defense stat of Defender`, and the damage caused by a Pokémon's
 Special move is `10 * Sp. Atk. stat of Attacker / Sp. Def. stat of Defender`.
 
-If a Pokémon wants to win, it should always choose the move which will do
-more damage.
+**If a Pokémon wants to win, it should always choose the move which will do
+more damage.**
 
 For example, let the attacker be Scraggy and the defender be Tranquill. Their
 stats are as follows:
@@ -99,8 +99,8 @@ Speed :  65
 ```
 The damage caused by Scraggy's physical move will be `10*75/62`, which is `12.0967`,
 while the damage caused by its special move will be `10*35/42`, which is `8.33`.
-So, in this case, when facing Tranquill, Scraggy would always choose its physical
-move to do `12.0967` damage.
+**So, in this case, when facing Tranquill, Scraggy would always choose its physical
+move to do `12.0967` damage.**
 
 Copy/paste the following code in a new cell of your notebook and fill in the details.
 
