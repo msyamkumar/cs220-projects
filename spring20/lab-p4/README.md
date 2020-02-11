@@ -98,17 +98,14 @@ def get_total_attack(pkmn):
     return (project.get_attack(pkmn) + project.get_sp_atk(pkmn))
 ```
 
-That function sums up the Attack and Special Attack stats of a given Pokémon and returns that value. Try creating the following functions. They might prove useful in P4.
+That function sums up the Attack and Special Attack stats of a given Pokémon and returns that value. Try creating a function that returns the sum total of all statistics for a given Pokémon. They might prove useful in P4.
 
 ```python
-def get_total_defense(pkmn):
-    #TODO: Return the sum of the pkmn's Defense and Sp. Def stats
-
 def get_stat_total(pkmn):
-    #TODO: Return the sum of all six stats (HP, Attack, Defense, Sp. Atk, Sp. Def and Speed) for pkmn
+    #TODO: Return sum of all stats(HP,Attack,Defense,Sp. Atk,Sp. Def, Speed)
 ```
 
-To verify that your functions are correct, check that `get_total_defense('Snorlax')` returns 175 and `get_stat_total('Heracross')` returns 500.
+To verify that your functions are correct, check that `get_stat_total('Heracross')` returns 500.
 
 ## More Advanced Conditional Statements
 
