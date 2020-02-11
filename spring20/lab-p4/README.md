@@ -13,7 +13,7 @@ First download [`project.py`](https://github.com/msyamkumar/cs220-projects/blob/
 5. Sp. Def (short for Special Defense)
 6. Speed (which is self explanatory)
 
-If you are feeling brave, take a look at [`gen_csv.ipynb`](https://github.com/msyamkumar/cs220-projects/blob/master/spring20/lab-p4/gen_csv.ipynb) to see how this file `pokemon_stats.csv` was generated. Don't worry if it doesn't make much sense at this point. By the end of CS220, you will be able to understand everything that is happening there. For now, you can try to figure out what is happening in each of the cells.
+If you are feeling brave, take a look at [`gen_csv.ipynb`](https://github.com/msyamkumar/cs220-projects/blob/master/spring20/p4/gen_csv.ipynb) to see how this file `pokemon_stats.csv` was generated. Don't worry if it doesn't make much sense at this point. By the end of CS220, you will be able to understand everything that is happening there. For now, you can try to figure out what is happening in each of the cells.
 
 `project.py` is designed to give you access to the data in `pokemon_stats.csv`. First, we need to check the `project.py` API just like we did in P3. Enter the Python Interactive Mode and type:
 
