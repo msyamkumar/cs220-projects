@@ -25,7 +25,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 class Database:
     def __init__(self, s3dir='./s3', cleanup=False):
         self.BUCKET = 'caraza-harter-cs301'
-        self.SEMESTER = "fall19"
+        self.SEMESTER = "spring20"
         self.PROFILE = 'cs301ta'
         self.S3_DIR = os.path.abspath(s3dir)
         self.session = boto3.Session(profile_name=self.PROFILE)
