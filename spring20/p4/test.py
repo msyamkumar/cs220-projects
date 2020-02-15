@@ -39,26 +39,26 @@ question_nums = set([q.number for q in questions])
 
 # JSON and plaintext values
 expected_json = {
-    "1": "True",
-    "2": "False",
-    "3": "False",
-    "4": "False",
-    "5": "True",
-    "6": "False",
-    "7": "False",
-    "8": "False",
-    "9": "False",
-    "10": "True",
-    "11": "True",
-    "12": "True",
-    "13": "False",
-    "14": "True",
-    "15": "False",
-    "16": "120.89453125",
-    "17": "79.79947916666667",
-    "18": "False",
-    "19": "True",
-    "20": "True",
+    "1": "Gligar",
+    "2": "Pidgeot",
+    "3": "Draw",
+    "4": "Draw",
+    "5": "Draw",
+    "6": "3.3333333333333335",
+    "7": "31.75",
+    "8": "9.166666666666666",
+    "9": "28.333333333333332",
+    "10": "3",
+    "11": "14",
+    "12": "3",
+    "13": "Torterra",
+    "14": "Sceptile",
+    "15": "Tepig",
+    "16": "Bulbasaur",
+    "17": "Greninja",
+    "18": "Snorlax",
+    "19": "Cannot battle",
+    "20": "Dragonite",
 }
 
 
@@ -75,7 +75,7 @@ def extract_question_num(cell):
 
 # rerun notebook and return parsed JSON
 def rerun_notebook(orig_notebook):
-    new_notebook = 'cs-301-test.ipynb'
+    new_notebook = 'cs-220-test.ipynb'
 
     # re-execute it from the beginning
     with open(orig_notebook) as f:
