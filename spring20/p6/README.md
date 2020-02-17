@@ -64,14 +64,14 @@ Summary:
 TOTAL SCORE: 5.00%
 ```
 
-### Q2: what is the average points (rating) of wine?
+### Q2: what is the average price of wine?
 
-Be careful!  There may be missing rating points information for some rows, so
+Be careful!  There may be missing price information for some rows, so
 it's best to skip those.
 
-### Q3: List all wineries which produce wine in South Africa?
+### Q3: List all wineries which produce wine in New Zealand?
 
-Answer in the form of a list containing no duplicates (for this and future questions).
+Answer in the form of a list containing no duplicates!! (for this and future questions).
 
 ### Q4: which wine varieties contain the phrase "caramelized" in the description?
 
