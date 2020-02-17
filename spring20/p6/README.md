@@ -73,15 +73,15 @@ it's best to skip those.
 
 Answer in the form of a list containing no duplicates!! (for this and future questions).
 
-### Q4: which wine varieties contain the phrase "caramelized" in the description?
+### Q4: which wine varieties contain the phrase "cranberry" in the description?
 
-This shoud match anything containing "caramelized (in any case), regardless of
+This should match anything containing "cranberry" (in any case), regardless of
 spacing.
 
 ### Q5: which wine varieties contain the phrase "lemon-lime soda" in the description?
 
 
-### Q6: which wine varieties contain the phrase "cherry-berry" in the description?
+### Q6: which wine varieties contain the phrase "black-fruit" in their description?
 
 ### Q7: which wine varieties are anagrams of the phrase "antibus governance"?
 
@@ -101,7 +101,8 @@ if there is a short, clever solution.
 
 Consider writing a function to solve Q7 and Q8 with the same code.
 
-### Q8: which wine varieties are anagrams of the phrase "Banned Petrol Mill".
+<!-- ### Q8: which wine varieties are anagrams of the phrase "Banned Petrol Mill". -->
+### Q8: How many unique wineries, produce the wine variety "Pinot Noir"?
 
 ### Q9: which winery produces the highest-priced wine in "US"?
 
