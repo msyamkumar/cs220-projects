@@ -131,10 +131,6 @@ print("returned value:", result)
 
 What does `sorted` do to existing structures?  What does it return?
 
-While `.sort` only works on lists, `sorted` works on other sequences,
-such as strings.  Can you guess why there's not the equivalent of a
-`.sort` method for strings?  Hint: remember strings are immutable.
-
 Let's try `sorted` on a string:
 
 ```python
@@ -145,6 +141,10 @@ result = sorted(s)
 print("original str:", s)
 print("returned value:", result)
 ```
+
+While `.sort` only works on lists, `sorted` works on other sequences,
+such as strings.  Can you guess why there's not the equivalent of a
+`.sort` method for strings?  Hint: remember strings are immutable.
 
 Note that `sorted` always returns a list sequence, even if the input
 is a string sequence.
@@ -222,7 +222,7 @@ You can switch back and forth between lists and sets with ease.  Let's
 try it:
 
 ```python
-items = [3,2,1]
+items = [1,2,4]
 items_set = set(items)
 print(items_set)
 ```
@@ -230,7 +230,7 @@ print(items_set)
 Or in the other direction:
 
 ```python
-items = {3,2,1}
+items = {4,2,1}
 items_list = list(items)
 print(items_list)
 ```
