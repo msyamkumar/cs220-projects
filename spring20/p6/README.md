@@ -104,7 +104,9 @@ Consider writing a function to solve Q7 and Q8 with the same code.
 <!-- ### Q8: which wine varieties are anagrams of the phrase "Banned Petrol Mill". -->
 ### Q8: How many unique wineries, produce the wine variety "Pinot Noir"?
 
-### Q9: which winery produces the highest-priced wine in "US"?
+### Q9: what is the highest-rated wine variety made in "Spain"?
+
+### Q10: which winery produces the highest-priced wine in "Italy"?
 
 Your answer should be in the form of a Python list.  If there is a
 single best, that list should contain that single best variety.  If
@@ -112,9 +114,7 @@ multiple varieties tie for best, the list should contain all that tie.
 
 Consider writing a function to solve Q9 and Q10 with the same code.
 
-### Q10: what is the highest-rated wine variety made in "France"?
-
-### Q11: what is the average points-per-dollar (PPD) ratio of the "Ponzi" winery?
+### Q11: what is the average points-per-dollar (PPD) ratio of the "Patricia Green Cellars" winery?
 
 In this question, we're trying to find the best value using the
 `points` (the rating) and `price` (cost in dollars) columns.
@@ -124,7 +124,7 @@ winery, then take the average of those ratios.  Simply dividing the
 sum of all points by the sum of all prices will calculates the wrong
 answer.
 
-### Q12: what is the average PPD of the "Blue Farm" winery?
+### Q12: what is the average PPD of the "Hall" winery?
 
 ### Q13: which winery in New Zealand has the lowest average PPD?
 
@@ -154,16 +154,13 @@ hired a savvy data scientist (you!) to keep an eye on the competition.
 ----
 
 Suppose you are throwing a birthday party for your friends and family
-guests. You decided to buy one bottle of the costliest wine in the US
-for family guests and one of the cheapest wine for your friends (but
-you promise your friends to treat with the costliest wine when you
-get a job offer).
+guests. Being a CR7 fan, you decided to treat them with Portugese wine.
 
 ----
 
-### Q19: what is the cost of cheapest wine that you could find in US?
+### Q19: what is the cost of costliest wine that you could find in Portugal?
 Ignore the cells, which does not mention the price value.
 
-### Q20: What is the total cost of buying the two bottles?
+### Q20: What is the total cost of buying two bottles of the costliest wine and three bottles of the cheapest wine in Portugal?
 
 Cheers!
