@@ -27,14 +27,14 @@ file to start answering the following questions, and remember to run
 suggest some code in the lab that you can use to access the data.  Use
 the `#qN` format as you have previously.
 
-### Q1: which country names are listed in the `country` column of the dataset?
+### Q1: How many unique countries are present in the wine dataset?
 
-Your output should be in the form of a Python list containing the
+Your output should be in the form of<!--  a Python list containing the
 country names.  The tests don't care about the order, but there should
-should be no duplicate entries in the lists.  Also, some country names
-are missing in the dataset (real-life data is often messy,
+should be no duplicate entries in the lists.   -->
+Note: Some country names are missing in the dataset (real-life data is often messy,
 unfortunately!).  Missing values are represented as `None`, but you
-should make sure `None` does not appear in your answer list.
+should make sure `None` does not contribute to your answer.
 
 Now is a good time to run the tests with `python test.py`.  If you did Q1 correctly, it should look like this:
 
