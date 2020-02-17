@@ -126,22 +126,20 @@ answer.
 
 ### Q12: what is the average PPD of the "Hall" winery?
 
-### Q13: which winery in New Zealand has the lowest average PPD?
+### Q13: which winery in US has the highest average PPD?
 
 Consider writing a function to answer this and Q14 and Q15 with the
-same code. Make sure to return a string if there is only one winery having
-the lowest PPD, otherwise return a list of wineries.
-Hint: Suppose 'winery_list' is the list of all wineries having the lowest average PPD.
+same code. 
+Hint: Suppose 'winery_list' is the list of all wineries having the highest average PPD.
 Now, check if the len(winery_list) is 1, then return winery_list[0], otherwise return winery_list.
 
-### Q14: which winery in Australia has the lowest average PPD?
+Careful,answer with a list containing the names of the wineries.
 
-Careful, two wineries tie in this one!  Answer with a list containing
-the names of the two wineries.
+### Q14: which winery in Argentina has the lowest average PPD?
 
-### Q15: which winery in Canada has the lowest average PPD?
+### Q15: which winery in Canada has the highest average PPD?
 
-### Q16: which wine varieties are produced by the "Global Wines" winery?
+### Q16: which wine varieties are produced by the "Ironstone" winery?
 
 Produce a Python list with no duplicates.
 
