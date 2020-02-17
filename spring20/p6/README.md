@@ -128,12 +128,10 @@ answer.
 
 ### Q13: which winery in US has the highest average PPD?
 
-Consider writing a function to answer this and Q14 and Q15 with the
+Consider writing a function to answer this and Q14 (with small variation) and Q15 with the
 same code. 
-Hint: Suppose 'winery_list' is the list of all wineries having the highest average PPD.
-Now, check if the len(winery_list) is 1, then return winery_list[0], otherwise return winery_list.
 
-Careful,answer with a list containing the names of the wineries.
+Careful! You may need to answer with a list containing the names of the wineries.
 
 ### Q14: which winery in Argentina has the lowest average PPD?
 
