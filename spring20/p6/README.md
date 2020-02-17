@@ -3,7 +3,7 @@
 
 ## Corrections and Clarifications
 
-* Oct 14: give better error when question cell has no output
+* None so far
 
 ## Introduction
 
