@@ -133,9 +133,9 @@ same code.
 
 Careful! You may need to answer with a list containing the names of the wineries.
 
-### Q14: which winery in Argentina has the lowest average PPD?
+### Q14: which winery in Canada has the highest average PPD?
 
-### Q15: which winery in Canada has the highest average PPD?
+### Q15: which winery in Argentina has the lowest average PPD?
 
 ### Q16: which wine varieties are produced by the "Ironstone" winery?
 
@@ -143,7 +143,7 @@ Produce a Python list with no duplicates.
 
 ### Q17: which wine varieties are produced by the "Quinta Nova de Nossa Senhora do Carmo" winery?
 
-### Q18: what percentage of the varieties produced by "Global Wines" are also produced by "Quinta Nova de Nossa Senhora do Carmo"?
+### Q18: what percentage of the varieties produced by "Ironstone" are also produced by "Quinta Nova de Nossa Senhora do Carmo"?
 Quinta Nova wants to better understand their competition, so they
 hired a savvy data scientist (you!) to keep an eye on the competition.
 
