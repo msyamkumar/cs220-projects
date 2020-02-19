@@ -93,7 +93,7 @@ def extract_question_num(cell):
 
 # rerun notebook and return parsed JSON
 def rerun_notebook(orig_notebook):
-    new_notebook = 'cs-301-test.ipynb'
+    new_notebook = 'cs-220-test.ipynb'
 
     # re-execute it from the beginning
     with open(orig_notebook) as f:
