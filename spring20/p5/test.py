@@ -59,7 +59,7 @@ expected_json = {
     "17": "9",
     "18": "25",
     "19": "16",
-    "20": "18",
+    "20": "11",
     }
 
 # find a comment something like this: #q10
