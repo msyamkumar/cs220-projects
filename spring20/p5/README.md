@@ -4,7 +4,7 @@
 
 ## Corrections/Clarifications
 
-* none yet
+* **(2/19/2020 4:00 pm)** `test.py` updated. Please download the file again.
 
 ## Overview
 
