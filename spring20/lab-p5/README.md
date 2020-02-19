@@ -144,7 +144,7 @@ try, and discuss with your neighbour.
 ### 3. Looping over indexes
 
 You want a loop that prints the index of every row index in `hurricanes.csv`
-(from 0 to 131, inclusive):
+(from 0 to 132, inclusive):
 
 ```python
 for idx in range(???):
