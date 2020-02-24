@@ -5,6 +5,7 @@
 ## Corrections/Clarifications
 
 * **(2/19/2020 4:00 pm)** `test.py` updated. Please download the file again.
+* **(2/24/2020 11:30 am)** Hint for `format_damage()` updated.
 
 ## Overview
 
@@ -90,7 +91,6 @@ For e.g. your function should convert a string from "13.5M" to 13500000,
 "6.9K" to 6900 and so on.
 
 ```python
-# return index of deadliest hurricane over the given date range
 def format_damage(damage):
   # TODO check the last character of the string
   # and then convert it to appropriate integer by slicing and type casting
