@@ -2,7 +2,7 @@
 
 ## Corrections and Clarifications
 
-* **(2/26/2020, 11:30 am)** Bug fixed in test.py. Redownload if you have already downloaded.
+* **(2/26/2020, 2:00 Pm)** Bugs fixed in test.py. Redownload if you have already downloaded.
 
 ## Announcements
 
