@@ -133,15 +133,15 @@ Consider writing a function to answer Q11 and Q12
 
 ### #Q12: What is the average PPD of the "Hall" winery?
 
-### #Q13: Which winery in US has the highest average PPD?
+### #Q13: Which wineries in US have the highest average PPD?
 
 Your answer should be in the form of a Python list.  If there is a single best winery, the list will contain one entry.  If multiple wineries tie for best, the list should contain all wineries that tie.
 
 Consider writing a function to answer Q13, Q14, and Q15 with the same code.
 
-### #Q14: Which winery or wineries in South Africa have the highest average PPD?
+### #Q14: Which wineries in South Africa have the highest average PPD?
 
-### #Q15: which winery in Argentina has the lowest average PPD?
+### #Q15: which wineies in Argentina have the lowest average PPD?
 
 ### #Q16: Which wine varieties are produced by the "Ironstone" winery?
 
