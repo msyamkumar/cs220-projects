@@ -3,7 +3,7 @@
 In this lab, we'll practice accessing CSVs, sorting, and using sets.
 
 To start, familiarize yourself with the dataset for P6 on GitHub here:
-[wine.csv](https://github.com/tylerharter/cs301-projects/blob/master/fall19/p6/wine.csv).
+[wine.csv](https://github.com/msyamkumar/cs220-projects/blob/master/spring20/p6/wine.csv).
 Download the `wine.csv` to a new `lab6` directory, and start a new
 notebook in that directory for this lab.
 
