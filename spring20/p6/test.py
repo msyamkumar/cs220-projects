@@ -93,7 +93,7 @@ expected_json = {
     "17": ['Portuguese White', 'Portuguese Rosé', 'Portuguese Red'],
     "18": 7.6923076923076925,
     "19": 130.0,
-    "20": 281.0,
+    "20": 281.0
 }
 
 # find a comment something like this: #q10
