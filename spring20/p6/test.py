@@ -76,7 +76,7 @@ expected_json = {
     "15": ['Matias Riccitelli', 'Bodega Las Cañitas'],
     "16": ['Cabernet Franc'],
     "17": ['Portuguese Rosé', 'Portuguese Red', 'Portuguese White'],
-    "18": 0.0,
+    "18": 0.07692307692307693
     "19": 130.0,
     "20": 281.0,
 }
