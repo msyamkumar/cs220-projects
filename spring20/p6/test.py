@@ -87,7 +87,7 @@ expected_json = {
     "11": 1.98628003003003,
     "12": 0.2923076923076923,
     "13": ['Grand Pacific'],
-    "14": ['Cave Spring'],
+    "14": ['Long Neck', 'Essay', 'Robertson Winery', 'KWV'],
     "15": ['Bodega Las Cañitas'],
     "16": ['Cabernet Franc'],
     "17": ['Portuguese White', 'Portuguese Rosé', 'Portuguese Red'],
@@ -176,7 +176,7 @@ def check_cell_text(qnum, cell):
     else:
         if expected != actual:
             expected_mismatch = True
-            
+
     if expected_mismatch:
         return "found {} in cell {} but expected {}".format(actual, qnum, expected)
 

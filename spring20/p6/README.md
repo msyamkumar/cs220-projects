@@ -6,19 +6,19 @@
 
 ## Announcements
 
-* Remember you must begin each cell with the comment #q1, #q2, etc.  This comment is read by test.py to 
-identify which question is being answered. We recommend copying the entire question line as a comment 
+* Remember you must begin each cell with the comment #q1, #q2, etc.  This comment is read by test.py to
+identify which question is being answered. We recommend copying the entire question line as a comment
 into your notebook.
-* To view comments grader comments for previous projects go to the project submission page and select 
+* To view comments grader comments for previous projects go to the project submission page and select
 the graded project and click view submission.
-* For regrade requests.  First contact the TA who graded your project - you can find their contact 
+* For regrade requests.  First contact the TA who graded your project - you can find their contact
 information when you view your submission.
 * Please remember that if you are looking for a partner you can use our Match Making service found under surveys on the course webpage.
 
 ## Introduction
 
-This project is a wine connoisseurs' delight!  Data Science can help us understand people's drinking 
-habits around the world.  For example, take a look at Mona Chalabi's analysis 
+This project is a wine connoisseurs' delight!  Data Science can help us understand people's drinking
+habits around the world.  For example, take a look at Mona Chalabi's analysis
 here: [Where Do People Drink The Most Beer, Wine And Spirits?](https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/)
 
 For our part, we will be exploring a modified subset (the first 1501 rows) of the Kaggle
@@ -40,7 +40,7 @@ the `#qN` format as you have for previous projects.
 
 ### #Q1: What countries are present in the wine dataset?
 
-Generate a Python list containing the country names. The order of the names doesn't matter but make sure that your answer doesn't contain duplicate entries. 
+Generate a Python list containing the country names. The order of the names doesn't matter but make sure that your answer doesn't contain duplicate entries.
 
 Note: Some entries in the data set are missing country names (real-life data is often messy,
 unfortunately!).  Missing values are represented as `None`. Do not include `None` in your answer.
@@ -137,9 +137,9 @@ Consider writing a function to answer Q11 and Q12
 
 Your answer should be in the form of a Python list.  If there is a single best winery, the list will contain one entry.  If multiple wineries tie for best, the list should contain all wineries that tie.
 
-Consider writing a function to answer Q13, Q14, and Q15 with the same code. 
+Consider writing a function to answer Q13, Q14, and Q15 with the same code.
 
-### #Q14: Which winery or wineries in Canada have the highest average PPD?
+### #Q14: Which winery or wineries in South Africa have the highest average PPD?
 
 ### #Q15: which winery in Argentina has the lowest average PPD?
 
@@ -147,7 +147,7 @@ Consider writing a function to answer Q13, Q14, and Q15 with the same code.
 
 Produce a Python list with no duplicates.
 
-Consider writing a function to answer Q16 and Q17 with the same code. 
+Consider writing a function to answer Q16 and Q17 with the same code.
 
 ### #Q17: Which wine varieties are produced by the "Quinta Nova de Nossa Senhora do Carmo" winery?
 
