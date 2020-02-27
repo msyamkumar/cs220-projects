@@ -12,9 +12,9 @@ practice with lists and start using dictionaries.  Start by
 downloading `test.py` and `Fifa20.csv` (which was adapted from
 [this dataset](https://www.kaggle.com/stefanoleone992/fifa-20-complete-player-dataset#players_20.csv)).
 This dataset is too large to preview on GitHub (>18K rows), but you can view the
-[raw version](https://github.com/tylerharter/cs301-projects/raw/master/fall19/p7/Fifa19.csv)
-or using a program such as [Excel](https://github.com/tylerharter/cs301-projects/blob/master/fall19/p7/excel.md).
-You can also preview an example with 100 rows [here](https://github.com/tylerharter/cs301-projects/blob/master/fall19/p7/preview.csv).
+[raw version](https://raw.githubusercontent.com/msyamkumar/cs220-projects/master/spring20/p7/Fifa20.csv)
+or using a program such as [Excel](https://github.com/msyamkumar/cs220-projects/blob/master/spring20/p7/excel.md).
+You can also preview an example with 100 rows [here](https://github.com/msyamkumar/cs220-projects/blob/master/spring20/p7/preview.csv).
 For this project, you'll create a new `main.ipynb` and answer
 questions in the usual format.
 
