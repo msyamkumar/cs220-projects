@@ -2,7 +2,8 @@
 
 ## Corrections and Clarifications
 
-* **(2/26/2020, 2:00 Pm)** Bugs fixed in test.py. Redownload if you have already downloaded.
+* **(2/26/2020, 2:00 pm)** Bugs fixed in test.py. Redownload if you have already downloaded.
+* **(2/26/2020, 8:20 pm)** Q18 clarified.
 
 ## Announcements
 
@@ -153,7 +154,9 @@ Consider writing a function to answer Q16 and Q17 with the same code.
 
 Produce a Python list with no duplicates.
 
-### #Q18: What percentage of the wines that contain the word "cranberry" in their description also contain the phrase "black-fruit" in their description? See Q4 and Q6.
+### #Q18: What percentage of wine varieties that contain the word "cranberry" in its description also contain the phrase "black-fruit" in its description? See Q4 and Q6.
+
+The two wines need not be the same. If a wine variety has two wines, one with 'cranberry' in its description, and the other wine with 'black-fruit' in its description, we want to count that wine variety.
 
 ### #Q19: What is the price of the most expensive wine that you could find in Portugal?
 
