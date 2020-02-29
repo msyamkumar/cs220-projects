@@ -1,101 +1,101 @@
-Id,Name,Age,Nationality,Overall,Club,Value,Wage,Preferred Foot,Jersey Number,Height,Weight
-158023,L. Messi,31,Argentina,94,FC Barcelona,€110.5M,€565K,Left,10,5'7,159lbs
-20801,Cristiano Ronaldo,33,Portugal,94,Juventus,€77M,€405K,Right,7,6'2,183lbs
-190871,Neymar Jr,26,Brazil,92,Paris Saint-Germain,€118.5M,€290K,Right,10,5'9,150lbs
-193080,De Gea,27,Spain,91,Manchester United,€72M,€260K,Right,1,6'4,168lbs
-192985,K. De Bruyne,27,Belgium,91,Manchester City,€102M,€355K,Right,7,5'11,154lbs
-183277,E. Hazard,27,Belgium,91,Chelsea,€93M,€340K,Right,10,5'8,163lbs
-177003,L. Modrić,32,Croatia,91,Real Madrid,€67M,€420K,Right,10,5'8,146lbs
-176580,L. Suárez,31,Uruguay,91,FC Barcelona,€80M,€455K,Right,9,6'0,190lbs
-155862,Sergio Ramos,32,Spain,91,Real Madrid,€51M,€380K,Right,15,6'0,181lbs
-200389,J. Oblak,25,Slovenia,90,Atlético Madrid,€68M,€94K,Right,1,6'2,192lbs
-188545,R. Lewandowski,29,Poland,90,FC Bayern München,€77M,€205K,Right,9,6'0,176lbs
-182521,T. Kroos,28,Germany,90,Real Madrid,€76.5M,€355K,Right,8,6'0,168lbs
-182493,D. Godín,32,Uruguay,90,Atlético Madrid,€44M,€125K,Right,10,6'2,172lbs
-168542,David Silva,32,Spain,90,Manchester City,€60M,€285K,Left,21,5'8,148lbs
-215914,N. Kanté,27,France,89,Chelsea,€63M,€225K,Right,13,5'6,159lbs
-211110,P. Dybala,24,Argentina,89,Juventus,€89M,€205K,Left,21,5'10,165lbs
-202126,H. Kane,24,England,89,Tottenham Hotspur,€83.5M,€205K,Right,9,6'2,196lbs
-194765,A. Griezmann,27,France,89,Atlético Madrid,€78M,€145K,Left,7,5'9,161lbs
-192448,M. ter Stegen,26,Germany,89,FC Barcelona,€58M,€240K,Right,22,6'2,187lbs
-192119,T. Courtois,26,Belgium,89,Real Madrid,€53.5M,€240K,Left,1,6'6,212lbs
-189511,Sergio Busquets,29,Spain,89,FC Barcelona,€51.5M,€315K,Right,5,6'2,168lbs
-179813,E. Cavani,31,Uruguay,89,Paris Saint-Germain,€60M,€200K,Right,21,6'1,170lbs
-167495,M. Neuer,32,Germany,89,FC Bayern München,€38M,€130K,Right,1,6'4,203lbs
-153079,S. Agüero,30,Argentina,89,Manchester City,€64.5M,€300K,Right,10,5'8,154lbs
-138956,G. Chiellini,33,Italy,89,Juventus,€27M,€215K,Left,3,6'2,187lbs
-231747,K. Mbappé,19,France,88,Paris Saint-Germain,€81M,€100K,Right,10,5'10,161lbs
-209331,M. Salah,26,Egypt,88,Liverpool,€69.5M,€255K,Left,10,5'9,157lbs
-200145,Casemiro,26,Brazil,88,Real Madrid,€59.5M,€285K,Right,14,6'1,185lbs
-198710,J. Rodríguez,26,Colombia,88,FC Bayern München,€69.5M,€315K,Left,10,5'11,172lbs
-198219,L. Insigne,27,Italy,88,Napoli,€62M,€165K,Right,10,5'4,130lbs
-197781,Isco,26,Spain,88,Real Madrid,€73.5M,€315K,Right,22,5'9,174lbs
-190460,C. Eriksen,26,Denmark,88,Tottenham Hotspur,€73.5M,€205K,Right,10,5'11,168lbs
-189242,Coutinho,26,Brazil,88,FC Barcelona,€69.5M,€340K,Right,7,5'8,150lbs
-188567,P. Aubameyang,29,Gabon,88,Arsenal,€59M,€265K,Right,14,6'2,176lbs
-178603,M. Hummels,29,Germany,88,FC Bayern München,€46M,€160K,Right,5,6'3,203lbs
-176676,Marcelo,30,Brazil,88,Real Madrid,€43M,€285K,Left,12,5'9,176lbs
-173731,G. Bale,28,Wales,88,Real Madrid,€60M,€355K,Left,11,6'1,181lbs
-167948,H. Lloris,31,France,88,Tottenham Hotspur,€36M,€150K,Left,1,6'2,181lbs
-167664,G. Higuaín,30,Argentina,88,Milan,€57M,€245K,Right,9,6'1,196lbs
-164240,Thiago Silva,33,Brazil,88,Paris Saint-Germain,€24M,€165K,Right,2,6'0,181lbs
-162835,S. Handanovič,33,Slovenia,88,Inter,€30M,€110K,Right,1,6'4,203lbs
-1179,G. Buffon,40,Italy,88,Paris Saint-Germain,€4M,€77K,Right,1,6'4,203lbs
-205600,S. Umtiti,24,France,87,FC Barcelona,€57M,€205K,Left,23,6'0,165lbs
-201399,M. Icardi,25,Argentina,87,Inter,€64.5M,€130K,Right,9,5'11,165lbs
-201024,K. Koulibaly,27,Senegal,87,Napoli,€51M,€115K,Right,26,6'2,196lbs
-195864,P. Pogba,25,France,87,Manchester United,€64M,€210K,Right,6,6'4,185lbs
-193041,K. Navas,31,Costa Rica,87,Real Madrid,€30.5M,€195K,Right,1,6'1,176lbs
-192505,R. Lukaku,25,Belgium,87,Manchester United,€62.5M,€230K,Left,9,6'3,207lbs
-192387,C. Immobile,28,Italy,87,Lazio,€52M,€115K,Right,17,6'1,187lbs
-189332,Jordi Alba,29,Spain,87,FC Barcelona,€38M,€250K,Left,18,5'7,150lbs
-175943,D. Mertens,31,Belgium,87,Napoli,€45M,€135K,Right,14,5'7,134lbs
-172871,J. Vertonghen,31,Belgium,87,Tottenham Hotspur,€34M,€155K,Left,5,6'2,190lbs
-171877,M. Hamšík,30,Slovakia,87,Napoli,€46.5M,€125K,Right,17,6'0,174lbs
-168651,I. Rakitić,30,Croatia,87,FC Barcelona,€46.5M,€260K,Right,4,6'0,172lbs
-152729,Piqué,31,Spain,87,FC Barcelona,€34M,€240K,Right,3,6'4,187lbs
-222492,L. Sané,22,Germany,86,Manchester City,€61M,€195K,Left,19,6'0,165lbs
-218667,Bernardo Silva,23,Portugal,86,Manchester City,€59.5M,€180K,Left,11,5'8,141lbs
-210257,Ederson,24,Brazil,86,Manchester City,€41.5M,€125K,Left,31,6'2,190lbs
-208722,S. Mané,26,Senegal,86,Liverpool,€52M,€195K,Right,10,5'9,152lbs
-203376,V. van Dijk,26,Netherlands,86,Liverpool,€44.5M,€165K,Right,4,6'4,203lbs
-202652,R. Sterling,23,England,86,Manchester City,€56.5M,€195K,Right,10,5'7,152lbs
-201942,Roberto Firmino,26,Brazil,86,Liverpool,€53M,€195K,Right,9,5'11,168lbs
-201535,R. Varane,25,France,86,Real Madrid,€50M,€210K,Right,4,6'3,179lbs
-199556,M. Verratti,25,Italy,86,Paris Saint-Germain,€55M,€135K,Right,6,5'5,132lbs
-191043,Alex Sandro,27,Brazil,86,Juventus,€36.5M,€160K,Left,12,5'11,176lbs
-190483,Douglas Costa,27,Brazil,86,Juventus,€46.5M,€175K,Left,11,5'8,154lbs
-189596,T. Müller,28,Germany,86,FC Bayern München,€45M,€135K,Right,13,6'1,165lbs
-189509,Thiago,27,Spain,86,FC Bayern München,€45.5M,€130K,Right,19,5'9,154lbs
-188350,M. Reus,29,Germany,86,Borussia Dortmund,€43.5M,€100K,Right,11,5'11,157lbs
-184432,Azpilicueta,28,Spain,86,Chelsea,€35M,€175K,Right,14,5'10,168lbs
-184344,L. Bonucci,31,Italy,86,Juventus,€30M,€160K,Right,19,6'3,187lbs
-184087,T. Alderweireld,29,Belgium,86,Tottenham Hotspur,€39M,€150K,Right,2,6'1,179lbs
-180206,M. Pjanić,28,Bosnia Herzegovina,86,Juventus,€44M,€180K,Right,5,5'10,159lbs
-177509,M. Benatia,31,Morocco,86,Juventus,€30M,€160K,Right,4,6'2,207lbs
-176635,M. Özil,29,Germany,86,Arsenal,€43.5M,€190K,Left,10,5'11,168lbs
-135507,Fernandinho,33,Brazil,86,Manchester City,€18M,€185K,Right,25,5'10,148lbs
-41,Iniesta,34,Spain,86,Vissel Kobe,€21.5M,€21K,Right,8,5'7,150lbs
-232363,M. Škriniar,23,Slovakia,85,Inter,€46.5M,€82K,Right,37,6'2,176lbs
-223848,S. Milinković-Savić,23,Serbia,85,Lazio,€50.5M,€73K,Right,21,6'3,168lbs
-220834,Marco Asensio,22,Spain,85,Real Madrid,€54M,€215K,Left,10,6'0,168lbs
-216594,N. Fekir,24,France,85,Olympique Lyonnais,€50M,€92K,Left,18,5'8,165lbs
-212831,Alisson,25,Brazil,85,Liverpool,€36.5M,€115K,Right,13,6'3,201lbs
-212622,J. Kimmich,23,Germany,85,FC Bayern München,€40.5M,€92K,Right,18,5'9,154lbs
-208421,Saúl,23,Spain,85,Atlético Madrid,€50.5M,€77K,Left,6,6'0,170lbs
-204485,R. Mahrez,27,Algeria,85,Manchester City,€40.5M,€205K,Left,26,5'10,148lbs
-197445,D. Alaba,26,Austria,85,FC Bayern München,€38M,€110K,Left,8,5'11,168lbs
-193747,Koke,26,Spain,85,Atlético Madrid,€45M,€88K,Right,8,5'9,163lbs
-193301,A. Lacazette,27,France,85,Arsenal,€45M,€180K,Right,9,5'9,161lbs
-192774,K. Manolas,27,Greece,85,Roma,€37.5M,€96K,Right,4,6'2,183lbs
-192366,N. Otamendi,30,Argentina,85,Manchester City,€28.5M,€170K,Right,30,6'0,179lbs
-189513,Parejo,29,Spain,85,Valencia CF,€37M,€66K,Right,10,6'0,163lbs
-187961,Paulinho,29,Brazil,85,Guangzhou Evergrande Taobao FC,€37M,€235K,Right,9,6'0,157lbs
-186153,W. Szczęsny,28,Poland,85,Juventus,€32M,€125K,Right,1,6'5,198lbs
-184941,A. Sánchez,29,Chile,85,Manchester United,€37.5M,€215K,Right,7,5'7,163lbs
-184267,Y. Brahimi,28,Algeria,85,FC Porto,€39M,€28K,Right,8,5'9,146lbs
-183907,J. Boateng,29,Germany,85,FC Bayern München,€30M,€115K,Right,17,6'4,198lbs
-181872,A. Vidal,31,Chile,85,FC Barcelona,€26M,€205K,Right,8,5'11,165lbs
-181458,I. Perišić,29,Croatia,85,Inter,€37.5M,€110K,Right,44,6'1,176lbs
-180930,E. Džeko,32,Bosnia Herzegovina,85,Roma,€30.5M,€115K,Right,9,6'4,185lbs
-179846,S. Khedira,31,Germany,85,Juventus,€33M,€160K,Right,6,6'2,198lbs
+ID,Name,Age,Nationality,Overall,Club,Position,Value,Wage,Preferred Foot,Jersey Number,Height,Weight
+158023,L. Messi,32,Argentina,94,FC Barcelona,RW,€95.5M,€565K,Left,10,5'7,159lbs
+20801,Cristiano Ronaldo,34,Portugal,93,Juventus,ST,€58.5M,€405K,Right,7,6'2,183lbs
+190871,Neymar Jr,27,Brazil,92,Paris Saint-Germain,LW,€105.5M,€290K,Right,10,5'9,150lbs
+200389,J. Oblak,26,Slovenia,91,Atlético Madrid,GK,€77.5M,€125K,Right,13,6'2,192lbs
+183277,E. Hazard,28,Belgium,91,Real Madrid,LW,€90M,€470K,Right,7,5'9,163lbs
+192985,K. De Bruyne,28,Belgium,91,Manchester City,CAM,€90M,€370K,Right,17,5'11,154lbs
+192448,M. ter Stegen,27,Germany,90,FC Barcelona,GK,€67.5M,€250K,Right,1,6'2,187lbs
+203376,V. van Dijk,27,Netherlands,90,Liverpool,CB,€78M,€200K,Right,4,6'4,203lbs
+177003,L. Modrić,33,Croatia,90,Real Madrid,CM,€45M,€340K,Right,10,5'8,146lbs
+209331,M. Salah,27,Egypt,90,Liverpool,RW,€80.5M,€240K,Left,11,5'9,157lbs
+231747,K. Mbappé,20,France,89,Paris Saint-Germain,ST,€93.5M,€155K,Right,7,5'10,161lbs
+201024,K. Koulibaly,28,Senegal,89,Napoli,CB,€67.5M,€150K,Right,26,6'2,196lbs
+202126,H. Kane,25,England,89,Tottenham Hotspur,ST,€83M,€220K,Right,10,6'2,196lbs
+212831,Alisson,26,Brazil,89,Liverpool,GK,€58M,€155K,Right,1,6'3,201lbs
+193080,De Gea,28,Spain,89,Manchester United,GK,€56M,€205K,Right,1,6'4,181lbs
+215914,N. Kanté,28,France,89,Chelsea,CDM,€66M,€235K,Right,7,5'6,159lbs
+138956,G. Chiellini,34,Italy,89,Juventus,CB,€24.5M,€215K,Left,3,6'2,187lbs
+153079,S. Agüero,31,Argentina,89,Manchester City,ST,€60M,€300K,Right,10,5'8,154lbs
+155862,Sergio Ramos,33,Spain,89,Real Madrid,CB,€31.5M,€300K,Right,4,6'0,181lbs
+176580,L. Suárez,32,Uruguay,89,FC Barcelona,ST,€53M,€355K,Right,9,5'12,190lbs
+188545,R. Lewandowski,30,Poland,89,FC Bayern München,ST,€64.5M,€235K,Right,9,6'0,176lbs
+189511,Sergio Busquets,30,Spain,89,FC Barcelona,CDM,€55M,€300K,Right,5,6'2,168lbs
+194765,A. Griezmann,28,France,89,FC Barcelona,CF,€69M,€370K,Left,17,5'9,161lbs
+211110,P. Dybala,25,Argentina,88,Juventus,CAM,€76.5M,€215K,Left,10,5'10,165lbs
+195864,P. Pogba,26,France,88,Manchester United,CM,€72.5M,€250K,Right,6,6'3,185lbs
+210257,Ederson,25,Brazil,88,Manchester City,GK,€54.5M,€185K,Left,31,6'2,190lbs
+202652,R. Sterling,24,England,88,Manchester City,RW,€73M,€255K,Right,7,5'7,152lbs
+190460,C. Eriksen,27,Denmark,88,Tottenham Hotspur,CAM,€68M,€205K,Right,23,5'11,168lbs
+192119,T. Courtois,27,Belgium,88,Real Madrid,GK,€48M,€235K,Left,13,6'6,212lbs
+152729,Piqué,32,Spain,88,FC Barcelona,CB,€38M,€285K,Right,3,6'4,187lbs
+162835,S. Handanovič,34,Slovenia,88,Inter,GK,€26M,€110K,Right,1,6'4,203lbs
+167495,M. Neuer,33,Germany,88,FC Bayern München,GK,€32M,€155K,Right,1,6'4,203lbs
+167948,H. Lloris,32,France,88,Tottenham Hotspur,GK,€36M,€150K,Left,1,6'2,181lbs
+168542,David Silva,33,Spain,88,Manchester City,CAM,€36M,€265K,Left,21,5'8,148lbs
+179813,E. Cavani,32,Uruguay,88,Paris Saint-Germain,ST,€47M,€195K,Right,9,6'1,170lbs
+182493,D. Godín,33,Uruguay,88,Inter,CB,€28M,€135K,Right,2,6'2,172lbs
+182521,T. Kroos,29,Germany,88,Real Madrid,CM,€57M,€330K,Right,8,6'0,168lbs
+188350,M. Reus,30,Germany,88,Borussia Dortmund,CAM,€56M,€170K,Right,11,5'11,157lbs
+188567,P. Aubameyang,30,Gabon,88,Arsenal,ST,€57M,€205K,Right,14,6'2,176lbs
+208722,S. Mané,27,Senegal,88,Liverpool,LW,€62M,€220K,Right,10,5'9,152lbs
+212218,A. Laporte,25,France,87,Manchester City,CB,€56.5M,€195K,Left,14,6'2,187lbs
+218667,Bernardo Silva,24,Portugal,87,Manchester City,RW,€64M,€210K,Left,20,5'8,141lbs
+200145,Casemiro,27,Brazil,87,Real Madrid,CDM,€53.5M,€240K,Right,14,6'1,185lbs
+200104,H. Son,26,Korea Republic,87,Tottenham Hotspur,CF,€60M,€185K,Right,7,6'0,172lbs
+135507,Fernandinho,34,Brazil,87,Manchester City,CDM,€19.5M,€200K,Right,25,5'10,148lbs
+164240,Thiago Silva,34,Brazil,87,Paris Saint-Germain,CB,€18.5M,€135K,Right,2,6'0,181lbs
+165153,K. Benzema,31,France,87,Real Madrid,CF,€45M,€285K,Right,9,6'1,179lbs
+172871,J. Vertonghen,32,Belgium,87,Tottenham Hotspur,CB,€32.5M,€155K,Left,5,6'2,190lbs
+175943,D. Mertens,32,Belgium,87,Napoli,CF,€40M,€135K,Right,14,5'7,134lbs
+178603,M. Hummels,30,Germany,87,Borussia Dortmund,CB,€41M,€130K,Right,15,6'3,207lbs
+184087,T. Alderweireld,30,Belgium,87,Tottenham Hotspur,CB,€41M,€155K,Right,4,6'1,179lbs
+189332,Jordi Alba,30,Spain,87,FC Barcelona,LB,€40M,€240K,Left,18,5'7,150lbs
+189509,Thiago,28,Spain,87,FC Bayern München,CM,€50M,€180K,Right,6,5'9,154lbs
+193041,K. Navas,32,Costa Rica,87,Real Madrid,GK,€30.5M,€195K,Right,1,6'1,176lbs
+198219,L. Insigne,28,Italy,87,Napoli,CF,€52M,€140K,Right,24,5'4,130lbs
+222492,L. Sané,23,Germany,86,Manchester City,LW,€61M,€195K,Left,19,6'0,165lbs
+207865,Marquinhos,25,Brazil,86,Paris Saint-Germain,CB,€51.5M,€120K,Right,5,6'0,165lbs
+232363,M. Škriniar,24,Slovakia,86,Inter,CB,€52M,€89K,Right,37,6'2,176lbs
+199556,M. Verratti,26,Italy,86,Paris Saint-Germain,CM,€54.5M,€140K,Right,6,5'5,132lbs
+205600,S. Umtiti,25,France,86,FC Barcelona,CB,€50M,€210K,Left,23,5'12,165lbs
+186153,W. Szczęsny,29,Poland,86,Juventus,GK,€37.5M,€135K,Right,1,6'5,198lbs
+212622,J. Kimmich,24,Germany,86,FC Bayern München,RB,€48M,€125K,Right,32,5'9,161lbs
+197781,Isco,27,Spain,86,Real Madrid,CAM,€51M,€245K,Right,22,5'9,174lbs
+201942,Roberto Firmino,27,Brazil,86,Liverpool,CF,€52M,€170K,Right,9,5'11,168lbs
+168651,I. Rakitić,31,Croatia,86,FC Barcelona,CM,€38M,€245K,Right,4,6'0,172lbs
+180206,M. Pjanić,29,Bosnia Herzegovina,86,Juventus,CM,€42.5M,€180K,Right,5,5'10,159lbs
+183898,A. Di María,31,Argentina,86,Paris Saint-Germain,RW,€39M,€150K,Left,11,5'11,152lbs
+184344,L. Bonucci,32,Italy,86,Juventus,CB,€28.5M,€160K,Right,19,6'3,187lbs
+189242,Coutinho,27,Brazil,86,FC Bayern München,LW,€46.5M,€175K,Right,10,5'8,150lbs
+189513,Parejo,30,Spain,86,Valencia CF,CM,€41M,€69K,Right,10,5'12,163lbs
+189596,T. Müller,29,Germany,86,FC Bayern München,CAM,€43.5M,€170K,Right,25,6'1,165lbs
+192387,C. Immobile,29,Italy,86,Lazio,ST,€44.5M,€105K,Right,17,6'1,187lbs
+193301,A. Lacazette,28,France,86,Arsenal,ST,€46M,€165K,Right,9,5'9,161lbs
+235243,M. de Ligt,19,Netherlands,85,Juventus,CB,€50M,€76K,Right,4,6'2,196lbs
+230621,G. Donnarumma,20,Italy,85,Milan,GK,€41.5M,€34K,Right,99,6'5,198lbs
+228702,F. de Jong,22,Netherlands,85,FC Barcelona,CM,€52M,€195K,Right,21,5'11,163lbs
+201535,R. Varane,26,France,85,Real Madrid,CB,€45M,€205K,Right,5,6'3,179lbs
+212190,N. Süle,23,Germany,85,FC Bayern München,CB,€46.5M,€115K,Right,4,6'5,214lbs
+223848,S. Milinković-Savić,24,Serbia,85,Lazio,CM,€50.5M,€73K,Right,21,6'3,168lbs
+231866,Rodri,23,Spain,85,Manchester City,CDM,€47M,€150K,Right,16,6'3,181lbs
+208421,Saúl,24,Spain,85,Atlético Madrid,CM,€49.5M,€77K,Left,8,6'0,170lbs
+209499,Fabinho,25,Brazil,85,Liverpool,CDM,€45M,€125K,Right,3,6'2,172lbs
+216267,A. Robertson,25,Scotland,85,Liverpool,LB,€43.5M,€125K,Left,26,5'10,141lbs
+216460,J. Giménez,24,Uruguay,85,Atlético Madrid,CB,€45M,€69K,Right,2,6'1,176lbs
+220440,C. Lenglet,24,France,85,FC Barcelona,CB,€45M,€175K,Left,15,6'1,179lbs
+212198,Bruno Fernandes,24,Portugal,85,Sporting CP,CAM,€49M,€24K,Right,8,5'10,152lbs
+199482,A. Lopes,28,Portugal,85,Olympique Lyonnais,GK,€33.5M,€88K,Left,1,6'0,179lbs
+185122,P. Gulácsi,29,Hungary,85,RB Leipzig,GK,€31M,€69K,Right,1,6'4,190lbs
+189117,R. Bürki,28,Switzerland,85,Borussia Dortmund,GK,€32M,€92K,Right,1,6'2,187lbs
+192505,R. Lukaku,26,Belgium,85,Inter,ST,€46M,€115K,Left,9,6'3,207lbs
+192774,K. Manolas,28,Greece,85,Napoli,CB,€37.5M,€105K,Right,44,6'2,183lbs
+194404,Neto,29,Brazil,85,FC Barcelona,GK,€31M,€175K,Right,13,6'3,185lbs
+197445,D. Alaba,27,Austria,85,FC Bayern München,LB,€38M,€135K,Left,27,5'11,172lbs
+201399,M. Icardi,26,Argentina,85,Inter,ST,€46M,€115K,Right,36,5'11,165lbs
+204963,Carvajal,27,Spain,85,Real Madrid,RB,€38M,€205K,Right,2,5'8,161lbs
+208670,H. Ziyech,26,Morocco,85,Ajax,CAM,€45M,€39K,Left,22,5'11,143lbs
+41236,Z. Ibrahimović,37,Sweden,85,LA Galaxy,ST,€14M,€15K,Right,9,6'5,209lbs
+143076,A. Gómez,31,Argentina,85,Atalanta,CAM,€34M,€92K,Right,10,5'5,150lbs
+167664,G. Higuaín,31,Argentina,85,Juventus,ST,€34.5M,€175K,Right,21,6'1,196lbs
+170890,B. Matuidi,32,France,85,Juventus,CDM,€25M,€145K,Left,14,5'11,165lbs

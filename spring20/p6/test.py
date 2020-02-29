@@ -40,66 +40,60 @@ question_nums = set([q.number for q in questions])
 
 # JSON and plaintext values
 expected_json = {
-    "1": [
-         'Argentina',
-         'Australia',
-         'Austria',
-         'Bulgaria',
-         'Canada',
-         'Chile',
-         'Croatia',
-         'France',
-         'Germany',
-         'Greece',
-         'Hungary',
-         'India',
-         'Israel',
-         'Italy',
-         'Moldova',
-         'Morocco',
-         'New Zealand',
-         'Portugal',
-         'Romania',
-         'Slovenia',
-         'South Africa',
-         'Spain',
-         'US'
-    ],
-    "2": 89.65489673550967,
-    "3": ['Fat Barrel',
-         'Robertson Winery',
-         'Neil Ellis',
-         'Graham Beck',
-         'Essay',
-         'Bouchard Finlayson',
-         'Waterkloof',
-         'Noble Hill',
-         'Long Neck',
-         'Vergelegen',
-         'KWV'      
-    ],
-    "4": [
-        'White Blend', 
-        'Chardonnay', 
-        'Rhône-style White Blend',
-        'Syrah'
-    ],
-    "5": ['Pinot Grigio', 'Chardonnay', 'Sparkling Blend'],
-    "6": ['Rosé', 'Cabernet Sauvignon', 'Nebbiolo'],
+    "1": ['South Africa',
+             'Chile',
+             'Croatia',
+             'Romania',
+             'Australia',
+             'Morocco',
+             'Bulgaria',
+             'Moldova',
+             'Argentina',
+             'Greece',
+             'Italy',
+             'Slovenia',
+             'India',
+             'Israel',
+             'New Zealand',
+             'France',
+             'Austria',
+             'Canada',
+             'Portugal',
+             'Hungary',
+             'Spain',
+             'US',
+             'Germany'],
+    "2": 39.40787623066104,
+    "3": ['Kumeu River', 'Felton Road', 'Spy Valley'],
+    "4": ['Rosé',
+             'Pinot Noir',
+             'Meritage',
+             'Cabernet Sauvignon',
+             'Lemberger',
+             'Nebbiolo',
+             'Cabernet Franc',
+             'Sangiovese',
+             'Zinfandel',
+             'Merlot',
+             'Aglianico',
+             'Blaufränkisch',
+             'Bordeaux-style Red Blend'],
+    "5": ['Sparkling Blend', 'Chardonnay', 'Pinot Grigio'],
+    "6": ['Castelão', 'Red Blend', 'Cabernet Sauvignon', 'Tempranillo', 'Tinta de Toro'],
     "7": ['Cabernet Sauvignon'],
-    "8": ['Tempranillo Blend'],
-    "9": ['Hall'],
-    "10": ['Provence red blend', 'Tannat', 'Malbec'],
-    "11": 1.288074888074888,
-    "12": 1.3628968253968254,
-    "13": 'Kumeu River',
-    "14": ["D'Arenberg", 'Dalrymple'],
-    "15": 'Burrowing Owl',
-    "16": ['Portuguese Red', 'Portuguese Sparkling', 'Touriga Nacional'],
-    "17": ['Portuguese Rosé', 'Portuguese Red', 'Portuguese White'],
-    "18": 33.33333333333333,
-    "19": 10.0,
-    "20": 335.0,
+    "8": 123,
+    "9": ['Tinta de Toro'],
+    "10": ['Gaja'],
+    "11": 1.98628003003003,
+    "12": 0.2923076923076923,
+    "13": ['Grand Pacific'],
+    "14": ['Long Neck', 'Essay', 'Robertson Winery', 'KWV'],
+    "15": ['Bodega Las Cañitas'],
+    "16": ['Cabernet Franc'],
+    "17": ['Portuguese White', 'Portuguese Rosé', 'Portuguese Red'],
+    "18": 7.6923076923076925,
+    "19": 130.0,
+    "20": 281.0
 }
 
 # find a comment something like this: #q10
@@ -114,7 +108,7 @@ def extract_question_num(cell):
 
 # rerun notebook and return parsed JSON
 def rerun_notebook(orig_notebook):
-    new_notebook = 'cs-301-test.ipynb'
+    new_notebook = 'cs-220-test.ipynb'
 
     # re-execute it from the beginning
     with open(orig_notebook) as f:
@@ -182,7 +176,7 @@ def check_cell_text(qnum, cell):
     else:
         if expected != actual:
             expected_mismatch = True
-            
+
     if expected_mismatch:
         return "found {} in cell {} but expected {}".format(actual, qnum, expected)
 
