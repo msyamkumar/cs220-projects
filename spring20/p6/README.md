@@ -4,6 +4,7 @@
 
 * **(2/26/2020, 2:00 pm)** Bugs fixed in test.py. Redownload if you have already downloaded.
 * **(2/26/2020, 8:20 pm)** Q18 clarified.
+* **(3/3/2020), 12:00 pm)** Q18 clarified.
 
 ## Announcements
 
@@ -156,7 +157,12 @@ Produce a Python list with no duplicates.
 
 ### #Q18: What percentage of wine varieties that contain the word "cranberry" in its description also contain the phrase "black-fruit" in its description? See Q4 and Q6.
 
-The two wines need not be the same. If a wine variety has two wines, one with 'cranberry' in its description, and the other wine with 'black-fruit' in its description, we want to count that wine variety.
+Denominator is the number of wine varieties with 'cranberry' in the description of one of its wines. Numerator is the number of wine varieties that have both 'cranberry' and 'black-fruit' in the description of one of its wines (the two wines need not be the same)
+
+Additional hints:
+    * Step 1: find the wine varieties which have 'cranberry' in its description.
+    * Step 2: find the wine varieties which have 'black-fruit' in its description.
+    * Step 3: find the set intersection between result from step 1 and step 2.
 
 ### #Q19: What is the price of the most expensive wine that you could find in Portugal?
 
