@@ -52,8 +52,8 @@ If done correctly, you should see something like this:
 Fill in the blanks:
 
 ```python
-keys = ["three", "zero", "one"]
-vals = ["tres", "cero", "uno"]
+keys = ["two", "zero"]
+vals = ["dos", "cero"]
 en2sp = ???? # empty dictionary
 for i in range(len(????)):
     en2sp[keys[????]] = ????
@@ -64,13 +64,13 @@ The resulting dictionary should map the English words to the Spanish
 words, like this:
 
 ```python
-{'three': 'tres', 'zero': 'cero', 'one': 'uno'}
+{'two': 'dos', 'zero': 'cero'}
 ```
 
 Try using your dictionary:
 
 ```python
-words = "I love Comp Sci three zero one".split(" ")
+words = "I love Comp Sci two two zero".split(" ")
 for i in range(len(words)):
     default = words[i] # don't translate it
     words[i] = en2sp.get(words[i], default)
@@ -96,7 +96,7 @@ sp2en
 You should get this:
 
 ```python
-{'tres': 'three', 'cero': 'zero', 'uno': 'one'}
+{ 'dos': 'two', 'cero': 'zero'}
 ```
 
 ### Dictionary Division
