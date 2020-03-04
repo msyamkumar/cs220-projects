@@ -1,6 +1,4 @@
 # Project 7: Fédération Internationale de Football Association
-## Under Construction. Dont start working on it before release
-
 
 ## Corrections
 
