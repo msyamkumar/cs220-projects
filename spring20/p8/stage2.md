@@ -109,21 +109,7 @@ test_movies = [
 ]
 ```
 
-#### Question 21: what is `bucketize(test_movies, "year")`?
-
-Expected answer:
-
-```
-{2018: [{'title': 'A', 'year': 2018, 'style': 'short', 'genres': ['g1']},
-  {'title': 'B', 'year': 2018, 'style': 'long', 'genres': ['g2']}],
- 2019: [{'title': 'C', 'year': 2019, 'style': 'short', 'genres': ['g3']},
-  {'title': 'D', 'year': 2019, 'style': 'long', 'genres': ['g1', 'g2', 'g3']}]}
-```
-
-Note that the *A* and *B* dictionaries are in the 2018 bucket and *C*
-and *D* are in the 2019 bucket.
-
-#### Question 22: what is `bucketize(test_movies, "style")`?
+#### Question 21: what is `bucketize(test_movies, "style")`?
 
 Expected answer:
 
@@ -134,7 +120,10 @@ Expected answer:
   {'title': 'D', 'year': 2019, 'style': 'long', 'genres': ['g1', 'g2', 'g3']}]}
 ```
 
-#### Question 23: what is `bucketize(test_movies, "genres")`?
+Note that the *A* and *B* dictionaries are in the 2018 bucket and *C*
+and *D* are in the 2019 bucket.
+
+#### Question 22: what is `bucketize(test_movies, "genres")`?
 
 Expected answer:
 
@@ -147,11 +136,22 @@ Expected answer:
   {'title': 'D', 'year': 2019, 'style': 'long', 'genres': ['g1', 'g2', 'g3']}]}
 ```
 
+#### Question 23: what is `bucketize(test_movies, "year")`?
+
+Expected answer:
+
+```
+{2018: [{'title': 'A', 'year': 2018, 'style': 'short', 'genres': ['g1']},
+  {'title': 'B', 'year': 2018, 'style': 'long', 'genres': ['g2']}],
+ 2019: [{'title': 'C', 'year': 2019, 'style': 'short', 'genres': ['g3']},
+  {'title': 'D', 'year': 2019, 'style': 'long', 'genres': ['g1', 'g2', 'g3']}]}
+```
+
 This one is tricky!  Notice how movie *D* shows up in all three
 buckets because we're bucketizing by genre, and *D* is falls under all
 three genre categories.
 
-#### Question 24: what is `bucketize(small, "genres")`?
+#### Question 24: what is `bucketize(small, "year")`?
 
 Remember that `small` is where we stored the value returned by
 `get_movies` in stage 1 when we loaded data from the
@@ -160,37 +160,13 @@ Remember that `small` is where we stored the value returned by
 Expected answer:
 
 ```
-{'Crime': [{'title': 'Runaway Jury',
-   'year': 2003,
-   'rating': 7.1,
-   'directors': ['Gary Fleder'],
-   'actors': ['John Cusack', 'Gene Hackman', 'Dustin Hoffman'],
-   'genres': ['Crime', 'Drama', 'Thriller']},
-  {'title': 'Lethal Weapon',
-   'year': 1987,
-   'rating': 7.6,
-   'directors': ['Richard Donner'],
-   'actors': ['Mel Gibson', 'Danny Glover', 'Gary Busey', 'Mitchell Ryan'],
-   'genres': ['Action', 'Crime', 'Thriller']}],
- 'Drama': [{'title': 'Runaway Jury',
+{2003: [{'title': 'Runaway Jury',
    'year': 2003,
    'rating': 7.1,
    'directors': ['Gary Fleder'],
    'actors': ['John Cusack', 'Gene Hackman', 'Dustin Hoffman'],
    'genres': ['Crime', 'Drama', 'Thriller']}],
- 'Thriller': [{'title': 'Runaway Jury',
-   'year': 2003,
-   'rating': 7.1,
-   'directors': ['Gary Fleder'],
-   'actors': ['John Cusack', 'Gene Hackman', 'Dustin Hoffman'],
-   'genres': ['Crime', 'Drama', 'Thriller']},
-  {'title': 'Lethal Weapon',
-   'year': 1987,
-   'rating': 7.6,
-   'directors': ['Richard Donner'],
-   'actors': ['Mel Gibson', 'Danny Glover', 'Gary Busey', 'Mitchell Ryan'],
-   'genres': ['Action', 'Crime', 'Thriller']}],
- 'Action': [{'title': 'Lethal Weapon',
+ 1987: [{'title': 'Lethal Weapon',
    'year': 1987,
    'rating': 7.6,
    'directors': ['Richard Donner'],
@@ -198,14 +174,14 @@ Expected answer:
    'genres': ['Action', 'Crime', 'Thriller']}]}
 ```
 
-#### Question 25: how many different unique actors appear in the `small` dataset?
+#### Question 25: how many different unique directors appear in the `small` dataset?
 
 **Hint:** `bucketize(small, "actors")` bucketizes movies based on actors,
 so the number of buckets will correspond to the number of unique
 actors.  In other words, `len(bucketize(small, "actors"))` is the
 number of unique actors.
 
-#### Question 26: how many unique actors appear in the full dataset?
+#### Question 26: how many unique directors appear in the full dataset?
 
 **Note:** for this and all remaining questions, answer with respect to
 the full dataset referenced by the `movies` variable from stage 1
@@ -259,14 +235,14 @@ been released.  Also, in case you missed it from the lab, if you don't
 have `%matplotlib inline` in a cell, your first plot might not show up
 in the notebook after a Restart & Run All.
 
-#### Question 29: how many movies are there of each genre, prior to 2000? (plot your answer)
+#### Question 29: how many movies are there of each genre, prior to 1995? (plot your answer)
 
 **Mediocre Hint:** creating the right functions so that the return
   value from one call can be the argument to for another call is the key to
   doing this without writing very complicated code.  For example, your
   instructor solved this problem with a single line of code: `plot_dict(bucket_counts(filter_year(movies, None, 1999), "genres"), "Movie Count")`.  What code did he use for `bucket_counts` and `filter_year`?  Well, if we told you that, it wouldn't be be a "mediocre" hint, would it?
 
-#### Question 30: how many movies are there of each genre, in or after 2000? (plot your answer)
+#### Question 30: how many movies are there of each genre, in or after 2005? (plot your answer)
 
 **Another Mediocre Hint:** Your instructor solved this one with `plot_dict(bcounts(filter_year(movies, 2000, None), "genres"), "Movie Count")`.
 
