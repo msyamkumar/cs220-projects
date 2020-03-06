@@ -353,4 +353,4 @@ and Q17 at the same time.
 
 #### Question 19: what is the average movie rating?
 
-#### Question 20: what is the longest movie title in the dataset (in terms of most characters)?
+#### Question 20: what is the shortest movie title in the dataset (in terms of most characters)?
