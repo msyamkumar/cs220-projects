@@ -250,13 +250,13 @@ Take a moment to compare this and the previous plot.  What can you
 infer?  What genres have grown in popularity?  Which ones have fallen
 out of favor in recent years?
 
-#### Question 31: how many movies have there been per year, since (and including) 2000? (plot your answer)
+#### Question 31: how many movies have there been per year, after (not including) 2000? (plot your answer)
 
 **Hint:** if you've written a general function to help with the previous
 questions and you've kept the relevant data in a variable, you can
 answer this with one simple line of code.
 
-#### Question 32: what are the directing career spans of the directors who have directed for at least 30 years?
+#### Question 32: what are the acting career spans of the actors who have acted for at least 45 years?
 
 The span is the difference in years between year of the first movie
 they directed and the last one they directed (so if they only ever
@@ -264,39 +264,42 @@ directed in one year, the span is 0).  Answer with a dictionary,
 mapping name to years worked.  It should look like this:
 
 ```
-{'Howard Hawks': 42,
- 'Charles Chaplin': 34,
- 'Henry Hathaway': 36,
- 'Stanley Kubrick': 46,
- 'Taylor Hackford': 32,
- 'Cecil B. DeMille': 30,
- 'Lee H. Katzin': 30,
- 'Richard Fleischer': 32,
- 'Sidney Lumet': 33,
- 'George Sherman': 33,
- 'John Huston': 30,
- 'Robert Siodmak': 30,
- 'Eldar Ryazanov': 31,
- 'Martin Ritt': 32}
+{'Robert De Niro': 49,
+ 'Kurt Russell': 50,
+ 'John Wayne': 46,
+ 'Mickey Rooney': 75,
+ 'Robert Mitchum': 51,
+ 'Henry Fonda': 46,
+ 'Glenn Ford': 52,
+ 'Jeff Bridges': 48,
+ 'James Caan': 52,
+ 'Anthony Quinn': 61,
+ 'Marlon Brando': 49,
+ 'Tony Curtis': 45,
+ 'Ernest Borgnine': 47,
+ 'Rod Steiger': 45,
+ 'George Burns': 60,
+ 'Bruce Dern': 45,
+ 'Dean Stockwell': 53}
 ```
 
-#### Question 33: what are the acting career spans of the actors who have acted for at least 50 years?
+#### Question 33: what are the directing career spans of the directors who have directed for at least 40 years?
 
-#### Question 34: who are the 10 directors with the longest careers?
+#### Question 34: who are the top 10 actors with the longest careers?
 
 Answer with a list of dictionaries, such that each dictionary specifies a name and span, like this:
 
 ```
-[{'name': 'Stanley Kubrick', 'span': 46},
- {'name': 'Howard Hawks', 'span': 42},
- {'name': 'Henry Hathaway', 'span': 36},
- {'name': 'Charles Chaplin', 'span': 34},
- {'name': 'Sidney Lumet', 'span': 33},
- {'name': 'George Sherman', 'span': 33},
- {'name': 'Taylor Hackford', 'span': 32},
- {'name': 'Richard Fleischer', 'span': 32},
- {'name': 'Martin Ritt', 'span': 32},
- {'name': 'Eldar Ryazanov', 'span': 31}]
+[{'name': 'Mickey Rooney', 'span': 75},
+ {'name': 'Anthony Quinn', 'span': 61},
+ {'name': 'George Burns', 'span': 60},
+ {'name': 'Dean Stockwell', 'span': 53},
+ {'name': 'Glenn Ford', 'span': 52},
+ {'name': 'James Caan', 'span': 52},
+ {'name': 'Robert Mitchum', 'span': 51},
+ {'name': 'Kurt Russell', 'span': 50},
+ {'name': 'Robert De Niro', 'span': 49},
+ {'name': 'Marlon Brando', 'span': 49}]
 ```
 
 This is a little tricky, so we'll sketch out part of a function for
@@ -326,21 +329,21 @@ def top_n_span(buckets, n):
     # TODO: return a slice of the rows
 ```
 
-#### Question 35: who are the 10 actors with the longest careers?
+#### Question 35: who are the top 20 directors with the longest careers?
 
 Answer with the same format as above.
 
-#### Question 36: what are the three genres in which movies receive the highest median rating?
+#### Question 36: what are the three genres in which movies receive the lowest median rating?
 
 Answer with a list of length three, containing dictionaries detailing
 the category (which genre), rating (the median for that genre), and
 count (number of movies in that genre).  It should look like this,
-with the best-rated genres first:
+with the lowest-rated genres first:
 
 ```
-[{'category': 'Animation', 'rating': 7.3, 'count': 45},
- {'category': 'History', 'rating': 6.7, 'count': 73},
- {'category': 'War', 'rating': 6.7, 'count': 99}]
+[{'category': 'Horror', 'rating': 5.7, 'count': 85},
+ {'category': 'Thriller', 'rating': 6.0, 'count': 250},
+ {'category': 'Sci-Fi', 'rating': 6.1, 'count': 69}]
 ```
 
 #### Question 37: what were the 10 best years for movies?
@@ -368,11 +371,11 @@ What do you notice about the number of movies in the highest-rated
 years?  Is the highest median a good metric for best, or can you think
 of a better metric?
 
-#### Question 38: what were the 5 best years for movies, if we only consider years with at least 10 movies?
+#### Question 38: what were the 10 best years for movies, if we only consider years with at least 5 movies?
 
 Can you add a parameter to a previously created function to deal with
 this extra constraint (i.e., a minimum number of movies)?
 
-#### Question 39: who are the best 4 directors, if we only count directors having at least 3 movies? 
+#### Question 39: who are the 10 best directors, if we only count directors having at least 5 movies?
 
-#### Question 40: who are the 3 best actors, if we only count actors having at least 5 movies?
+#### Question 40: who are the 10 best actors, if we only count actors having at least 10 movies?

@@ -58,7 +58,7 @@ otherwise specified.
 In addition to displaying the result in the `Out [N]` area, keep the
 result in a variable for use in subsequent questions.
 
-#### Question 2: what is the value associated with the key "nm0752751"?
+#### Question 2: what is the value associated with the key "nm0001219"?
 
 Use the dictionary returned earlier. Do not call `get_mapping` a
 second time (that would be inneficient).
@@ -67,11 +67,11 @@ second time (that would be inneficient).
 
 Answer with a Python list.
 
-#### Question 4: which keys in the mapping map to people with a first name of "Gary"?
+#### Question 4: which keys in the mapping map to people with a first name which starts with "D"?
 
 Answer with a Python list.  To get full points, you should write code
-that will count somebody named "gary" but will not count somebody
-named "Garyyy".
+that will count first name starts with "D" but will not count somebody
+whose name contains "D" in other location.
 
 ---
 
@@ -122,11 +122,11 @@ should not call the function more often than necessary (in other
 words, keep the returned data structures in a variable to re-use for
 multiple questions).
 
-#### Question 6: how many genres did the movie at index 0 have?
+#### Question 6: how many actors did the movie at index 1 have?
 
 Use the data from Q5.
 
-#### Question 7: what is the ID of the last actor listed for the move at index 1?
+#### Question 7: what is the ID of the first actor listed for the move at index 0?
 
 Use the data from Q5.
 
@@ -169,13 +169,13 @@ small = get_movies("small_movies.csv", "small_mapping.csv")
 
 ---
 
-#### Question 8: what is `small[0]["title"]`?
+#### Question 8: what is `small[1]["title"]`?
 
-Just paste `small[0]["title"]` into a cell and run it.  We're doing
+Just paste `small[1]["title"]` into a cell and run it.  We're doing
 this to check that the structures in `small` (as returned by
 `get_movies` above) contain the correct data.
 
-#### Question 9: what is `small[1]["actors"]`?
+#### Question 9: what is `small[0]["actors"]`?
 
 #### Question 10: what is `small[-1]["directors"]`?
 
