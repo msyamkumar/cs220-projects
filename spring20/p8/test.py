@@ -294,91 +294,90 @@ expected_json = {
             {'name': 'Robert De Niro', 'span': 49},
             {'name': 'Marlon Brando', 'span': 49}],
     "35": [{'name': 'Stanley Kubrick', 'span': 46},
-            {'name': 'Howard Hawks', 'span': 42},
-            {'name': 'Henry Hathaway', 'span': 36},
-            {'name': 'Charles Chaplin', 'span': 34},
-            {'name': 'Sidney Lumet', 'span': 33},
-            {'name': 'George Sherman', 'span': 33},
-            {'name': 'Taylor Hackford', 'span': 32},
-            {'name': 'Richard Fleischer', 'span': 32},
-            {'name': 'Martin Ritt', 'span': 32},
-            {'name': 'Eldar Ryazanov', 'span': 31},
-            {'name': 'Cecil B. DeMille', 'span': 30},
-            {'name': 'Lee H. Katzin', 'span': 30},
-            {'name': 'John Huston', 'span': 30},
-            {'name': 'Robert Siodmak', 'span': 30},
-            {'name': 'Richard Thorpe', 'span': 29},
-            {'name': 'J. Lee Thompson', 'span': 28},
-            {'name': 'Don Siegel', 'span': 27},
-            {'name': 'John Ford', 'span': 25},
-            {'name': 'John Sturges', 'span': 25},
-            {'name': 'Burt Kennedy', 'span': 25},
-            {'name': 'William A. Graham', 'span': 25}],
+             {'name': 'Howard Hawks', 'span': 42},
+             {'name': 'Henry Hathaway', 'span': 36},
+             {'name': 'Charles Chaplin', 'span': 34},
+             {'name': 'Sidney Lumet', 'span': 33},
+             {'name': 'George Sherman', 'span': 33},
+             {'name': 'Taylor Hackford', 'span': 32},
+             {'name': 'Richard Fleischer', 'span': 32},
+             {'name': 'Martin Ritt', 'span': 32},
+             {'name': 'Eldar Ryazanov', 'span': 31},
+             {'name': 'Cecil B. DeMille', 'span': 30},
+             {'name': 'Lee H. Katzin', 'span': 30},
+             {'name': 'John Huston', 'span': 30},
+             {'name': 'Robert Siodmak', 'span': 30},
+             {'name': 'Richard Thorpe', 'span': 29},
+             {'name': 'J. Lee Thompson', 'span': 28},
+             {'name': 'Don Siegel', 'span': 27},
+             {'name': 'John Ford', 'span': 25},
+             {'name': 'John Sturges', 'span': 25},
+             {'name': 'Burt Kennedy', 'span': 25}],
     "36": [{'name': 'Heath Ledger', 'rating': 9.0, 'count': 1},
-             {'name': 'John Fiedler', 'rating': 8.9, 'count': 1},
-             {'name': 'Aldo Giuffrè', 'rating': 8.9, 'count': 1},
-             {'name': 'Steven Williams', 'rating': 8.8, 'count': 1},
-             {'name': 'Daniel Roebuck', 'rating': 8.8, 'count': 1},
-             {'name': 'Joseph Gordon-Levitt', 'rating': 8.8, 'count': 1},
-             {'name': 'Miyu Irino', 'rating': 8.6, 'count': 1},
-             {'name': 'Andrew Kevin Walker', 'rating': 8.6, 'count': 1},
-             {'name': 'Ken Watanabe', 'rating': 8.55, 'count': 2},
-             {'name': 'Chester Conklin', 'rating': 8.5, 'count': 1},
-             {'name': 'Hank Mann', 'rating': 8.5, 'count': 1},
-             {'name': 'Stanley Blystone', 'rating': 8.5, 'count': 1},
-             {'name': 'Guy Pearce', 'rating': 8.5, 'count': 1},
-             {'name': 'Andrey Mironov', 'rating': 8.5, 'count': 1},
-             {'name': 'Harry Myers', 'rating': 8.5, 'count': 1}],
+            {'name': 'John Fiedler', 'rating': 8.9, 'count': 1},
+            {'name': 'Aldo Giuffrè', 'rating': 8.9, 'count': 1},
+            {'name': 'Steven Williams', 'rating': 8.8, 'count': 1},
+            {'name': 'Daniel Roebuck', 'rating': 8.8, 'count': 1},
+            {'name': 'Joseph Gordon-Levitt', 'rating': 8.8, 'count': 1},
+            {'name': 'Miyu Irino', 'rating': 8.6, 'count': 1},
+            {'name': 'Andrew Kevin Walker', 'rating': 8.6, 'count': 1},
+            {'name': 'Ken Watanabe', 'rating': 8.55, 'count': 2},
+            {'name': 'Chester Conklin', 'rating': 8.5, 'count': 1},
+            {'name': 'Hank Mann', 'rating': 8.5, 'count': 1},
+            {'name': 'Stanley Blystone', 'rating': 8.5, 'count': 1},
+            {'name': 'Guy Pearce', 'rating': 8.5, 'count': 1},
+            {'name': 'Andrey Mironov', 'rating': 8.5, 'count': 1},
+            {'name': 'Harry Myers', 'rating': 8.5, 'count': 1}],
     "37": [{'name': 'James Marlowe', 'rating': 8.8, 'count': 1},
-             {'name': 'Kirk Wise', 'rating': 8.6, 'count': 1},
-             {'name': 'David Fincher', 'rating': 8.6, 'count': 1},
-             {'name': 'Christopher Nolan', 'rating': 8.5, 'count': 9},
-             {'name': 'Leonid Gayday', 'rating': 8.4, 'count': 5},
-             {'name': 'Adrian Molina', 'rating': 8.4, 'count': 1},
-             {'name': 'Stanley Kubrick', 'rating': 8.3, 'count': 11},
-             {'name': 'Sergio Leone', 'rating': 8.3, 'count': 7},
-             {'name': 'Satyajit Ray', 'rating': 8.2, 'count': 9},
-             {'name': 'Moustapha Akkad', 'rating': 8.2, 'count': 1}],
+            {'name': 'Kirk Wise', 'rating': 8.6, 'count': 1},
+            {'name': 'David Fincher', 'rating': 8.6, 'count': 1},
+            {'name': 'Christopher Nolan', 'rating': 8.5, 'count': 9},
+            {'name': 'Leonid Gayday', 'rating': 8.4, 'count': 5},
+            {'name': 'Adrian Molina', 'rating': 8.4, 'count': 1},
+            {'name': 'Stanley Kubrick', 'rating': 8.3, 'count': 11},
+            {'name': 'Sergio Leone', 'rating': 8.3, 'count': 7},
+            {'name': 'Satyajit Ray', 'rating': 8.2, 'count': 9},
+            {'name': 'Moustapha Akkad', 'rating': 8.2, 'count': 1}],
     "38": [{'name': 'Henry Bergman', 'rating': 8.2, 'count': 5},
-             {'name': 'Ioan Gruffudd', 'rating': 8.2, 'count': 6},
-             {'name': 'Robert Lindsay', 'rating': 8.2, 'count': 6},
-             {'name': 'Charles Chaplin', 'rating': 8.15, 'count': 10},
-             {'name': 'Bradley Cooper', 'rating': 7.3, 'count': 5},
-             {'name': 'Joe Pesci', 'rating': 7.2, 'count': 7},
-             {'name': 'Robin Williams', 'rating': 7.2, 'count': 5},
-             {'name': 'Kirk Douglas', 'rating': 7.15, 'count': 12},
-             {'name': 'Ward Bond', 'rating': 7.1, 'count': 10},
-             {'name': 'Gregory Peck', 'rating': 7.1, 'count': 5},
-             {'name': 'Tom Hanks', 'rating': 7.1, 'count': 6},
-             {'name': 'Al Pacino', 'rating': 7.05, 'count': 8},
-             {'name': 'Ben Johnson', 'rating': 7.05, 'count': 6},
-             {'name': 'Charles Coburn', 'rating': 7.0, 'count': 9},
-             {'name': 'Walter Brennan', 'rating': 6.9, 'count': 7}],
+            {'name': 'Ioan Gruffudd', 'rating': 8.2, 'count': 6},
+            {'name': 'Robert Lindsay', 'rating': 8.2, 'count': 6},
+            {'name': 'Charles Chaplin', 'rating': 8.15, 'count': 10},
+            {'name': 'Bradley Cooper', 'rating': 7.3, 'count': 5},
+            {'name': 'Joe Pesci', 'rating': 7.2, 'count': 7},
+            {'name': 'Robin Williams', 'rating': 7.2, 'count': 5},
+            {'name': 'Kirk Douglas', 'rating': 7.15, 'count': 12},
+            {'name': 'Ward Bond', 'rating': 7.1, 'count': 10},
+            {'name': 'Gregory Peck', 'rating': 7.1, 'count': 5},
+            {'name': 'Tom Hanks', 'rating': 7.1, 'count': 6},
+            {'name': 'Al Pacino', 'rating': 7.05, 'count': 8},
+            {'name': 'Ben Johnson', 'rating': 7.05, 'count': 6},
+            {'name': 'Charles Coburn', 'rating': 7.0, 'count': 9},
+            {'name': 'Walter Brennan', 'rating': 6.9, 'count': 7}],
     "39": [{'name': 'Henry Fonda', 'rating': 6.9, 'count': 77},
-             {'name': 'Mickey Rooney', 'rating': 6.7, 'count': 82},
-             {'name': 'Anthony Quinn', 'rating': 6.7, 'count': 79},
-             {'name': 'Brian Donlevy', 'rating': 6.7, 'count': 47},
-             {'name': 'Robert Mitchum', 'rating': 6.65, 'count': 74},
-             {'name': 'Glenn Ford', 'rating': 6.6, 'count': 74},
-             {'name': 'George Sanders', 'rating': 6.6, 'count': 74},
-             {'name': 'Robert De Niro', 'rating': 6.55, 'count': 74},
-             {'name': 'Randolph Scott', 'rating': 6.5, 'count': 76},
-             {'name': 'Jeff Bridges', 'rating': 6.5, 'count': 59},
-             {'name': 'Ned Beatty', 'rating': 6.45, 'count': 50},
-             {'name': 'Kurt Russell', 'rating': 6.4, 'count': 46},
-             {'name': 'John Wayne', 'rating': 6.4, 'count': 130},
-             {'name': 'John Cusack', 'rating': 6.4, 'count': 52},
-             {'name': 'Danny Glover', 'rating': 6.4, 'count': 51}],
+            {'name': 'Mickey Rooney', 'rating': 6.7, 'count': 82},
+            {'name': 'Anthony Quinn', 'rating': 6.7, 'count': 79},
+            {'name': 'Brian Donlevy', 'rating': 6.7, 'count': 47},
+            {'name': 'Robert Mitchum', 'rating': 6.65, 'count': 74},
+            {'name': 'Glenn Ford', 'rating': 6.6, 'count': 74},
+            {'name': 'George Sanders', 'rating': 6.6, 'count': 74},
+            {'name': 'Robert De Niro', 'rating': 6.55, 'count': 74},
+            {'name': 'Randolph Scott', 'rating': 6.5, 'count': 76},
+            {'name': 'Jeff Bridges', 'rating': 6.5, 'count': 59},
+            {'name': 'Ned Beatty', 'rating': 6.45, 'count': 50},
+            {'name': 'Kurt Russell', 'rating': 6.4, 'count': 46},
+            {'name': 'John Wayne', 'rating': 6.4, 'count': 130},
+            {'name': 'John Cusack', 'rating': 6.4, 'count': 52},
+            {'name': 'Danny Glover', 'rating': 6.4, 'count': 51}],
     "40": [{'name': 'Christopher Nolan', 'rating': 8.5, 'count': 9},
-             {'name': 'Stanley Kubrick', 'rating': 8.3, 'count': 11},
-             {'name': 'Satyajit Ray', 'rating': 8.2, 'count': 9},
-             {'name': 'Charles Chaplin', 'rating': 8.1, 'count': 11},
-             {'name': 'Hayao Miyazaki', 'rating': 8.1, 'count': 9},
-             {'name': 'Martin Scorsese', 'rating': 8.0, 'count': 8},
-             {'name': 'John Ford', 'rating': 7.3, 'count': 21},
-             {'name': 'Fritz Lang', 'rating': 7.2, 'count': 9},
-             {'name': 'Howard Hawks', 'rating': 6.85, 'count': 10},
-             {'name': 'William A. Wellman', 'rating': 6.85, 'count': 10}],
+            {'name': 'Stanley Kubrick', 'rating': 8.3, 'count': 11},
+            {'name': 'Satyajit Ray', 'rating': 8.2, 'count': 9},
+            {'name': 'Charles Chaplin', 'rating': 8.1, 'count': 11},
+            {'name': 'Hayao Miyazaki', 'rating': 8.1, 'count': 9},
+            {'name': 'Martin Scorsese', 'rating': 8.0, 'count': 8},
+            {'name': 'John Ford', 'rating': 7.3, 'count': 21},
+            {'name': 'Fritz Lang', 'rating': 7.2, 'count': 9},
+            {'name': 'Howard Hawks', 'rating': 6.85, 'count': 10},
+            {'name': 'William A. Wellman', 'rating': 6.85, 'count': 10}],
 }
 
 # find a comment something like this: #q10
@@ -444,34 +443,36 @@ def check_cell_text(qnum, cell):
     expected_mismatch = False
 
     # TODO: remove this hack!!!
-    if qnum == 34 or qnum == 35:
+    if qnum in [34, 35]:
         # check they did some reasonable sorting
         for i in range(1, len(actual)):
-            a = actual[i-1]["span"]
-            b = actual[i]["span"]
-            if a < b:
-                return "bad sort: found a span of {} before a span of {}".format(a, b)
-        expected = sorted(expected, key=lambda row: (-row["span"], row["name"]))
-        actual = sorted(actual, key=lambda row: (-row["span"], row["name"]))
+            try:
+                a = actual[i-1]["span"]
+                b = actual[i]["span"]
+                if a < b:
+                    return "bad sort: found a span of {} before a span of {}".format(a, b)
+            except KeyError:
+                return "expected {}".format(expected)
 
     # TODO: remove this hack!!!
-    if 36 <= qnum <= 40:
+    if qnum in [36, 37, 38, 39, 40]:
         # check they did some reasonable sorting
         for i in range(1, len(actual)):
-            a = actual[i-1]["rating"]
-            b = actual[i]["rating"]
-            if a < b:
-                return "bad sort: found a rating of {} before a rating of {}".format(a, b)
-        expected = sorted(expected, key=lambda row: (-row["rating"], row["category"]))
-        actual = sorted(actual, key=lambda row: (-row["rating"], row["category"]))
-    
+            try:
+                a = actual[i-1]["rating"]
+                b = actual[i]["rating"]
+                if a < b:
+                    return "bad sort: found a rating of {} before a rating of {}".format(a, b)
+            except KeyError:
+                return "expected {}".format(expected)
+
     if type(expected) != type(actual):
         return "expected an answer of type %s but found one of type %s" % (type(expected), type(actual))
     elif type(expected) == float:
         if not math.isclose(actual, expected, rel_tol=1e-06, abs_tol=1e-06):
             expected_mismatch = True
     elif type(expected) == list:
-        try: 
+        try:
             extra = set(actual) - set(expected)
             missing = set(expected) - set(actual)
             if extra:
@@ -481,25 +482,44 @@ def check_cell_text(qnum, cell):
             elif len(actual) != len(expected):
                 return "expected %d entries in the list but found %d" % (len(expected), len(actual))
         except TypeError:
-            # this happens when the list contains dicts.  Just do a simple comparison
+            # this happens when the list contains dicts.
             if actual != expected:
-                return "expected %s" % repr(expected)
+                # TODO: remove this hack!!!
+                if qnum in [34, 35, 36, 37, 38, 39, 40]:
+                    if len(actual) != len(expected):
+                        return "expected %d entries in the list but found %d" % (len(expected), len(actual))
+                    try:
+                        # check the numbers are reasonably close.
+                        for i in range(0, len(expected)):
+                            found = False
+                            for j in range(0, len(actual)):
+                                if actual[j]['name'] == expected[i]['name']:
+                                    found = True
+                                    for key in expected[i]:
+                                        val = expected[i][key]
+                                        if type(val) == float:
+                                            if not math.isclose(actual[j][key], val, rel_tol=1e-06, abs_tol=1e-06):
+                                                return "found {} in cell {} but expected {}".format(actual[j], qnum, expected[i])
+                                        else:
+                                            if not actual[j][key] == val:
+                                                return "found {} in cell {} but expected {}".format(actual[j], qnum, expected[i])
+                            if not found:
+                                return "missing entries such as {}".format(expected[i])
+                    except KeyError:
+                        # this happpens if answer is not in the correct format
+                        return "expected {}".format(expected)
+
     else:
         if expected != actual:
             expected_mismatch = True
-            
+
     if expected_mismatch:
         return "found {} in cell {} but expected {}".format(actual, qnum, expected)
 
     return PASS
 
 def check_cell_png(qnum, cell):
-    if qnum == 21:
-        print('here')
-        print(cell)
     for output in cell.get('outputs', []):
-        if qnum == 21:
-            print(output.get('data', {}).keys())
         if 'image/png' in output.get('data', {}):
             return PASS
     return 'no plot found'
