@@ -198,7 +198,7 @@ instead (that's more efficient).
 
 The result should look like this:
 
-```python
+```
 [{'title': 'Fortitude and Glory: Angelo Dundee and His Fighters',
   'year': 2012,
   'rating': 7.2,
@@ -223,7 +223,7 @@ The result should look like this:
 
 The result should look like this:
 
-```python
+```
 [{'title': 'The Big Wedding',
   'year': 2013,
   'rating': 5.6,
@@ -270,7 +270,7 @@ Requirements:
 
 The answer should look like this:
 
-```python
+```
 [{'title': 'Redskin',
   'year': 1929,
   'rating': 7.0,
