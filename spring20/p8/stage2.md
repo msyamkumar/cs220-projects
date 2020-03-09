@@ -67,7 +67,7 @@ In this case, `buckets[2003]` will be a list of movie dicts for the
 movies made in 2003 (in this case, just *Runaway Jury*).  Concretely,
 `buckets` should be the following:
 
-```python
+```
 {2003: [{'title': 'Runaway Jury',
    'year': 2003,
    'rating': 7.1,
