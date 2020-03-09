@@ -247,7 +247,7 @@ Of what variety is Q27?
 Yes, this is the same as Q27, but now you must answer with a plot
 rather than a dictionary.  Your plot should look like this:
 
-<img src="genre_count.png" width="400">
+<img src="Q28.png" width="400">
 
 **Note:** For plot-based, the tests are only checking that a plot exists.  If a
 plot is not correct, your reviewer will manually deduct points.
@@ -260,6 +260,10 @@ in the notebook after a Restart & Run All.
 
 #### Q29: How many movies are there of each genre, prior to 1970? (plot your answer)
 
+Your plot should look like this:
+
+<img src="Q29.png" width="400">
+
 **Mediocre Hint:** Creating the right functions so that the return
   value from one call can be the argument to for another call is the key to
   doing this without writing very complicated code.  For example, you
@@ -270,6 +274,10 @@ in the notebook after a Restart & Run All.
 
 #### Q30: How many movies are there of each genre, in or after 1990? (plot your answer)
 
+Your plot should look like this:
+
+<img src="Q30.png" width="400">
+
 **Another Mediocre Hint:** Your instructor solved this one with
 `plot_dict(bucket_counts(filter_year(movies, 1990, None), "genres"), "Movie Count")`.
 
@@ -278,6 +286,10 @@ infer?  What genres have grown in popularity?  Which ones have fallen
 out of favor in recent years?
 
 #### Q31: How many movies have there been per year, after (not including) 2005? (plot your answer)
+
+Your plot should look like this:
+
+<img src="Q31.png" width="400">
 
 **Hint:** if you've written a general function to help with the previous
 questions and you've kept the relevant data in a variable, you can
@@ -362,13 +374,13 @@ Answer with the same format as above.
 
 #### Q36: Who are the fifteen best actors?
 
-By "best", we mean having the highest median movie rating (this is
+By "best", we mean having the highest *median* movie rating (this is
 true for the following questions too).
 
 Answer with a list of length ten, containing dictionaries detailing
 the name, rating (the median rating for that actor), and
 count (number of movies that actor has acted in).  It should look like this
-(the order in which the names appear do not matter):
+(the list should be sorted in order of decreasing rating):
 
 ```
 [{'name': 'Heath Ledger', 'rating': 9.0, 'count': 1},
