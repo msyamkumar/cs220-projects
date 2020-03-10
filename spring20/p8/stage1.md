@@ -53,21 +53,21 @@ otherwise specified.
 
 ---
 
-#### Q1: What is returned by your `get_mapping("small_mapping.csv")` function?
+#### #Q1: What is returned by your `get_mapping("small_mapping.csv")` function?
 
 In addition to displaying the result in the `Out [N]` area, keep the
 result in a variable for use in subsequent questions.
 
-#### Q2: What is the value associated with the key "nm0001219"?
+#### #Q2: What is the value associated with the key "nm0001219"?
 
 Use the dictionary returned earlier. Do not call `get_mapping` a
 second time (that would be inneficient).
 
-#### Q3: What are the values in the mapping associated with keys beginning with "nm"?
+#### #Q3: What are the values in the mapping associated with keys beginning with "nm"?
 
 Answer with a Python list.
 
-#### Q4: Which keys in the mapping map to people with a last name which starts with "G"?
+#### #Q4: Which keys in the mapping map to people with a last name which starts with "G"?
 
 Answer with a Python list. To get full points, you should write code
 that will count only last names that start with "G". You should ignore names that
@@ -99,7 +99,7 @@ always contain lists, even if those lists contain a single value.
 
 ---
 
-#### Q5: What does `get_raw_movies("small_movies.csv")` return?
+#### #Q5: What does `get_raw_movies("small_movies.csv")` return?
 
 The result should be this:
 ```
@@ -122,11 +122,11 @@ should not call the function more often than necessary (in other
 words, keep the returned data structures in a variable to re-use for
 multiple questions).
 
-#### Q6: How many actors did the movie at index 1 have?
+#### #Q6: How many actors did the movie at index 1 have?
 
 Use the data from Q5.
 
-#### Q7: What is the ID of the first actor listed for the move at index 0?
+#### #Q7: What is the ID of the first actor listed for the move at index 0?
 
 Use the data from Q5.
 
@@ -169,15 +169,15 @@ small = get_movies("small_movies.csv", "small_mapping.csv")
 
 ---
 
-#### Q8: what is `small[1]["title"]`?
+#### #Q8: what is `small[1]["title"]`?
 
 Just paste `small[1]["title"]` into a cell and run it.  We're doing
 this to check that the structures in `small` (as returned by
 `get_movies` above) contain the correct data.
 
-#### Q9: What is `small[0]["actors"]`?
+#### #Q9: What is `small[0]["actors"]`?
 
-#### Q10: What is `small[-1]["directors"]`?
+#### #Q10: What is `small[-1]["directors"]`?
 
 ---
 
@@ -194,7 +194,7 @@ instead (that's more efficient).
 
 ---
 
-#### Q11: What are the last 3 rows in movies?
+#### #Q11: What are the last 3 rows in movies?
 
 The result should look like this:
 
@@ -219,7 +219,7 @@ The result should look like this:
   'genres': ['Drama']}]
 ```
 
-#### Q12: What are the first 2 rows in movies?
+#### #Q12: What are the first 2 rows in movies?
 
 The result should look like this:
 
@@ -262,7 +262,7 @@ year.
 
 ---
 
-#### Q13: What are the movies from 1929?
+#### #Q13: What are the movies from 1929?
 
 Requirements:
 1. Answer using `filter_movies_by_year`
@@ -291,7 +291,7 @@ The answer should look like this:
   'genres': ['Drama']}]
 ```
 
-#### Q14: What are the movies from 1931?
+#### #Q14: What are the movies from 1931?
 
 **Hint:** we've set you up a bit to encounter a bug.  Review the copy
 functions in the `copy` module and see if you can use one of them to
@@ -323,19 +323,19 @@ If you get it right, you'll get this output:
   'genres': ['Mystery', 'Western']}]
 ```
 
-#### Q15: How many unique actor names are there in the dataset?
+#### #Q15: How many unique actor names are there in the dataset?
 
 Think about whether you can write a function that helps you with Q15
 and Q16 at the same time.
 
-#### Q16: How many unique genres are there in the dataset?
+#### #Q16: How many unique genres are there in the dataset?
 
-#### Q17: Which movie title in the dataset appears last alphabetically?
+#### #Q17: Which movie title in the dataset appears last alphabetically?
 
 Output should be the movie title in string format. 
 
-#### Q18: What is the average movie rating?
+#### #Q18: What is the average movie rating?
 
-#### Q19: What is the name of the highest rated movie?
+#### #Q19: What is the name of the highest rated movie?
 
-#### Q20: What is the oldest movie title in the dataset?
+#### #Q20: What is the oldest movie title in the dataset?
