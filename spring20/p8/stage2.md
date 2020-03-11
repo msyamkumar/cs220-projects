@@ -109,7 +109,7 @@ test_movies = [
 ]
 ```
 
-#### Q21: What is `bucketize(test_movies, "style")`?
+#### #Q21: What is `bucketize(test_movies, "style")`?
 
 Expected answer:
 
@@ -123,7 +123,7 @@ Expected answer:
 Note that the *A* and *B* dictionaries are in the 2018 bucket and *C*
 and *D* are in the 2019 bucket.
 
-#### Q22: What is `bucketize(test_movies, "year")`?
+#### #Q22: What is `bucketize(test_movies, "year")`?
 
 Expected answer:
 
@@ -134,7 +134,7 @@ Expected answer:
   {'title': 'D', 'year': 2019, 'style': 'long', 'genres': ['g1', 'g2', 'g3']}]}
 ```
 
-#### Q23: What is `bucketize(test_movies, "genres")`?
+#### #Q23: What is `bucketize(test_movies, "genres")`?
 
 Expected answer:
 
@@ -151,7 +151,7 @@ This one is tricky!  Notice how movie *D* shows up in all three
 buckets because we're bucketizing by genre, and *D* is falls under all
 three genre categories.
 
-#### Q24: What is `bucketize(small, "genres")`?
+#### #Q24: What is `bucketize(small, "genres")`?
 
 Remember that `small` is where we stored the value returned by
 `get_movies` in stage 1 when we loaded data from the
@@ -198,19 +198,19 @@ Expected answer:
    'genres': ['Action', 'Crime', 'Thriller']}]}
 ```
 
-#### Q25: How many different unique directors appear in the `small` dataset?
+#### #Q25: How many different unique directors appear in the `small` dataset?
 
 **Hint:** `bucketize(small, "directors")` bucketizes movies based on directors,
 so the number of buckets will correspond to the number of unique
 directors.
 
-#### Q26: How many unique directors appear in the full dataset?
+#### #Q26: How many unique directors appear in the full dataset?
 
 **Note:** for this and all remaining questions, answer with respect to
 the full dataset referenced by the `movies` variable from stage 1
 (we'll ask nothing more regarding `small` or `test_movies`).
 
-#### Q27: How many movies are there of each genre?
+#### #Q27: How many movies are there of each genre?
 
 Answer with a dictionary where each key is a genre and each value is
 how many movies have that genre, like this:
@@ -242,7 +242,7 @@ how many movies have that genre, like this:
 
 Of what variety is Q27?
 
-#### Q28: How many movies are there of each genre? (plot your answer)
+#### #Q28: How many movies are there of each genre? (plot your answer)
 
 Yes, this is the same as Q27, but now you must answer with a plot
 rather than a dictionary.  Your plot should look like this:
@@ -258,7 +258,7 @@ been released.  Also, in case you missed it from the lab, if you don't
 have `%matplotlib inline` in a cell, your first plot might not show up
 in the notebook after a Restart & Run All.
 
-#### Q29: How many movies are there of each genre, prior to 1970? (plot your answer)
+#### #Q29: How many movies are there of each genre, prior to 1970? (plot your answer)
 
 Your plot should look like this:
 
@@ -272,7 +272,7 @@ Your plot should look like this:
   What code should you use for `bucket_counts` and `filter_year`?  
   Well, if we told you that, it wouldn't be be a "mediocre" hint, would it?
 
-#### Q30: How many movies are there of each genre, in or after 1990? (plot your answer)
+#### #Q30: How many movies are there of each genre, in or after 1990? (plot your answer)
 
 Your plot should look like this:
 
@@ -285,7 +285,7 @@ Take a moment to compare this and the previous plot.  What can you
 infer?  What genres have grown in popularity?  Which ones have fallen
 out of favor in recent years?
 
-#### Q31: How many movies have there been per year, after (not including) 2005? (plot your answer)
+#### #Q31: How many movies have there been per year, after (not including) 2005? (plot your answer)
 
 Your plot should look like this:
 
@@ -295,7 +295,7 @@ Your plot should look like this:
 questions and you've kept the relevant data in a variable, you can
 answer this with one simple line of code.
 
-#### Q32: What are the acting career spans of the actors who have acted for at least 45 years?
+#### #Q32: What are the acting career spans of the actors who have acted for at least 45 years?
 
 The span is the difference in years between year of the first movie
 they acted in and the last one they acted in (so if they only ever
@@ -322,9 +322,9 @@ mapping name to years worked.  It should look like this:
  'Dean Stockwell': 53}
 ```
 
-#### Q33: What are the directing career spans of the directors who have directed for at least 25 years?
+#### #Q33: What are the directing career spans of the directors who have directed for at least 25 years?
 
-#### Q34: Who are the top 10 actors with the longest careers?
+#### #Q34: Who are the top 10 actors with the longest careers?
 
 Answer with a list of dictionaries, such that each dictionary specifies a name and span, like this:
 
@@ -368,11 +368,11 @@ def top_n_span(buckets, n):
     # TODO: return a slice of the rows
 ```
 
-#### Q35: Who are the top 20 directors with the longest careers?
+#### #Q35: Who are the top 20 directors with the longest careers?
 
 Answer with the same format as above.
 
-#### Q36: Who are the fifteen best actors?
+#### #Q36: Who are the fifteen best actors?
 
 By "best", we mean having the highest *median* movie rating (this is
 true for the following questions too).
@@ -400,7 +400,7 @@ count (number of movies that actor has acted in).  It should look like this
  {'name': 'Harry Myers', 'rating': 8.5, 'count': 1}]
 ```
 
-#### Q37: Who are the ten best directors?
+#### #Q37: Who are the ten best directors?
 
 Consider refactoring your code
 from Q36 into a function to answer this with a single call.  The
@@ -423,11 +423,11 @@ What do you notice about the number of movies of the highest-rated
 directors (and actors)?  Is the highest median a good metric for best,
 or can you think of a better metric?
 
-#### Q38: Who are the fifteen best actors, if we only consider those who have acted in at least 5 movies?
+#### #Q38: Who are the fifteen best actors, if we only consider those who have acted in at least 5 movies?
 
 Can you add a parameter to a previously created function to deal with
 this extra constraint (i.e., a minimum number of movies)?
 
-#### Q39: Who are the fifteen best actors, if we only consider those who have acted in at least 30 movies?
+#### #Q39: Who are the fifteen best actors, if we only consider those who have acted in at least 30 movies?
 
-#### Q40: Who are the ten best directors, if we only count directors having at least 8 movies?
+#### #Q40: Who are the ten best directors, if we only count directors having at least 8 movies?
