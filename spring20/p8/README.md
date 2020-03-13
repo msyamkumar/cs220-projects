@@ -2,7 +2,7 @@
 
 ## Clarifications/Corrections
 
-None so far 
+* **3/13/2020 - 12:45 pm** Stage 2 questions updated. Redownload test.py.
 
 ## Introduction
 
