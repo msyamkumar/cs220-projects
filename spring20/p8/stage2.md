@@ -372,12 +372,12 @@ def top_n_span(buckets, n):
 
 Answer with the same format as above.
 
-#### #Q36: Who are the fifteen best actors?
+#### #Q36: Who are the nine best actors?
 
 By "best", we mean having the highest *median* movie rating (this is
 true for the following questions too).
 
-Answer with a list of length ten, containing dictionaries detailing
+Answer with a list of length nine, containing dictionaries detailing
 the name, rating (the median rating for that actor), and
 count (number of movies that actor has acted in).  It should look like this
 (the list should be sorted in order of decreasing rating):
@@ -391,16 +391,10 @@ count (number of movies that actor has acted in).  It should look like this
  {'name': 'Joseph Gordon-Levitt', 'rating': 8.8, 'count': 1},
  {'name': 'Miyu Irino', 'rating': 8.6, 'count': 1},
  {'name': 'Andrew Kevin Walker', 'rating': 8.6, 'count': 1},
- {'name': 'Ken Watanabe', 'rating': 8.55, 'count': 2},
- {'name': 'Chester Conklin', 'rating': 8.5, 'count': 1},
- {'name': 'Hank Mann', 'rating': 8.5, 'count': 1},
- {'name': 'Stanley Blystone', 'rating': 8.5, 'count': 1},
- {'name': 'Guy Pearce', 'rating': 8.5, 'count': 1},
- {'name': 'Andrey Mironov', 'rating': 8.5, 'count': 1},
- {'name': 'Harry Myers', 'rating': 8.5, 'count': 1}]
+ {'name': 'Ken Watanabe', 'rating': 8.55, 'count': 2}]
 ```
 
-#### #Q37: Who are the ten best directors?
+#### #Q37: Who are the twelve best directors?
 
 Consider refactoring your code
 from Q36 into a function to answer this with a single call.  The
@@ -416,18 +410,20 @@ output should follow the same format, like this:
  {'name': 'Stanley Kubrick', 'rating': 8.3, 'count': 11},
  {'name': 'Sergio Leone', 'rating': 8.3, 'count': 7},
  {'name': 'Satyajit Ray', 'rating': 8.2, 'count': 9},
- {'name': 'Moustapha Akkad', 'rating': 8.2, 'count': 1}]
+ {'name': 'Moustapha Akkad', 'rating': 8.2, 'count': 1},
+ {'name': 'Andrew Grieve', 'rating': 8.2, 'count': 6},
+ {'name': 'Danny Boyle', 'rating': 8.2, 'count': 1}]
 ```
 
 What do you notice about the number of movies of the highest-rated
 directors (and actors)?  Is the highest median a good metric for best,
 or can you think of a better metric?
 
-#### #Q38: Who are the fifteen best actors, if we only consider those who have acted in at least 5 movies?
+#### #Q38: Who are the fourteen best actors, if we only consider those who have acted in at least 5 movies?
 
 Can you add a parameter to a previously created function to deal with
 this extra constraint (i.e., a minimum number of movies)?
 
-#### #Q39: Who are the fifteen best actors, if we only consider those who have acted in at least 30 movies?
+#### #Q39: Who are the sixteen best actors, if we only consider those who have acted in at least 30 movies?
 
-#### #Q40: Who are the ten best directors, if we only count directors having at least 8 movies?
+#### #Q40: Who are the eight best directors, if we only count directors having at least 8 movies?
