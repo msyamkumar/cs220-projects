@@ -368,7 +368,7 @@ def top_n_span(buckets, n):
     # TODO: return a slice of the rows
 ```
 
-#### #Q35: Who are the top 20 directors with the longest careers?
+#### #Q35: Who are the top twenty one directors with the longest careers?
 
 Answer with the same format as above.
 
