@@ -67,7 +67,7 @@ In this case, `buckets[2003]` will be a list of movie dicts for the
 movies made in 2003 (in this case, just *Runaway Jury*).  Concretely,
 `buckets` should be the following:
 
-```python
+```
 {2003: [{'title': 'Runaway Jury',
    'year': 2003,
    'rating': 7.1,
@@ -109,21 +109,7 @@ test_movies = [
 ]
 ```
 
-#### Question 21: what is `bucketize(test_movies, "year")`?
-
-Expected answer:
-
-```
-{2018: [{'title': 'A', 'year': 2018, 'style': 'short', 'genres': ['g1']},
-  {'title': 'B', 'year': 2018, 'style': 'long', 'genres': ['g2']}],
- 2019: [{'title': 'C', 'year': 2019, 'style': 'short', 'genres': ['g3']},
-  {'title': 'D', 'year': 2019, 'style': 'long', 'genres': ['g1', 'g2', 'g3']}]}
-```
-
-Note that the *A* and *B* dictionaries are in the 2018 bucket and *C*
-and *D* are in the 2019 bucket.
-
-#### Question 22: what is `bucketize(test_movies, "style")`?
+#### #Q21: What is `bucketize(test_movies, "style")`?
 
 Expected answer:
 
@@ -134,7 +120,21 @@ Expected answer:
   {'title': 'D', 'year': 2019, 'style': 'long', 'genres': ['g1', 'g2', 'g3']}]}
 ```
 
-#### Question 23: what is `bucketize(test_movies, "genres")`?
+Note that the *A* and *B* dictionaries are in the 2018 bucket and *C*
+and *D* are in the 2019 bucket.
+
+#### #Q22: What is `bucketize(test_movies, "year")`?
+
+Expected answer:
+
+```
+{2018: [{'title': 'A', 'year': 2018, 'style': 'short', 'genres': ['g1']},
+  {'title': 'B', 'year': 2018, 'style': 'long', 'genres': ['g2']}],
+ 2019: [{'title': 'C', 'year': 2019, 'style': 'short', 'genres': ['g3']},
+  {'title': 'D', 'year': 2019, 'style': 'long', 'genres': ['g1', 'g2', 'g3']}]}
+```
+
+#### #Q23: What is `bucketize(test_movies, "genres")`?
 
 Expected answer:
 
@@ -151,7 +151,7 @@ This one is tricky!  Notice how movie *D* shows up in all three
 buckets because we're bucketizing by genre, and *D* is falls under all
 three genre categories.
 
-#### Question 24: what is `bucketize(small, "genres")`?
+#### #Q24: What is `bucketize(small, "genres")`?
 
 Remember that `small` is where we stored the value returned by
 `get_movies` in stage 1 when we loaded data from the
@@ -198,20 +198,19 @@ Expected answer:
    'genres': ['Action', 'Crime', 'Thriller']}]}
 ```
 
-#### Question 25: how many different unique actors appear in the `small` dataset?
+#### #Q25: How many different unique directors appear in the `small` dataset?
 
-**Hint:** `bucketize(small, "actors")` bucketizes movies based on actors,
+**Hint:** `bucketize(small, "directors")` bucketizes movies based on directors,
 so the number of buckets will correspond to the number of unique
-actors.  In other words, `len(bucketize(small, "actors"))` is the
-number of unique actors.
+directors.
 
-#### Question 26: how many unique actors appear in the full dataset?
+#### #Q26: How many unique directors appear in the full dataset?
 
 **Note:** for this and all remaining questions, answer with respect to
 the full dataset referenced by the `movies` variable from stage 1
 (we'll ask nothing more regarding `small` or `test_movies`).
 
-#### Question 27: how many movies are there of each genre?
+#### #Q27: How many movies are there of each genre?
 
 Answer with a dictionary where each key is a genre and each value is
 how many movies have that genre, like this:
@@ -241,86 +240,105 @@ how many movies have that genre, like this:
 * how many buckets are there?
 * how many items are there in each bucket?
 
-Of what variety is q27?
+Of what variety is Q27?
 
-#### Question 28: how many movies are there of each genre? (plot your answer)
+#### #Q28: How many movies are there of each genre? (plot your answer)
 
-Yes, this is the same as q27, but now you must answer with a plot
+Yes, this is the same as Q27, but now you must answer with a plot
 rather than a dictionary.  Your plot should look like this:
 
-<img src="genre_count.png" width="400">
+<img src="Q28.png" width="400">
 
-For plot-based, the tests are only checking that a plot exists.  If a
+**Note:** For plot-based, the tests are only checking that a plot exists.  If a
 plot is not correct, your reviewer will manually deduct points.
 
-Note: we introduce how to create plots in Lab-P8b.  So if you're
+Note: We introduce how to create plots in Lab-P8b.  So if you're
 working ahead, you might need to save this question until that lab has
 been released.  Also, in case you missed it from the lab, if you don't
 have `%matplotlib inline` in a cell, your first plot might not show up
 in the notebook after a Restart & Run All.
 
-#### Question 29: how many movies are there of each genre, prior to 2000? (plot your answer)
+#### #Q29: How many movies are there of each genre, prior to 1970? (plot your answer)
 
-**Mediocre Hint:** creating the right functions so that the return
+Your plot should look like this:
+
+<img src="Q29.png" width="400">
+
+**Mediocre Hint:** Creating the right functions so that the return
   value from one call can be the argument to for another call is the key to
-  doing this without writing very complicated code.  For example, your
-  instructor solved this problem with a single line of code: `plot_dict(bucket_counts(filter_year(movies, None, 1999), "genres"), "Movie Count")`.  What code did he use for `bucket_counts` and `filter_year`?  Well, if we told you that, it wouldn't be be a "mediocre" hint, would it?
+  doing this without writing very complicated code.  For example, you
+  can solve this problem with a single line of code:
+  `plot_dict(bucket_counts(filter_year(movies, None, 1970), "genres"), "Movie Count")`. 
+  What code should you use for `bucket_counts` and `filter_year`?  
+  Well, if we told you that, it wouldn't be be a "mediocre" hint, would it?
 
-#### Question 30: how many movies are there of each genre, in or after 2000? (plot your answer)
+#### #Q30: How many movies are there of each genre, in or after 1990? (plot your answer)
 
-**Another Mediocre Hint:** Your instructor solved this one with `plot_dict(bcounts(filter_year(movies, 2000, None), "genres"), "Movie Count")`.
+Your plot should look like this:
+
+<img src="Q30.png" width="400">
+
+**Another Mediocre Hint:** Your instructor solved this one with
+`plot_dict(bucket_counts(filter_year(movies, 1990, None), "genres"), "Movie Count")`.
 
 Take a moment to compare this and the previous plot.  What can you
 infer?  What genres have grown in popularity?  Which ones have fallen
 out of favor in recent years?
 
-#### Question 31: how many movies have there been per year, since (and including) 2000? (plot your answer)
+#### #Q31: How many movies have there been per year, after (not including) 2005? (plot your answer)
+
+Your plot should look like this:
+
+<img src="Q31.png" width="400">
 
 **Hint:** if you've written a general function to help with the previous
 questions and you've kept the relevant data in a variable, you can
 answer this with one simple line of code.
 
-#### Question 32: what are the directing career spans of the directors who have directed for at least 30 years?
+#### #Q32: What are the acting career spans of the actors who have acted for at least 45 years?
 
 The span is the difference in years between year of the first movie
-they directed and the last one they directed (so if they only ever
-directed in one year, the span is 0).  Answer with a dictionary,
+they acted in and the last one they acted in (so if they only ever
+acted in one year, the span is 0).  Answer with a dictionary,
 mapping name to years worked.  It should look like this:
 
 ```
-{'Howard Hawks': 42,
- 'Charles Chaplin': 34,
- 'Henry Hathaway': 36,
- 'Stanley Kubrick': 46,
- 'Taylor Hackford': 32,
- 'Cecil B. DeMille': 30,
- 'Lee H. Katzin': 30,
- 'Richard Fleischer': 32,
- 'Sidney Lumet': 33,
- 'George Sherman': 33,
- 'John Huston': 30,
- 'Robert Siodmak': 30,
- 'Eldar Ryazanov': 31,
- 'Martin Ritt': 32}
+{'Robert De Niro': 49,
+ 'Kurt Russell': 50,
+ 'John Wayne': 46,
+ 'Mickey Rooney': 75,
+ 'Robert Mitchum': 51,
+ 'Henry Fonda': 46,
+ 'Glenn Ford': 52,
+ 'Jeff Bridges': 48,
+ 'James Caan': 52,
+ 'Anthony Quinn': 61,
+ 'Marlon Brando': 49,
+ 'Tony Curtis': 45,
+ 'Ernest Borgnine': 47,
+ 'Rod Steiger': 45,
+ 'George Burns': 60,
+ 'Bruce Dern': 45,
+ 'Dean Stockwell': 53}
 ```
 
-#### Question 33: what are the acting career spans of the actors who have acted for at least 50 years?
+#### #Q33: What are the directing career spans of the directors who have directed for at least 25 years?
 
-#### Question 34: who are the 10 directors with the longest careers?
+#### #Q34: Who are the top 10 actors with the longest careers?
 
 Answer with a list of dictionaries, such that each dictionary specifies a name and span, like this:
 
 ```
-[{'name': 'Stanley Kubrick', 'span': 46},
- {'name': 'Howard Hawks', 'span': 42},
- {'name': 'Henry Hathaway', 'span': 36},
- {'name': 'Charles Chaplin', 'span': 34},
- {'name': 'Sidney Lumet', 'span': 33},
- {'name': 'George Sherman', 'span': 33},
- {'name': 'Taylor Hackford', 'span': 32},
- {'name': 'Richard Fleischer', 'span': 32},
- {'name': 'Martin Ritt', 'span': 32},
- {'name': 'Eldar Ryazanov', 'span': 31}]
+[{'name': 'Mickey Rooney', 'span': 75},
+ {'name': 'Anthony Quinn', 'span': 61},
+ {'name': 'George Burns', 'span': 60},
+ {'name': 'Dean Stockwell', 'span': 53},
+ {'name': 'Glenn Ford', 'span': 52},
+ {'name': 'James Caan', 'span': 52},
+ {'name': 'Robert Mitchum', 'span': 51},
+ {'name': 'Kurt Russell', 'span': 50},
+ {'name': 'Robert De Niro', 'span': 49},
+ {'name': 'Marlon Brando', 'span': 49}]
 ```
 
 This is a little tricky, so we'll sketch out part of a function for
@@ -350,53 +368,62 @@ def top_n_span(buckets, n):
     # TODO: return a slice of the rows
 ```
 
-#### Question 35: who are the 10 actors with the longest careers?
+#### #Q35: Who are the top twenty one directors with the longest careers?
 
 Answer with the same format as above.
 
-#### Question 36: what are the three genres in which movies receive the highest median rating?
+#### #Q36: Who are the nine best actors?
 
-Answer with a list of length three, containing dictionaries detailing
-the category (which genre), rating (the median for that genre), and
-count (number of movies in that genre).  It should look like this,
-with the best-rated genres first:
+By "best", we mean having the highest *median* movie rating (this is
+true for the following questions too).
 
-```
-[{'category': 'Animation', 'rating': 7.3, 'count': 45},
- {'category': 'History', 'rating': 6.7, 'count': 73},
- {'category': 'War', 'rating': 6.7, 'count': 99}]
-```
-
-#### Question 37: what were the 10 best years for movies?
-
-By "best", we mean having the highest median movie rating (this is
-true for the following questions too).  Consider refactoring your code
-from q36 into a function to answer this with a single call.  The
-output should follow the same format, but now categories are years
-instead of genres, like this:
+Answer with a list of length nine, containing dictionaries detailing
+the name, rating (the median rating for that actor), and
+count (number of movies that actor has acted in).  It should look like this
+(the list should be sorted in order of decreasing rating):
 
 ```
-[{'category': 1921, 'rating': 8.3, 'count': 1},
- {'category': 1925, 'rating': 8.2, 'count': 1},
- {'category': 1919, 'rating': 7.5, 'count': 1},
- {'category': 1923, 'rating': 7.3, 'count': 2},
- {'category': 1962, 'rating': 7.2, 'count': 17},
- {'category': 1964, 'rating': 7.1, 'count': 19},
- {'category': 1957, 'rating': 7.0, 'count': 24},
- {'category': 1985, 'rating': 7.0, 'count': 17},
- {'category': 1976, 'rating': 7.0, 'count': 17},
- {'category': 1963, 'rating': 6.95, 'count': 10}]
+[{'name': 'Heath Ledger', 'rating': 9.0, 'count': 1},
+ {'name': 'John Fiedler', 'rating': 8.9, 'count': 1},
+ {'name': 'Aldo Giuffrè', 'rating': 8.9, 'count': 1},
+ {'name': 'Steven Williams', 'rating': 8.8, 'count': 1},
+ {'name': 'Daniel Roebuck', 'rating': 8.8, 'count': 1},
+ {'name': 'Joseph Gordon-Levitt', 'rating': 8.8, 'count': 1},
+ {'name': 'Miyu Irino', 'rating': 8.6, 'count': 1},
+ {'name': 'Andrew Kevin Walker', 'rating': 8.6, 'count': 1},
+ {'name': 'Ken Watanabe', 'rating': 8.55, 'count': 2}]
 ```
 
-What do you notice about the number of movies in the highest-rated
-years?  Is the highest median a good metric for best, or can you think
-of a better metric?
+#### #Q37: Who are the twelve best directors?
 
-#### Question 38: what were the 5 best years for movies, if we only consider years with at least 10 movies?
+Consider refactoring your code
+from Q36 into a function to answer this with a single call.  The
+output should follow the same format, like this:
+
+```
+[{'name': 'James Marlowe', 'rating': 8.8, 'count': 1},
+ {'name': 'Kirk Wise', 'rating': 8.6, 'count': 1},
+ {'name': 'David Fincher', 'rating': 8.6, 'count': 1},
+ {'name': 'Christopher Nolan', 'rating': 8.5, 'count': 9},
+ {'name': 'Leonid Gayday', 'rating': 8.4, 'count': 5},
+ {'name': 'Adrian Molina', 'rating': 8.4, 'count': 1},
+ {'name': 'Stanley Kubrick', 'rating': 8.3, 'count': 11},
+ {'name': 'Sergio Leone', 'rating': 8.3, 'count': 7},
+ {'name': 'Satyajit Ray', 'rating': 8.2, 'count': 9},
+ {'name': 'Moustapha Akkad', 'rating': 8.2, 'count': 1},
+ {'name': 'Andrew Grieve', 'rating': 8.2, 'count': 6},
+ {'name': 'Danny Boyle', 'rating': 8.2, 'count': 1}]
+```
+
+What do you notice about the number of movies of the highest-rated
+directors (and actors)?  Is the highest median a good metric for best,
+or can you think of a better metric?
+
+#### #Q38: Who are the fourteen best actors, if we only consider those who have acted in at least 5 movies?
 
 Can you add a parameter to a previously created function to deal with
 this extra constraint (i.e., a minimum number of movies)?
 
-#### Question 39: who are the best 4 directors, if we only count directors having at least 3 movies? 
+#### #Q39: Who are the sixteen best actors, if we only consider those who have acted in at least 30 movies?
 
-#### Question 40: who are the 3 best actors, if we only count actors having at least 5 movies?
+#### #Q40: Who are the eight best directors, if we only count directors having at least 8 movies?

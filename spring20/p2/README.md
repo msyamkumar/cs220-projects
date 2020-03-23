@@ -2,8 +2,7 @@
 
 ## Clarifications/Corrections
 
-* Sep 11: Updated main.ipynb: Updated q18 statement for more clarification
-* Sep 13: Fixed test.py to work on machines where Jupyter is run with `py -m jupyter notebook`
+None yet.
 
 ## Overview
 
@@ -13,13 +12,13 @@ and `test.py` to that directory (IMPORTANT: use the same process to
 download that you used for P1, which involves left-clicking the files
 and then right-clicking the "Raw" button).
 
-You will change `main.ipynb` and hand it in.  You should not change
+You will change `main.ipynb` and hand it in. You should not change
 `test.py`, and you should not hand it in.
 
 After you've downloaded both files to `p2`, open a terminal window and
-use `cd` to navigate to that directory.  You will likely need to
+use `cd` to navigate to that directory. You will likely need to
 review the steps you used to cd to `p1` for the previous project, then
-adapt those steps for `p2`.  To make sure you're in the correct
+adapt those steps for `p2`. To make sure you're in the correct
 directory in terminal, type `ls` and make sure you see `main.ipynb`
 and `test.py` listed.
 
@@ -42,19 +41,20 @@ Summary:
   Test 7: no outputs in an Out[N] cell
   Test 8: no outputs in an Out[N] cell
   Test 9: no outputs in an Out[N] cell
-  Test 10: found 3001 but expected 301
-  Test 11: found :):):) but expected :):):):):):):):):):)
-  Test 12: found 777777 but expected 42
-  Test 13: found 25 but expected 125
+  Test 10: found 20020 but expected 220
+  Test 11: found :):):) but expected :):):):):)
+  Test 12: found 6666666 but expected 42
+  Test 13: found 36 but expected 216
   Test 14: no outputs in an Out[N] cell
   Test 15: found True but expected False
   Test 16: found False but expected True
   Test 17: found False but expected True
-  Test 18: found 3 but expected True
+  Test 18: found 4 but expected True
   Test 19: found False but expected True
   Test 20: no outputs in an Out[N] cell
 
 TOTAL SCORE: 10.00%
+
 ```
 
 This means if you turn in main.py now, you'll get 10% for your score.
@@ -66,8 +66,8 @@ output above says "PASS" by them.  Your goal is to get more points by
 getting test.py to print "PASS" by more problems.  In some cases, you
 can see there is no answer in the original notebook (when it says `no
 outputs in an Out[N] cell`), and in other cases you need to make a
-change to correct a wrong answer (e.g., when it says `found 25 but
-expected 125`).
+change to correct a wrong answer (e.g., when it says `found 36 but
+expected 216`).
 
 Now let's open a second terminal window (we want one to run Jupyter
 and one to run the tests).  In the second one, perform the same steps

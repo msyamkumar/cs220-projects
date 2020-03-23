@@ -53,25 +53,25 @@ otherwise specified.
 
 ---
 
-#### Question 1: what is returned by your `get_mapping("small_mapping.csv")` function?
+#### #Q1: What is returned by your `get_mapping("small_mapping.csv")` function?
 
 In addition to displaying the result in the `Out [N]` area, keep the
 result in a variable for use in subsequent questions.
 
-#### Question 2: what is the value associated with the key "nm0752751"?
+#### #Q2: What is the value associated with the key "nm0001219"?
 
 Use the dictionary returned earlier. Do not call `get_mapping` a
 second time (that would be inneficient).
 
-#### Question 3: what are the values in the mapping associated with keys beginning with "nm"?
+#### #Q3: What are the values in the mapping associated with keys beginning with "nm"?
 
 Answer with a Python list.
 
-#### Question 4: which keys in the mapping map to people with a first name of "Gary"?
+#### #Q4: Which keys in the mapping map to people with a last name which starts with "G"?
 
-Answer with a Python list.  To get full points, you should write code
-that will count somebody named "gary" but will not count somebody
-named "Garyyy".
+Answer with a Python list. To get full points, you should write code
+that will count only last names that start with "G". You should ignore names that
+contain "G" in other places.
 
 ---
 
@@ -99,7 +99,7 @@ always contain lists, even if those lists contain a single value.
 
 ---
 
-#### Question 5: what does `get_raw_movies("small_movies.csv")` return?
+#### #Q5: What does `get_raw_movies("small_movies.csv")` return?
 
 The result should be this:
 ```
@@ -122,11 +122,11 @@ should not call the function more often than necessary (in other
 words, keep the returned data structures in a variable to re-use for
 multiple questions).
 
-#### Question 6: how many genres did the movie at index 0 have?
+#### #Q6: How many actors did the movie at index 1 have?
 
 Use the data from Q5.
 
-#### Question 7: what is the ID of the last actor listed for the move at index 1?
+#### #Q7: What is the ID of the first actor listed for the move at index 0?
 
 Use the data from Q5.
 
@@ -142,7 +142,7 @@ should load using your `get_mapping` function.
 Each dictionary in the list should look something like this:
 
 ```python
-{ 
+{
     "title": "the movie name",
     "year": <the year as an integer>,
     "rating": <the rating as a float>,
@@ -169,34 +169,15 @@ small = get_movies("small_movies.csv", "small_mapping.csv")
 
 ---
 
-#### Question 8: what is `small[0]["title"]`?
+#### #Q8: what is `small[1]["title"]`?
 
-Just paste `small[0]["title"]` into a cell and run it.  We're doing
+Just paste `small[1]["title"]` into a cell and run it.  We're doing
 this to check that the structures in `small` (as returned by
 `get_movies` above) contain the correct data.
 
-#### Question 9: what is `small[1]["actors"]`?
+#### #Q9: What is `small[0]["actors"]`?
 
-#### Question 10: what is `small[-1]["directors"]`?
-
-#### Question 11: what is `small`?
-
-The result should look like this:
-
-```
-[{'title': 'Runaway Jury',
-  'year': 2003,
-  'rating': 7.1,
-  'directors': ['Gary Fleder'],
-  'actors': ['John Cusack', 'Gene Hackman', 'Dustin Hoffman'],
-  'genres': ['Crime', 'Drama', 'Thriller']},
- {'title': 'Lethal Weapon',
-  'year': 1987,
-  'rating': 7.6,
-  'directors': ['Richard Donner'],
-  'actors': ['Mel Gibson', 'Danny Glover', 'Gary Busey', 'Mitchell Ryan'],
-  'genres': ['Action', 'Crime', 'Thriller']}]
-```
+#### #Q10: What is `small[-1]["directors"]`?
 
 ---
 
@@ -213,36 +194,11 @@ instead (that's more efficient).
 
 ---
 
-#### Question 12: what are the first 3 rows in movies?
+#### #Q11: What are the last 3 rows in movies?
 
 The result should look like this:
 
-```python
-[{'title': 'The Big Wedding',
-  'year': 2013,
-  'rating': 5.6,
-  'directors': ['Justin Zackham'],
-  'actors': ['Robert De Niro'],
-  'genres': ['Comedy', 'Drama', 'Romance']},
- {'title': 'The Affair of the Necklace',
-  'year': 2001,
-  'rating': 6.1,
-  'directors': ['Charles Shyer'],
-  'actors': ['Simon Baker', 'Jonathan Pryce', 'Adrien Brody'],
-  'genres': ['Drama', 'History', 'Romance']},
- {'title': 'The Barefoot Executive',
-  'year': 1971,
-  'rating': 6.0,
-  'directors': ['Robert Butler'],
-  'actors': ['Kurt Russell', 'Joe Flynn', 'Harry Morgan', 'Wally Cox'],
-  'genres': ['Comedy', 'Family']}]
 ```
-
-#### Question 13: what are the last 3 rows in movies?
-
-The result should look like this:
-
-```python
 [{'title': 'Fortitude and Glory: Angelo Dundee and His Fighters',
   'year': 2012,
   'rating': 7.2,
@@ -261,6 +217,25 @@ The result should look like this:
   'directors': ['Elliott Nugent'],
   'actors': ['Alan Ladd', 'Macdonald Carey'],
   'genres': ['Drama']}]
+```
+
+#### #Q12: What are the first 2 rows in movies?
+
+The result should look like this:
+
+```
+[{'title': 'The Big Wedding',
+  'year': 2013,
+  'rating': 5.6,
+  'directors': ['Justin Zackham'],
+  'actors': ['Robert De Niro'],
+  'genres': ['Comedy', 'Drama', 'Romance']},
+ {'title': 'The Affair of the Necklace',
+  'year': 2001,
+  'rating': 6.1,
+  'directors': ['Charles Shyer'],
+  'actors': ['Simon Baker', 'Jonathan Pryce', 'Adrien Brody'],
+  'genres': ['Drama', 'History', 'Romance']}]
 ```
 
 ---
@@ -287,15 +262,47 @@ year.
 
 ---
 
-#### Question 14: what are the movies from 1931?
+#### #Q13: What are the movies from 1929?
 
 Requirements:
-1. answer using `filter_movies_by_year`
-2. do NOT call `get_movies` on "movies.csv" more than once in your notebook
+1. Answer using `filter_movies_by_year`
+2. Do NOT call `get_movies` on "movies.csv" more than once in your notebook
 
 The answer should look like this:
 
-```python
+```
+[{'title': 'Redskin',
+  'year': 1929,
+  'rating': 7.0,
+  'directors': ['Victor Schertzinger'],
+  'actors': ['Richard Dix', 'Tully Marshall', 'George Regas'],
+  'genres': ['Adventure', 'Drama', 'Western']},
+ {'title': 'The Girl in the Show',
+  'year': 1929,
+  'rating': 6.5,
+  'directors': ['Edgar Selwyn'],
+  'actors': ['Raymond Hackett', 'Edward J. Nugent'],
+  'genres': ['Comedy']},
+ {'title': 'Atlantic',
+  'year': 1929,
+  'rating': 5.5,
+  'directors': ['Ewald André Dupont'],
+  'actors': ['Franklin Dyall', 'John Stuart'],
+  'genres': ['Drama']}]
+```
+
+#### #Q14: What are the movies from 1931?
+
+**Hint:** we've set you up a bit to encounter a bug.  Review the copy
+functions in the `copy` module and see if you can use one of them to
+overcome the shortcomings of the `filter_movies_by_year` function
+we're forcing you to use.  You might need to go back and tweak your
+q14 answer and potentially do a "Restart & Run All" on your notebook
+after you've fixed the bug.
+
+If you get it right, you'll get this output:
+
+```
 [{'title': 'Arizona',
   'year': 1931,
   'rating': 6.0,
@@ -316,97 +323,19 @@ The answer should look like this:
   'genres': ['Mystery', 'Western']}]
 ```
 
-#### Question 15: what are the movies from 1932?
+#### #Q15: How many unique actor names are there in the dataset?
 
-**Hint:** we've set you up a bit to encounter a bug.  Review the copy
-functions in the `copy` module and see if you can use one of them to
-overcome the shortcomings of the `filter_movies_by_year` function
-we're forcing you to use.  You might need to go back and tweak your
-q14 answer and potentially do a "Restart & Run All" on your notebook
-after you've fixed the bug.
+Think about whether you can write a function that helps you with Q15
+and Q16 at the same time.
 
-If you get it right, you'll get this output:
+#### #Q16: How many unique genres are there in the dataset?
 
-```
-[{'title': 'Texas Cyclone',
-  'year': 1932,
-  'rating': 6.2,
-  'directors': ['D. Ross Lederman'],
-  'actors': ['Wallace MacDonald', 'Tim McCoy', 'Wheeler Oakman', 'John Wayne'],
-  'genres': ['Action', 'Western']},
- {'title': 'Haunted Gold',
-  'year': 1932,
-  'rating': 5.5,
-  'directors': ['Mack V. Wright'],
-  'actors': ['Otto Hoffman',
-   'John Wayne',
-   'Duke',
-   'Harry Woods',
-   'Erville Alderson'],
-  'genres': ['Horror', 'Mystery', 'Western']},
- {'title': 'Girl Crazy',
-  'year': 1932,
-  'rating': 6.3,
-  'directors': ['William A. Seiter'],
-  'actors': ['Bert Wheeler', 'Robert Woolsey', 'Eddie Quillan'],
-  'genres': ['Comedy']},
- {'title': 'Hot Saturday',
-  'year': 1932,
-  'rating': 6.6,
-  'directors': ['William A. Seiter'],
-  'actors': ['Cary Grant', 'Randolph Scott', 'Edward Woods'],
-  'genres': ['Drama', 'Romance']},
- {'title': 'Lady and Gent',
-  'year': 1932,
-  'rating': 5.7,
-  'directors': ['Stephen Roberts'],
-  'actors': ['Morgan Wallace',
-   'George Bancroft',
-   'Charles Starrett',
-   'James Gleason',
-   'John Wayne'],
-  'genres': ['Drama', 'Sport']},
- {'title': 'The Big Stampede',
-  'year': 1932,
-  'rating': 5.8,
-  'directors': ['Tenny Wright'],
-  'actors': ['John Wayne', 'Noah Beery', 'Paul Hurst'],
-  'genres': ['Western']},
- {'title': 'The Shadow of the Eagle',
-  'year': 1932,
-  'rating': 5.8,
-  'directors': ['B. Reeves Eason', 'Ford Beebe'],
-  'actors': ['John Wayne', 'Walter Miller', 'Kenneth Harlan'],
-  'genres': ['Crime', 'Drama', 'Mystery']},
- {'title': 'Ride Him, Cowboy',
-  'year': 1932,
-  'rating': 5.4,
-  'directors': ['Fred Allen'],
-  'actors': ['Otis Harlan', 'John Wayne', 'Duke', 'Henry B. Walthall'],
-  'genres': ['Romance', 'Western']},
- {'title': "Smilin' Through",
-  'year': 1932,
-  'rating': 7.0,
-  'directors': ['Sidney Franklin'],
-  'actors': ['Fredric March', 'Leslie Howard', 'O.P. Heggie'],
-  'genres': ['Drama', 'Romance']},
- {'title': 'The Hurricane Express',
-  'year': 1932,
-  'rating': 5.6,
-  'directors': ['J.P. McGowan', 'Armand Schaefer'],
-  'actors': ['Tully Marshall', 'Conway Tearle', 'John Wayne'],
-  'genres': ['Action', 'Adventure', 'Crime']}]
-```
+#### #Q17: Which movie title in the dataset appears last alphabetically?
 
-#### Question 16: how many unique genres are there in the dataset?
+Output should be the movie title in string format. 
 
-Think about whether you can write a function that helps you with Q16
-and Q17 at the same time.
+#### #Q18: What is the average movie rating?
 
-#### Question 17: how many unique director names are there in the dataset?
+#### #Q19: What is the name of the highest rated movie?
 
-#### Question 18: which movie has the highest number of actors? Output should be the movie title in string format.
-
-#### Question 19: what is the average movie rating?
-
-#### Question 20: what is the longest movie title in the dataset (in terms of most characters)?
+#### #Q20: What is the oldest movie title in the dataset?

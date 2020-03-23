@@ -39,26 +39,27 @@ question_nums = set([q.number for q in questions])
 
 # JSON and plaintext values
 expected_json = {
-    "1": "132",
-    "2": "'Carol'",
-    "3": "1",
+    "1": "133",
+    "2": "'Omar'",
+    "3": "72",
     "4": "True",
     "5": "3",
     "6": "190",
     "7": "Allen",
-    "8": "13500000",
-    "9": "18959",
+    "8": "1570000000",
+    # "9": "64.6590909090909",
+    "9": "18960",
     "10": "'Maria'",
     "11": "'Inez'",
     "12": "1899",
-    "13": "226500000",
-    "14": "864230465000",
-    "15": "17",
+    "13": "91610000000",
+    "14": "864830464997",
+    "15": "4",
     "16": "3",
-    "17": "3",
-    "18": "2",
-    "19": "9",
-    "20": "10",
+    "17": "9",
+    "18": "25",
+    "19": "16",
+    "20": "11",
     }
 
 # find a comment something like this: #q10
@@ -73,7 +74,7 @@ def extract_question_num(cell):
 
 # rerun notebook and return parsed JSON
 def rerun_notebook(orig_notebook):
-    new_notebook = 'cs-301-test.ipynb'
+    new_notebook = 'cs-220-test.ipynb'
 
     # re-execute it from the beginning
     with open(orig_notebook) as f:
@@ -123,7 +124,7 @@ def check_cell_text(qnum, cell):
     try:
         actual_float = float(actual)
         expected_float = float(expected)
-        if not math.isclose(actual_float, expected_float, rel_tol=1e-02, abs_tol=1e-02):
+        if not math.isclose(actual_float, expected_float, rel_tol=1e-03, abs_tol=1e-06):
             return "found {} in {} but expected {}".format(actual, location_name, expected)
     except Exception as e:
         if actual != expected:

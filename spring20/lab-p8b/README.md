@@ -383,7 +383,7 @@ sorted(vals, key=????)
 
 ## Project Hints
 
-* you'll be creating a few plots for P8, so consider copying the `plot_dict` function
-* you'll need to answer a few questions such as "what are the three genres in which movies receive the highest median rating?"  The easiest way to approach such questions is with a custom sort.
+* You'll be creating a few plots for P8, so consider copying the `plot_dict` function
+* You'll need to answer a few questions such as "Who are the top ten actors with the longest careers?" The easiest way to approach such questions is with a custom sort.
 
 Good luck!

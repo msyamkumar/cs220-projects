@@ -1,7 +1,7 @@
 # Lab 7: Dictionaries
 
-In this lab, we'll practice using dictionaries in preperation for P7
-(and exam 2!).  Start a new scratch notebook to do the exercises.
+In this lab, we'll practice using dictionaries in preperation for P7. 
+Start a new scratch notebook to do the exercises.
 
 ## Exercises
 
@@ -52,8 +52,8 @@ If done correctly, you should see something like this:
 Fill in the blanks:
 
 ```python
-keys = ["three", "zero", "one"]
-vals = ["tres", "cero", "uno"]
+keys = ["two", "zero"]
+vals = ["dos", "cero"]
 en2sp = ???? # empty dictionary
 for i in range(len(????)):
     en2sp[keys[????]] = ????
@@ -64,13 +64,13 @@ The resulting dictionary should map the English words to the Spanish
 words, like this:
 
 ```python
-{'three': 'tres', 'zero': 'cero', 'one': 'uno'}
+{'two': 'dos', 'zero': 'cero'}
 ```
 
 Try using your dictionary:
 
 ```python
-words = "I love Comp Sci three zero one".split(" ")
+words = "I love Comp Sci two two zero".split(" ")
 for i in range(len(words)):
     default = words[i] # don't translate it
     words[i] = en2sp.get(words[i], default)
@@ -96,7 +96,7 @@ sp2en
 You should get this:
 
 ```python
-{'tres': 'three', 'cero': 'zero', 'uno': 'one'}
+{ 'dos': 'two', 'cero': 'zero'}
 ```
 
 ### Dictionary Division
@@ -161,10 +161,3 @@ for key in incidents:
         best_key = ????
 print("Year", best_key, "had", incidents[????], "incidents (the max)")
 ```
-
-## Project Hints
-
-1. for project questions like q12, you'll need to pair up two lists to make a dictionary (review "Dictionary from Two Lists" from the lab)
-2. q16 and q17 require some counting (review the first lab exercises)
-3. q18  requires an average (review "Dictionary Division" above).
-4. q19 and q20 are finding the key that yields the max value in a dictionary (in comparison, we've solved many problems prior involving finding the argument that yields the max return value from a function)

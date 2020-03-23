@@ -1,71 +1,206 @@
-# Project 4: Forecasting Diabetes
+# Project 4: Pokémon Simulation
 
-## Corrections
-* Sep 26: quotations removed from column_name argument in column_sum. Download p4.py again.
+## Corrections/Clarifications
+None yet.
 
 ## Overview
 
-In the lab, you ran a program we provided to generate decision trees that can be used to forecast diabetes.  Now, you'll write Python conditionals to automatically make such predictions about new patients.
+For this project, you'll be using the data from `pokemon_stats.csv` to
+simulate Pokémon battles. This data was gathered by the Python program
+`gen_csv.ipynb` from the website https://www.pokemondb.net/.  This project will
+focus on **conditional statements**. To start, download `project.py`,
+`test.py` and `pokemon_stats.csv`. You'll do your work in a Jupyter Notebook,
+producing a `main.ipynb` file. You'll test as usual by running `python test.py`
+to test a `main.ipynb` file.
 
-For this project, download the following:
-* diabetes.csv
-* main.ipynb
-* test.py
-* p4.py
+We won't explain how to use the `project` module here (the code in the
+`project.py` file). The lab this week is designed to teach you how it
+works. So, before starting P4, take a look at Lab P4.
 
-Don't modify `main.ipynb` or `test.py`.  **Do all your work in `p4.py` and hand that in when your done.**
+This project consists of writing code to answer 20 questions. If
+you're answering a particular question in a cell in your notebook, you
+need to put a comment in the cell so we know what you're answering.
+For example, if you're answering question 13, the first line of your
+cell should contain `#q13`.
 
-As usual, `test.py` checks the answers in `main.ipynb`.  So, you might wonder, how can you make the tests pass without modifying the notebook?
+## Questions and Functions
 
-The notebook imports `p4.py` as a module, and uses several functions there.  Those functions are incomplete, but when you finish writing them, you'll be able to do a Kernel Restart & Run All in the notebook to get the right answers.
+For the first few questions, we will try to simulate a very simple 'battle'.
+Create a function `simple_battle(pkmn1, pkmn2)` which simply returns the name of
+the Pokémon with the highest stat total.
 
-## The Trees
+**Hint: In Lab P4, you created a helper function which could be very useful here**
+### Q1: What is the output of `simple_battle('Gligar', 'Pidgeotto')`?
 
-During lab, we generated the following trees, all based on the same data, but having varying levels of complexity:
+### Q2: What is the output of `simple_battle('Gligar', 'Pidgeot')`?
 
-### Depth 1
+While we are off to a good start, the function is not quite finished yet. For instance,
+consider the Pokémon Charmander and Chimchar. Both of them have the same stat total
+of 309. In such cases, we want our function to return the string `'Draw'` instead of
+choosing between the two Pokémon.
 
-<img src="diabetes-1.png" width="350">
+### Q3: What is the output of `simple_battle('Chikorita', 'Turtwig')`?
 
-### Depth 2
+Our function `simple_battle` is quite rudimentary. All it does is compare the stat
+totals of different Pokémon. Although it can predict effectively when the stat
+totals of two Pokémon are far apart, we cannot rely on its predictions, if the
+two numbers are close to each other. Modify `simple_battle` so that it returns
+`'Draw'` if `|stat total of pkmn1 - stat total of pkmn2| < 20`.
 
-<img src="diabetes-2.png" width="400">
+### Q4: What is the output of `simple_battle('Kingler', 'Staraptor')`?
 
-### Depth 3
+### Q5: What is the output of `simple_battle('Heracross', 'Krookodile')`?
 
-<img src="diabetes-3.png" width="600">
+Our function `simple_battle` is a good start, but we can make our battles a bit
+more interesting. Let us set up some rules for our battles.
 
-Take a moment to make sure your trees from lab are essentially the same (we don't care about the color of the boxes, but we want to make sure they are the same shape, have the same conditions, and have the same classes).  Our tests will assume you implement the logic as shown as above.
+1. The Pokémon take turns attacking each other.
+2. The Pokémon with the higher Speed stat attacks first.
+3. On each turn, the attacking Pokémon can choose between two moves - Physical
+or Special
+4. Based on the move chosen by the attacking Pokémon, the defending Pokémon
+receives damage to its HP.
+5. If a Pokémon's HP drops to (or below) 0, it faints and therefore loses
+the battle.
 
-## Predict Functions
+The damage caused by a Pokémon's Physical move is `10 * Attack stat of
+Attacker / Defense stat of Defender`, and the damage caused by a Pokémon's
+Special move is `10 * Sp. Atk. stat of Attacker / Sp. Def. stat of Defender`.
 
-You'll make three functions: `predict1`, `predict2`, and `predict3`, corresponding to the three trees, respectively.  All the functions should be as follows:
+**If a Pokémon wants to win, it should always choose the move which will do
+more damage.**
 
-* take three parameters: `glucose`, `age`, and `bmi`.  Although there were originally 6 variables in the dataset, all the trees we generated only identified these three as most important.
-* return `True` if the patient is likely to get diabetes, and `False` otherwise
+For example, let the attacker be Scraggy and the defender be Tranquill. Their
+stats are as follows:
+```python
+>>> project.print_stats('Scraggy')
+Name :  Scraggy
+Region :  Unova
+Type 1 :  Dark
+Type 2 :  Fighting
+HP :  50
+Attack :  75
+Defense :  70
+Sp. Atk :  35
+Sp. Def :  70
+Speed :  48
+>>> project.print_stats('Tranquill')
+Name :  Tranquill
+Region :  Unova
+Type 1 :  Normal
+Type 2 :  Flying
+HP :  62
+Attack :  77
+Defense :  62
+Sp. Atk :  50
+Sp. Def :  42
+Speed :  65
+>>>
+```
+The damage caused by Scraggy's physical move will be `10*75/62`, which is `12.0967`,
+while the damage caused by its special move will be `10*35/42`, which is `8.33`.
+**So, in this case, when facing Tranquill, Scraggy would always choose its physical
+move to do `12.0967` damage.**
 
-Open `p4.py` in idle.  You'll notice we wrote some function "stubs", functions that are defined, but don't contain any code yet (it's your job to write that code).
+Copy/paste the following code in a new cell of your notebook and fill in the details.
 
-## Testing
+```python
+def most_damage(attacker, defender):
+    if ???:
+        return 10 * project.get_attack(attacker)/project.get_defense(defender)
+    else:
+        ???
+```
 
-Although you'll write all your code in p4.py using idle, we recommend you manually check your answers by opening `main.ipynb` in Jupyter.  Don't change this file, but do Kernel Restart & Run All to see what values your predict functions are returning.  Note that every time you change p4.py, you need to restart the notebook for it to pick up the changes.
+Verify that `most_damage('Scraggy', 'Tranquill')` returns `12.0967`.
 
-In addition to manually testing, you can run `test.py` from another terminal window, as usual.
+### Q6: What is the damage that will be done by Caterpie to Incineroar?
 
-## Challenge Questions
+### Q7: What is the damage that will be done by Naganadel to Rockruff?
 
-What would you do if you had only partial information about a patient?  For example, suppose you only knew their BMI and age.  Could you use the decision tree, even without knowing glucose?
+### Q8: What is the damage that will be done by Taillow to Swellow?
 
-One approach would be to replacing missing values with the average from the total population.  This is what we'll do for the last three questions.
+### Q9: What is the damage that will be done by Swellow to Taillow?
 
-First, finish implement the `column_avg` function in p4.py.  Questions q16 and q17 in `main.ipynb` try to use this function.
+Now that we have a way of calculating the damage done by the Pokémon during
+battle, we have to calculate how many hits each Pokémon can take before fainting.
 
-Second, modify `predict3` so that when it gets `None` for any of the parameters (`None` is the default argument for each parameter) it will use the average (from `column_avg`) instead.  Doing this correctly will solve q18, q19, and q20.
+Going back to our previous example, we saw that Scraggy does `12.0967` damage to
+Tranquill, each turn. Since Tranquill has HP `62`, it can take a total of `62/12.0697
+= 5.125` hits, which is rounded up to `6` hits. So, Tranquill
+can take `6` hits from Scraggy before it faints.
 
-Happy Coding!
+Copy/paste the following code in a new cell of your notebook and fill in the details.
+
+```python
+def num_hits(attacker, defender):
+    return math.ceil(project.get_hp(???)/???)
+```
+
+**Hint: You might want to use the method [math.ceil()](https://docs.python.org/3/library/math.html) here. First import the module math
+and then look up the documentation of math.ceil to see how you could use it.**
+
+### Q10: How many hits can Goomy take from Gible?
+
+### Q11: How many hits can Donphan take from Aipom?
+
+### Q12: How many hits can Aipom take from Donphan?
+
+Since Donphan can take more hits from Aipom than Aipom can from Donphan, clearly
+Donphan would win in a battle between the two. With the tools we have created
+so far, we can now finally create a battle simulator. Copy/paste the following
+code in a new cell of your notebook and fill in the details.
+
+```python
+def battle(pkmn1, pkmn2):
+    #TODO: Return the name of the pkmn that can take more hits from the other
+    # pkmn. If both pkmn faint within the same number of moves, return the
+    # string 'Draw'
+```
+
+### Q13: What is the outcome of `battle('Infernape', 'Torterra')`?
+
+### Q14: What is the outcome of `battle('Torkoal', 'Sceptile')`?
+
+### Q15: What is the outcome of `battle('Tepig', 'Oshawott')`?
+
+You may have noticed that the function `battle` does not quite follow all the rules
+that we laid out at the beginning. Find the output of `battle('Swadloon', 'Palpitoad')`.
+You will find that it is a draw, since they can both take 7 hits from the other Pokémon.
+But since Palpitoad has a higher Speed, it attacks first, so it will land its
+seventh hit on Swadloon, before Swadloon can hit Palpitoad. So, even though they
+both go down in the same number of moves, Palpitoad should win the battle.
+
+Go back and modify `battle()` so that if both Pokémon faint in the same number of
+moves, the Pokémon with the higher Speed wins. If they both have the same Speed,
+then the battle should be a `'Draw'`.
+
+### Q16: What is the outcome of `battle('Bulbasaur', 'Squirtle')`?
+
+### Q17: What is the outcome of `battle('Greninja', 'Hawlucha')`?
+
+### Q18: What is the outcome of `battle('Snorlax', 'Charizard')`?
+
+Our function `battle` is now working just as intended. But let us build some checks
+and balances into the function, to make it more reasonable. We will assume that
+Pokémon from different regions cannot battle each other, since they can't both meet
+each other.
+
+Create a new function `final_battle(attacker, defender)` so that if two Pokémon from
+different regions try to fight each other, the function returns `'Cannot battle'`.
+If both Pokémon are from the same region, the battle proceeds as before.
+
+### Q19: What is the outcome of `final_battle('Pikachu', 'Snivy')`?
+
+This restriction however, is a little too harsh. We can assume that Pokémon whose
+type (Type 1 or Type 2) is `Flying` can reach other regions by flying there.
+
+Modify `final_battle` so that even if the two Pokémon are from different regions, if the
+Type 1 **or** Type 2 of the Attacker is 'Flying', then the battle can
+take place as before.
+
+### Q20: What is the outcome of `final_battle('Dragonite', 'Goodra')`?
 
 
-## References and Optional Reading
-
-1. Dataset: https://www.kaggle.com/uciml/pima-indians-diabetes-database
-2. Advanced info about decision trees: https://www.datacamp.com/community/tutorials/decision-tree-classification-python
+That will be all for now. If you are interested, you can make your `battle` functions
+as complicated as you want. Good luck with your project!

@@ -1,4 +1,6 @@
 # Project 9: Amazon Reviews
+## Under Construction. Dont start working on it before release
+
 
 ## Clarifications/Corrections/Hints:
 * None yet.

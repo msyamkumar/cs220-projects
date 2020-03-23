@@ -12,8 +12,8 @@ scheduled progress. Enjoy!
 ## Project API
 
 The `project.py` file helps give you access to the dataset you'll use
-this week, `hurricanes.csv`.  Start by looking at the dataset here:
-https://github.com/tylerharter/cs301-projects/blob/master/fall19/p5/hurricanes.csv.
+this week, `hurricanes.csv`.  Start by looking at the dataset
+[here](https://github.com/msyamkumar/cs220-projects/blob/master/spring20/p5/hurricanes.csv).
 This data is a summary of statistics pulled from Wikipedia:
 https://en.wikipedia.org/wiki/List_of_United_States_hurricanes.  Look
 through the dataset for a recent hurricane, such as hurricane Michael,
@@ -33,9 +33,9 @@ perspective of `project.py`, the indexes of Baker, Camille, and Eloise
 are 0, 1, and 2 respectively (and so on).
 
 Download
-[hurricanes.csv](https://github.com/tylerharter/cs301-projects/blob/master/fall19/p5/hurricanes.csv)
+[hurricanes.csv](https://github.com/msyamkumar/cs220-projects/blob/master/spring20/p5/hurricanes.csv)
 and
-[project.py](https://github.com/tylerharter/cs301-projects/blob/master/fall19/p5/project.py)
+[project.py](https://github.com/msyamkumar/cs220-projects/blob/master/spring20/p5/project.py)
 to a `lab5` directory that you create, and start a new notebook in
 that directory for some scratch work.
 
@@ -144,7 +144,7 @@ try, and discuss with your neighbour.
 ### 3. Looping over indexes
 
 You want a loop that prints the index of every row index in `hurricanes.csv`
-(from 0 to 131, inclusive):
+(from 0 to 132, inclusive):
 
 ```python
 for idx in range(???):
