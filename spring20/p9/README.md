@@ -1,13 +1,7 @@
 # Project 9: Amazon Reviews
 
 ## Clarifications/Corrections/Hints:
-* Nov 7: Added hints for Q7
-* Nov 10: Stage 2 released
-* Nov 10: `test.py` updated.
-* Nov 12: Added a section on linting, see bottom of document
-* Nov 16 [hint]: how can you convert a string to a boolean?  Try putting `s == "False"` in a cell.  What does `bool(s)` evaluate to?  What about `s == "True"`?
-* Nov 16 [hint]: if you're using a `DictReader` for the csv, corrupt rows will have None values.  If you have a dict `d`, then `None in d.values()` is an easy way to notice.
-* Nov 16 [hint]: to create Review objects, you need to match up part of the data from the CSV with another part of the data from the JSON.  The slow/bad way is to have a loop inside a loop (the outer loop over one file's data and the inner loop over the other file's data).  The better/faster way is to loop over the CSV rows, then grab the piece you want from the JSON file with a dict lookup.  Looking up a single key in a dict (with `d[key]`) is MUCH faster than looping over all the keys/values in a dict.
+* None yet.
 
 ## Introduction
 
@@ -34,6 +28,8 @@ computer (using [Mac directions](http://osxdaily.com/2017/11/05/how-open-zip-fil
 
 Note: Make sure `data`, `main.ipynb` and `test.py` are in same directory.  Otherwise getting the tests to pass on your machine only will not be a good indication of whether they'll pass when we run them with the files organized as such.
 
+Historically, P9 has been the hardest project. So make sure you give yourself ample time to complete it.
+
 ## The Stages
 
 * [Stage 1](stage1.md): parse a mix of CSV and JSON files to get Review objects
@@ -41,6 +37,6 @@ Note: Make sure `data`, `main.ipynb` and `test.py` are in same directory.  Other
 
 ## Linting
 
-We are now introducing linting as a way to help you write better code. Please check it out 
-and try running it on your code! Everything you need to know to get started is explained 
+We are now introducing linting as a way to help you write better code. Please check it out
+and try running it on your code! Everything you need to know to get started is explained
 [here](../../linter/README.md).

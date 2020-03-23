@@ -17,28 +17,28 @@ represented with parameters).
 
 ----
 
-#### Question 1: What are the names of the files present in the `data` directory?
+#### #Q1: What are the names of the files present in the `data` directory?
 
-Hint: Look into the  `os.listdir`  function. Produce a list of file names, sorted in  **reverse-alphabetical**  order.
+Hint: Look into the `os.listdir` function. Produce a list of file names, sorted in  **reverse-alphabetical**  order.
 
-#### Question 2: What are the paths of all the files in the `data` directory?
+#### #Q2: What are the paths of all the files in the `data` directory?
 
 In order to achieve this, you need to use the `os.path.join()`
 function. Please do not hardcode "/" or "\\" because doing so will
 cause your function to fail on a computer that's not using the same
 operating system as yours.
 
-#### Question 3: What are the paths of all the CSV files present in `data` directory?
+#### #Q3: What are the paths of all the JSON files present in `data` directory?
 
-Filter to only include files ending in `.csv`
+Filter to only include files ending in `.json`
 
-#### Question 4: What are the paths of all the files present in `data` directory, that begin with the phrase `'review'`?
+#### #Q4: What are the paths of all the files present in `data` directory, that begin with the phrase `'review'`?
 
 ----
 
 We will first try to read the JSON file `products.json`. You might find it useful here, to create a function to read JSON files.
 
-#### Question 5: What are the products in `products.json`?
+#### #Q5: What are the products in `products.json`?
 
 Your output should look like this:
 ```python
@@ -61,16 +61,16 @@ The keys in the above dictionary are the Amazon Standard Identification Numbers 
 
 We will now try to read the CSV files that contain the reviews. Once again, you should consider creating a function to read CSV files given the filename. Use this function to read `review1.csv` to see what's in there.
 
-#### Question 6: What is the review *text* of review with id `1410`?
+#### #Q6: What is the review *text* of review with id `84440`?
 
-#### Question 7: What is the review *text* of review with id `69899`?
+#### #Q7: What is the review *text* of review with id `28615`?
 
-Careful, this one isn't in `review1.csv`. To get credit, make sure
+Careful, this one isn't in `review1.csv`. To get full credit, make sure
 your code looks through all the CSV files to find the review.
 
-#### Question 8: What is the review *title* of review id `28013`?
+#### #Q8: What is the review *title* of review id `69273`?
 
-#### Question 9: What file contained the review with that id?
+#### #Q9: What file contained the review with that id?
 
 ----
 
@@ -80,15 +80,21 @@ Each JSON file stores information about the reviews in the corresponding CSV fil
 
 ----
 
-#### Question 10: What is the data stored in `sample_reviews.json`?
+#### #Q10: What is the data stored in `sample_reviews.json`?
 
 `sample_reviews.json` contains a subset of the information in `review1.json`. Your output should look like this:
-```python
-{'10101': ['Mikey123456789', 'B00QFQRELG'],
- '99904': ['diamond', 'B00QFQRELG'],
- '89604': ['Pat91', 'B00QFQRELG'],
- '58704': ['Frank', 'B00QFQRELG'],
- '38104': ['LADYD92', 'B00QFQRELG']}
+
+```
+{'46663': ['Dmh1589', 'B018Y229OU'],
+ '36363': ['Shoot2thril', 'B018Y229OU'],
+ '15763': ['Barbara', 'B018Y229OU'],
+ '5463': ['Elec8', 'B018Y229OU'],
+ '54066': ['Silvrblur', 'B018Y229OU'],
+ '33466': ['Trish', 'B018Y229OU'],
+ '40869': ['airbear', 'B018Y229OU'],
+ '30569': ['lorphe', 'B018Y229OU'],
+ '89472': ['felix', 'B018Y229OU'],
+ '48272': ['Bull99', 'B018Y229OU']}
 ```
 
 The keys are the review ids, and the value stored is a list, containing the name of the user who made the review, as well as the asin of the reviewed product.
@@ -98,7 +104,7 @@ The keys are the review ids, and the value stored is a list, containing the name
 As we can see, the review data is distributed between different files. It would be useful to combine this data.
 
 For the following questions, you'll need to create a new Review type
-(using namedtuple).  It should have the following attributes:
+(using namedtuple). It should have the following attributes:
 
 * id (int)
 * username (string)
@@ -110,58 +116,77 @@ For the following questions, you'll need to create a new Review type
 * num_helpful (int)
 * date (string)
 
-Please ensure you define your namedtuple exactly according to the
-specifications above, or you will be unable to pass the tests.  You
-should be able to use your Review type to create new Review objects, like this:
+**Warning**: Please ensure you define your namedtuple exactly according to the
+specifications above (with the same attributes and data types), or you will be
+unable to pass the tests.
+
+You should be able to use your Review type to create new Review objects, like this:
 
 ```python
-review = Review(68358, "Preacherman", "B01BH83OOM", "Easy to set up" , "Enjoying the product and feel the ease of use is good.", 5, True, 0, "2017-07-07")
+review = Review(38574, "Rebe", "B018Y229OU", "Excellent" , "The tablet is great and works perfectly for any use", 5, True, 0, "2016-01-20")
 review
 ```
 
 Running the above in a cell should produce output like this:
 
 ```
-Review(id=68358, username='Preacherman', asin='B01BH83OOM', title='Easy to set up', text='Enjoying the product and feel the ease of use is good.', rating=5, do_recommend=True, num_helpful=0, date='2017-07-07')
+Review(id=38574, username='Rebe', asin='B018Y229OU', title='Excellent', text='The tablet is great and works perfectly for any use', rating=5, do_recommend=True, num_helpful=0, date='2016-01-20')
 ```
 
 ----
 
 Build a function `get_reviews` that accepts a CSV review file and a JSON review file and combines them to produce a list of `Review` objects, which it either returns or yields (your choice!).
 
-#### Question 11: What is produced by your function `get_reviews('sample_reviews.csv', 'sample_reviews.json')`?
+#### #Q11: What is produced by your function `get_reviews('sample_reviews.csv', 'sample_reviews.json')`?
 
-The output should be a list of five Reviews.  If you chose to write a generator with yield, just convert the generator object to a list.
+The output should be a list of ten Reviews. If you chose to write a generator with yield, just convert the generator object to a list.
 
 Be careful, if you get the types wrong for any of the Reviews, the tests won't recognize it.
 
-#### Question 12: What are the first ten Review objects in the list produced by `get_reviews('review1.csv', 'review1.json')`?
+#### #Q12: What are the first ten Review objects in the list produced by `get_reviews('review4.csv', 'review4.json')`?
 
-#### Question 13: What are the last ten Review objects in the list produced by `get_reviews('review2.csv', 'review2.json')`?
+#### #Q13: What are the last ten Review objects in the list produced by `get_reviews('review2.csv', 'review2.json')`?
 
-It is likely that your code crashed or your output has some missing data. That is because some of the rows in the CSV files are incomplete. Go back and modify the function you used to parse the CSV file, so that any rows that have missing data are ignored.
+It is likely that your code crashed. That is because the last few rows in the file `review2.csv` are broken. Go back to `get_reviews` and fix it so that broken rows are skipped. To get full credit, you need to skip only the rows that have missing data.
 
-In other words, if any row in a CSV file does not have all its fields, the row should be skipped entirely.
+**Hint**: A row could be 'broken' because
+1. Some entries in the column are missing. (i.e., some entry is just the empty string.)
+2. Some entries in the column are in the wrong column (i.e. the column `rating` contains the value for the column `do_recommend`.)
+3. Some entries are meaningless (i.e., a product's `date` is not a date.)
 
-#### Question 14: What is the Review object with review id `84713`?
+This is not an exhaustive list of all the ways the data can be bad, and you are
+not expected to deal with all the possibilities (or even all the possibilities
+listed above!). You need to manually look at `review2.csv` (via some Spreadsheet
+software), find the ways in which data is 'broken' in that particular file, and
+fix your code so that the bad rows are skipped.
 
-#### Question 15: What is the Review object with review id `42931`?
+**Additional Hint**: Exactly five rows in `review2.csv` have bad data, and they
+are all near the bottom of the file.
 
-#### Question 16: List the first ten Review objects in the entire dataset, sorted by increasing order of their review ids.
+
+#### #Q14: What is the Review object with review id `25401`?
+
+#### #Q15: What is the Review object with review id `78626`?
+
+#### #Q16: List the first ten Review objects in the entire dataset, when the usernames are sorted in the reverse alphabetical order.
 
 It is likely that your code crashed when you tried to read some of the files. That is because some of the JSON files are broken. Unlike broken CSV files, broken JSON files are much harder to salvage. Your code should skip any JSON files that you are unable to parse using  `json.load`.
+
+**Hint**: You could use try/except here.
 
 ----
 
 For this last section, we will now try to combine the data we have stored in the Review objects with the data from `products.json`.
 
-#### Question 17: Output the number of review objects for the product, "Amazon Tap Smart Assistant Alexa enabled (black) Brand New".
+#### #Q17: Output the number of review objects for the product, 'All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Magenta'.
 
-#### Question 18: Output the number of review objects for the product, "All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 32 GB - Includes Special Offers, Black".
+#### #Q18: Output the number of review objects for the product, "All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 32 GB - Includes Special Offers, Magenta".
 
-#### Question 19: Find the name of the product with most reviews.
+#### #Q19: Find the name of the product with most reviews.
 
-#### Question 20: Find the most helpful review(s) of this product.
+#### #Q20: Find the earliest review(s) of this product.
+
+**Hint**: Note that the dates are stored in the 'yyyy-mm-dd' format.
 
 That's it for Stage 1. In the next stage, we'll begin using the data
 structures we've set up to do some analysis that spans across multiple
