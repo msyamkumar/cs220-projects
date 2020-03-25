@@ -480,7 +480,7 @@ def check_cell_text(qnum, cell):
             # this happens when the list contains dicts.
             if actual != expected:
                 # TODO: remove this hack!!!
-                if qnum in [34, 35, 36, 37, 38, 39, 40]:
+                if qnum in [5, 11, 12, 13, 14, 34, 35, 36, 37, 38, 39, 40]:
                     if len(actual) != len(expected):
                         return "expected %d entries in the list but found %d" % (len(expected), len(actual))
                     try:
