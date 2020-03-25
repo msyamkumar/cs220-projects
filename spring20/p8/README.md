@@ -3,6 +3,7 @@
 ## Clarifications/Corrections
 
 * **3/13/2020 - 2:00 pm** Stage 2 questions updated. Redownload test.py.
+* **3/25/2020 - 5:30 pm** Bug fixed in test.py. Redownload if you faced any issues with Q14.
 
 ## Introduction
 
