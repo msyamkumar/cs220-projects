@@ -16,7 +16,7 @@ we go along.
 
 * **File Name:** a name you can use for a file if you know what directory you're in.  For example, `movies.csv`, `test.py`, and `main.ipynb` are examples of file names.  Note that different files can have the same name, as long as those files are in different directories.
 
-* **Path:** a more-complete name that tells you the file name AND what directory it is in.  For example, `p8/main.ipynb` and `p9/main.ipynb` are examples of path names on a Mac, referring to a file named `main.ipynb` in the `p8` directory and a second file with the same name in the `p9` directory, respectively.  Windows uses back-slashes instead of forward slashes, so on a Windows laptop the paths would be `p8\main.ipynb` and `p9\main.ipynb`.  There may be more levels in a path to represent more levels of directories.  For example, `courses\cs301\p8\test.py` refers to the `test.py` file in the `p8` directory, which is in the `cs301` directory, which is in the `courses` directory.
+* **Path:** a more-complete name that tells you the file name AND what directory it is in.  For example, `p8/main.ipynb` and `p9/main.ipynb` are examples of path names on a Mac, referring to a file named `main.ipynb` in the `p8` directory and a second file with the same name in the `p9` directory, respectively.  Windows uses back-slashes instead of forward slashes, so on a Windows laptop the paths would be `p8\main.ipynb` and `p9\main.ipynb`.  There may be more levels in a path to represent more levels of directories.  For example, `courses\cs220\p8\test.py` refers to the `test.py` file in the `p8` directory, which is in the `cs220` directory, which is in the `courses` directory.
 
 In Python, there's not a special type for file names or paths; we just
 use regular strings instead.
@@ -91,7 +91,7 @@ path
 ```
 
 If you're on a Mac, you'll see `fruit/apple.txt`; on Windows, you'll
-see `fruit\apple.txt`.  Be careful!  Use this way to create paths.
+see `fruit\\apple.txt`.  Be careful!  Use this way to create paths.
 Never use the regular string join method we've learned, because that
 will not work on everybody's computer.
 
@@ -269,6 +269,8 @@ OrderedDict([('fruit', 'orange'), ('count', '0')])
 What is an `OrderedDict`?  It behaves just like the normal `dict` with
 which you are familiar, but it keeps keys in a fixed order.  The
 important thing for now is that you can use it like a regular dictionary:
+
+Note: In Python 3.8 the returned rows are now of type `dict`
 
 For example, try looking specific cells and printing them:
 
