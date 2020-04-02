@@ -77,32 +77,6 @@ Answer with a `dict` mapping the words to the number of times they appear in the
 
 What differences and similarities do you see between the words in these three lists? Can you try to find the words that appear most commonly in the title of reviews with other ratings? Do you notice any patterns?
 
-----
-Now, we have some good news! The data from the JSON file that was broken(`review3.json`) has been found! Unfortunately, the data is not stored in a single JSON file. It has instead been broken down into multiple files and stored inside the directory `broken_file`. Explore this directory using Finder or Explorer to see how the data is stored there.
-
-Write a function that takes a directory path as a parameter,
-recursively explores that directory for any files (which might be
-buried in many levels of sub directories), and finally returns a list
-of paths to files inside that directory. The paths should be sorted
-in *reverse-alphabetical order*. Exclude any files with names beginning
-with `.`.
-
-**Important:** there are Python functions that can do this for you
-  (for example, https://docs.python.org/3/library/os.html#os.walk),
-  but you need to write the recursive code for yourself.  If you use
-  one of these existing implementations, we'll deduct any points you
-  get for the remaining questions.
-
-Your function MAY use the following:
-* `os.listdir`
-* `os.path.join`
-* `os.path.isfile`
-* `os.path.isdir`
-
-**Hint**: In Lab 9b, you created a recursive function to solve Problem 4. You need to do something very similar here.
-
-Use your function to answer the following.
-
 Expected answer:
 ```
 {'tablet': 43,
@@ -116,5 +90,3 @@ Expected answer:
  'nice': 12,
  'not': 15}
 ```
-
-----
