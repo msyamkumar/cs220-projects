@@ -354,12 +354,7 @@ def check_cell_text(qnum, cell):
     return PASS
 
 def check_cell_png(qnum, cell):
-    if qnum == 21:
-        print('here')
-        print(cell)
     for output in cell.get('outputs', []):
-        if qnum == 21:
-            print(output.get('data', {}).keys())
         if 'image/png' in output.get('data', {}):
             return PASS
     return 'no plot found'
@@ -421,7 +416,7 @@ def main():
     for test in results["tests"]:
         print("  Test %d: %s" % (test["test"], test["result"]))
 
-    print('\nTOTAL SCORE: %.2f%%' % results['score'])
+    print('\nTOTAL SCORE: %.1f/150.0' % results['score'])
     with open('result.json', 'w', encoding='utf-8') as f:
         f.write(json.dumps(results, indent=2))
 
