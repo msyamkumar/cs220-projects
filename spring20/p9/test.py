@@ -13,6 +13,7 @@ import nbconvert
 import nbformat
 
 PASS = 'PASS'
+OPTIONAL_PASS = 'PASS, good job attempting the optional question :)'
 FAIL_STDERR = 'Program produced an error - please scroll up for more details.'
 FAIL_JSON = 'Expected program to print in json format. Make sure the only print statement is a print(json.dumps...)!'
 EPSILON = 0.0001
@@ -41,11 +42,11 @@ questions = [
     Question(number=13, weight=1, format=TEXT_FORMAT),
     Question(number=14, weight=1, format=TEXT_FORMAT),
     Question(number=15, weight=1, format=TEXT_FORMAT),
-    Question(number=16, weight=1, format=TEXT_FORMAT),
-    Question(number=17, weight=1, format=TEXT_FORMAT),
-    Question(number=18, weight=1, format=TEXT_FORMAT),
-    Question(number=19, weight=1, format=TEXT_FORMAT),
-    Question(number=20, weight=1, format=TEXT_FORMAT),
+    Question(number=16, weight=0, format=TEXT_FORMAT),
+    Question(number=17, weight=0, format=TEXT_FORMAT),
+    Question(number=18, weight=0, format=TEXT_FORMAT),
+    Question(number=19, weight=0, format=TEXT_FORMAT),
+    Question(number=20, weight=0, format=TEXT_FORMAT),
     # stage 2
     Question(number=21, weight=1, format=TEXT_FORMAT),
     Question(number=22, weight=1, format=TEXT_FORMAT),
@@ -116,19 +117,19 @@ expected_json = {
             'B018Y229OU': 'Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Magenta'},
     "6": 'It does what it is suppose to. No problems with it...',
     "7": 'I hate amazon app store. Nothing good in there. The tablet is too slow for what I do... it is good for reading only....',
-    "8": 'Perfection',
-    "9": 'review3.csv',
-    "10": {'10101': ['Mikey123456789', 'B00QFQRELG'],
+    "16": 'Perfection',
+    "8": 'review3.csv',
+    "9": {'10101': ['Mikey123456789', 'B00QFQRELG'],
             '99904': ['diamond', 'B00QFQRELG'],
             '89604': ['Pat91', 'B00QFQRELG'],
             '58704': ['Frank', 'B00QFQRELG'],
             '38104': ['LADYD92', 'B00QFQRELG']},
-    "11": [Review(id=10101, username='Mikey123456789', asin='B00QFQRELG', title='A charger', text='It seems to work just like any other usb plug in charger.', rating=5, do_recommend=True, num_helpful=0, date='2017-01-02'),
+    "10": [Review(id=10101, username='Mikey123456789', asin='B00QFQRELG', title='A charger', text='It seems to work just like any other usb plug in charger.', rating=5, do_recommend=True, num_helpful=0, date='2017-01-02'),
             Review(id=99904, username='diamond', asin='B00QFQRELG', title='amazon power fast usb charger', text='got this for my kindle 7 tablet . Does an excellent job charging the kindle fire 7 a lot faster than the one it came with the kindle fire', rating=5, do_recommend=True, num_helpful=2, date='2016-06-03'),
             Review(id=89604, username='Pat91', asin='B00QFQRELG', title='Amazon powerfast wall charger', text='Best kindle charger ever. Took 30 minutes to being my kindle back to life.', rating=5, do_recommend=True, num_helpful=0, date='2016-11-21'),
             Review(id=58704, username='Frank', asin='B00QFQRELG', title='correct plug for kindle', text='Quickly charges kindle so son can use it. Worked great right out of the package', rating=5, do_recommend=True, num_helpful=0, date='2016-10-14'),
             Review(id=38104, username='LADYD92', asin='B00QFQRELG', title='Fast Charger', text='Bought this charger for the Kindle voyage and its great.', rating=5, do_recommend=True, num_helpful=0, date='2016-09-30')],
-    "12": [Review(id=10101, username='Mikey123456789', asin='B00QFQRELG', title='A charger', text='It seems to work just like any other usb plug in charger.', rating=5, do_recommend=True, num_helpful=0, date='2017-01-02'),
+    "11": [Review(id=10101, username='Mikey123456789', asin='B00QFQRELG', title='A charger', text='It seems to work just like any other usb plug in charger.', rating=5, do_recommend=True, num_helpful=0, date='2017-01-02'),
             Review(id=99904, username='diamond', asin='B00QFQRELG', title='amazon power fast usb charger', text='got this for my kindle 7 tablet . Does an excellent job charging the kindle fire 7 a lot faster than the one it came with the kindle fire', rating=5, do_recommend=True, num_helpful=2, date='2016-06-03'),
             Review(id=89604, username='Pat91', asin='B00QFQRELG', title='Amazon powerfast wall charger', text='Best kindle charger ever. Took 30 minutes to being my kindle back to life.', rating=5, do_recommend=True, num_helpful=0, date='2016-11-21'),
             Review(id=58704, username='Frank', asin='B00QFQRELG', title='correct plug for kindle', text='Quickly charges kindle so son can use it. Worked great right out of the package', rating=5, do_recommend=True, num_helpful=0, date='2016-10-14'),
@@ -138,7 +139,7 @@ expected_json = {
             Review(id=32310, username='Akki', asin='B00QFQRELG', title='Nice one', text='Good one and working without any issues. Slim and portable', rating=5, do_recommend=True, num_helpful=0, date='2016-06-24'),
             Review(id=22010, username='STRIPYGOOSE', asin='B00QFQRELG', title='not any faster', text='it does not charge any faster than regular charger.', rating=3, do_recommend=False, num_helpful=0, date='2016-08-18'),
             Review(id=1410, username='Jk60', asin='B00QFQRELG', title='Satisfied', text='It does what it is suppose to. No problems with it...', rating=4, do_recommend=True, num_helpful=0, date='2016-12-07')],
-    "13": [Review(id=25136, username='Angrydagg', asin='B018Y229OU', title='Nice features for the price.', text='For the price this tables does everything I need. so far.', rating=4, do_recommend=True, num_helpful=0, date='2015-12-30'),
+    "12": [Review(id=25136, username='Angrydagg', asin='B018Y229OU', title='Nice features for the price.', text='For the price this tables does everything I need. so far.', rating=4, do_recommend=True, num_helpful=0, date='2015-12-30'),
             Review(id=84039, username='Appman2015', asin='B018Y229OU', title='Great for xmas', text='So far I have bought three of these of tablets and they love it', rating=4, do_recommend=True, num_helpful=1, date='2015-12-30'),
             Review(id=22239, username='SuzieQ', asin='B018Y229OU', title='great for pre teens', text='i am glad i got them for my grand children they r enjoying them', rating=5, do_recommend=True, num_helpful=0, date='2015-12-31'),
             Review(id=70842, username='Gracie', asin='B018Y229OU', title='Great kindle', text='Purchase was good. Very easy to set up and use. Clear screen. Easy to charge. Would like more storage.', rating=5, do_recommend=True, num_helpful=0, date='2015-12-31'),
@@ -148,9 +149,9 @@ expected_json = {
             Review(id=37045, username='CaOk', asin='B018Y229OU', title='decent budget tablet that does what it suppose to', text='Nothing fancy. A good budget tablet that does what It suppose to do', rating=4, do_recommend=True, num_helpful=0, date='2016-01-01'),
             Review(id=26745, username='Tablet2', asin='B018Y229OU', title='Affordable tablet', text='Bought tablet for my five year old nephew. Is affordable and has good specs. Easy to use. Camera and video are good. My nephew has no problem using it', rating=4, do_recommend=True, num_helpful=0, date='2016-01-01'),
             Review(id=3248, username='Tims54913', asin='B018Y229OU', title='Great tablet', text='If your connected to amazon the tablet is great to use.', rating=5, do_recommend=True, num_helpful=0, date='2016-01-02')],
-    "14": Review(id=84713, username='mmolly1', asin='B01AHB9CN2', title='Great product', text='This product is very user friendly and it is very lightweight', rating=5, do_recommend=True, num_helpful=0, date='2017-01-08'),
-    "15": Review(id=42931, username='tbistone', asin='B01BH83OOM', title='Amazing', text='I literally use this thing every single day. Love it.', rating=5, do_recommend=True, num_helpful=0, date='2016-12-20'),
-    "16": [Review(id=74, username='Wayne', asin='B01AHB9CN2', title='Kindle upgrade', text='Gave this to my wife for Christmas. Upgraded from the original Kindle. She thoroughly enjoys it.', rating=5, do_recommend=True, num_helpful=0, date='2016-12-31'),
+    "13": Review(id=84713, username='mmolly1', asin='B01AHB9CN2', title='Great product', text='This product is very user friendly and it is very lightweight', rating=5, do_recommend=True, num_helpful=0, date='2017-01-08'),
+    "14": Review(id=42931, username='tbistone', asin='B01BH83OOM', title='Amazing', text='I literally use this thing every single day. Love it.', rating=5, do_recommend=True, num_helpful=0, date='2016-12-20'),
+    "15": [Review(id=74, username='Wayne', asin='B01AHB9CN2', title='Kindle upgrade', text='Gave this to my wife for Christmas. Upgraded from the original Kindle. She thoroughly enjoys it.', rating=5, do_recommend=True, num_helpful=0, date='2016-12-31'),
             Review(id=82, username='KKLORRAINE', asin='B01AHB9CN2', title='Good', text='Great for reading and Netflix. Fits nice in purse. Good price.', rating=4, do_recommend=True, num_helpful=0, date='2017-04-07'),
             Review(id=110, username='nell', asin='B00IOY8XWQ', title='I love it', text='Prefect for all reading conditions and environments. I take it everywhere.', rating=5, do_recommend=True, num_helpful=0, date='2016-07-09'),
             Review(id=122, username='apple21man', asin='B01BH83OOM', title='A great assistant', text='It works well it takes time for it to know your vocabulary', rating=5, do_recommend=True, num_helpful=0, date='2017-01-23'),
@@ -411,7 +412,10 @@ def check_cell_text(qnum, cell):
     if expected_mismatch:
         return "found {} in cell {} but expected {}".format(actual, qnum, expected)
 
-    return PASS
+    if qnum in [16, 17, 18, 19, 20]:
+        return OPTIONAL_PASS
+    else:
+        return PASS
 
 def check_cell_png(qnum, cell):
     if qnum == 21:

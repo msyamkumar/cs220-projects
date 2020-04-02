@@ -68,9 +68,7 @@ We will now try to read the CSV files that contain the reviews. Once again, you 
 Careful, this one isn't in `review1.csv`. To get credit, make sure
 your code looks through all the CSV files to find the review.
 
-#### Question 8: What is the review *title* of review id `28013`?
-
-#### Question 9: What file contained the review with that id?
+#### Question 8: What file contained the review with that id?
 
 ----
 
@@ -80,7 +78,7 @@ Each JSON file stores information about the reviews in the corresponding CSV fil
 
 ----
 
-#### Question 10: What is the data stored in `sample_reviews.json`?
+#### Question 9: What is the data stored in `sample_reviews.json`?
 
 `sample_reviews.json` contains a subset of the information in `review1.json`. Your output should look like this:
 ```python
@@ -129,31 +127,36 @@ Review(id=68358, username='Preacherman', asin='B01BH83OOM', title='Easy to set u
 
 Build a function `get_reviews` that accepts a CSV review file and a JSON review file and combines them to produce a list of `Review` objects, which it either returns or yields (your choice!).
 
-#### Question 11: What is produced by your function `get_reviews('sample_reviews.csv', 'sample_reviews.json')`?
+#### Question 10: What is produced by your function `get_reviews('sample_reviews.csv', 'sample_reviews.json')`?
 
 The output should be a list of five Reviews.  If you chose to write a generator with yield, just convert the generator object to a list.
 
 Be careful, if you get the types wrong for any of the Reviews, the tests won't recognize it.
 
-#### Question 12: What are the first ten Review objects in the list produced by `get_reviews('review1.csv', 'review1.json')`?
+#### Question 11: What are the first ten Review objects in the list produced by `get_reviews('review1.csv', 'review1.json')`?
 
-#### Question 13: What are the last ten Review objects in the list produced by `get_reviews('review2.csv', 'review2.json')`?
+#### Question 12: What are the last ten Review objects in the list produced by `get_reviews('review2.csv', 'review2.json')`?
 
 It is likely that your code crashed or your output has some missing data. That is because some of the rows in the CSV files are incomplete. Go back and modify the function you used to parse the CSV file, so that any rows that have missing data are ignored.
 
 In other words, if any row in a CSV file does not have all its fields, the row should be skipped entirely.
 
-#### Question 14: What is the Review object with review id `84713`?
+#### Question 13: What is the Review object with review id `84713`?
 
-#### Question 15: What is the Review object with review id `42931`?
+#### Question 14: What is the Review object with review id `42931`?
 
-#### Question 16: List the first ten Review objects in the entire dataset, sorted by increasing order of their review ids.
+#### Question 15: List the first ten Review objects in the entire dataset, sorted by increasing order of their review ids.
 
 It is likely that your code crashed when you tried to read some of the files. That is because some of the JSON files are broken. Unlike broken CSV files, broken JSON files are much harder to salvage. Your code should skip any JSON files that you are unable to parse using  `json.load`.
 
 ----
 
 For this last section, we will now try to combine the data we have stored in the Review objects with the data from `products.json`.
+
+## OPTIONAL QUESTIONS
+The following set of questions have been made optional due to the current COVID-19 situation. If you are looking for more practice, you should definitely attempt these questions.
+
+#### Question 16: What is the review *title* of review id `28013`?
 
 #### Question 17: Output the number of review objects for the product, "Amazon Tap Smart Assistant Alexa enabled (black) Brand New".
 
@@ -162,6 +165,8 @@ For this last section, we will now try to combine the data we have stored in the
 #### Question 19: Find the name of the product with most reviews.
 
 #### Question 20: Find the most helpful review(s) of this product.
+
+
 
 That's it for Stage 1. In the next stage, we'll begin using the data
 structures we've set up to do some analysis that spans across multiple
