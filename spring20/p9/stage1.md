@@ -68,9 +68,7 @@ We will now try to read the CSV files that contain the reviews. Once again, you 
 Careful, this one isn't in `review1.csv`. To get full credit, make sure
 your code looks through all the CSV files to find the review.
 
-#### #Q8: What is the review *title* of review id `69273`?
-
-#### #Q9: What file contained the review with that id?
+#### #Q8: What file contained the review with id `69273`?
 
 ----
 
@@ -80,7 +78,7 @@ Each JSON file stores information about the reviews in the corresponding CSV fil
 
 ----
 
-#### #Q10: What is the data stored in `sample_reviews.json`?
+#### #Q9: What is the data stored in `sample_reviews.json`?
 
 `sample_reviews.json` contains a subset of the information in `review1.json`. Your output should look like this:
 
@@ -137,15 +135,15 @@ Review(id=38574, username='Rebe', asin='B018Y229OU', title='Excellent', text='Th
 
 Build a function `get_reviews` that accepts a CSV review file and a JSON review file and combines them to produce a list of `Review` objects, which it either returns or yields (your choice!).
 
-#### #Q11: What is produced by your function `get_reviews('sample_reviews.csv', 'sample_reviews.json')`?
+#### #Q10: What is produced by your function `get_reviews('sample_reviews.csv', 'sample_reviews.json')`?
 
 The output should be a list of ten Reviews. If you chose to write a generator with yield, just convert the generator object to a list.
 
 Be careful, if you get the types wrong for any of the Reviews, the tests won't recognize it.
 
-#### #Q12: What are the first ten Review objects in the list produced by `get_reviews('review4.csv', 'review4.json')`?
+#### #Q11: What are the first ten Review objects in the list produced by `get_reviews('review4.csv', 'review4.json')`?
 
-#### #Q13: What are the last ten Review objects in the list produced by `get_reviews('review2.csv', 'review2.json')`?
+#### #Q12: What are the last ten Review objects in the list produced by `get_reviews('review2.csv', 'review2.json')`?
 
 It is likely that your code crashed. That is because the last few rows in the file `review2.csv` are broken. Go back to `get_reviews` and fix it so that broken rows are skipped. To get full credit, you need to skip only the rows that have missing data.
 
@@ -164,30 +162,17 @@ fix your code so that the bad rows are skipped.
 are all near the bottom of the file.
 
 
-#### #Q14: What is the Review object with review id `25401`?
+#### #Q13: What is the Review object with review id `25401`?
 
-#### #Q15: What is the Review object with review id `78626`?
+#### #Q14: What is the Review object with review id `78626`?
 
-#### #Q16: List the first ten Review objects in the entire dataset, when the usernames are sorted in the reverse alphabetical order.
+#### #Q15: List the first ten Review objects in the entire dataset, when the usernames are sorted in the reverse alphabetical order.
 
 It is likely that your code crashed when you tried to read some of the files. That is because some of the JSON files are broken. Unlike broken CSV files, broken JSON files are much harder to salvage. Your code should skip any JSON files that you are unable to parse using  `json.load`.
 
 **Hint**: You could use try/except here.
 
-----
-
-For this last section, we will now try to combine the data we have stored in the Review objects with the data from `products.json`.
-
-#### #Q17: Output the number of review objects for the product, 'All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Magenta'.
-
-#### #Q18: Output the number of review objects for the product, "All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 32 GB - Includes Special Offers, Magenta".
-
-#### #Q19: Find the name of the product with most reviews.
-
-#### #Q20: Find the earliest review(s) of this product.
-
-**Hint**: Note that the dates are stored in the 'yyyy-mm-dd' format.
-
-That's it for Stage 1. In the next stage, we'll begin using the data
+That's it for mandatory section of Stage 1. Please attempt the optional 5 questions for further practice.
+In the next stage, we'll begin using the data
 structures we've set up to do some analysis that spans across multiple
 files!
