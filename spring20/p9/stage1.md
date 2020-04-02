@@ -172,7 +172,7 @@ It is likely that your code crashed when you tried to read some of the files. Th
 
 **Hint**: You could use try/except here.
 
-That's it for mandatory section of Stage 1. Please attempt the optional 5 questions [Optional stage 1](stage1_optional.md) for further practice.
+That's it for Stage 1. Please attempt the [Optional questions](optional_questions.md) for further practice.
 In the next stage, we'll begin using the data
 structures we've set up to do some analysis that spans across multiple
 files!
