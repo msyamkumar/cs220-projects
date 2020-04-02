@@ -78,7 +78,7 @@ As you can see, there are two outliers on this graph with a very high number of 
 A product with more than 500 reviews can be considered to be an outlier.
 Your plot should look like this:
 
-<img src="Q22.PNG" width="400">
+<img src="q26.PNG" width="400">
 
 Do you see any interesting patterns here? Why do you think the products with the least number of reviews have the most variance in their average rating?
 
@@ -162,5 +162,3 @@ Let us now combine the data we found in `broken_file` with the original data. Us
 #### #Q30: What is the percentage of change in the average rating changed for the product 'Fire Tablet, 7 Display, Wi-Fi, 8 GB - Includes Special Offers, Magenta', because of the addition of the new data?
 
 A positive number would imply an increase in the average rating, and a negative number would imply a decrease.
-
-That's it for mandatory section of Stage 2. Please attempt the optional 5 questions [Optional stage 2](stage2_optional.md) for further practice.
