@@ -1,6 +1,4 @@
 # Project 9: Amazon Reviews
-## Under Construction. Dont start working on it before release
-
 
 ## Clarifications/Corrections/Hints:
 * None yet.
@@ -13,6 +11,9 @@ This data is messy!  You'll face the following challenges:
 * data is spread across multiple files
 * some files will be CSVs, others JSONs
 * the files may be missing values or be too corrupt to parse
+
+Due to the COVID-19 situation, P9 will have 30 questions instead of the usual 40. The questions have been
+split up into two stages with an additional optional stage for those who want some practice.
 
 In stage 1, you'll write code to cleanup the data, representing
 everything as Review objects (you'll create a new type for these).  In
@@ -30,14 +31,12 @@ computer (using [Mac directions](http://osxdaily.com/2017/11/05/how-open-zip-fil
 
 Note: Make sure `data`, `main.ipynb` and `test.py` are in same directory.  Otherwise getting the tests to pass on your machine only will not be a good indication of whether they'll pass when we run them with the files organized as such.
 
-Historically, P9 has been the hardest project. So make sure you give yourself ample time to complete it.
 
 ## The Stages
 
 * [Stage 1](stage1.md): parse a mix of CSV and JSON files to get Review objects
-* [Optional stage 1](stage1_optional.md): additional optional questions for stage 1
+* [Optional](optional_questions.md): additional optional questions for practice
 * [Stage 2](stage2.md): analyze the reviews of the Amazon products
-* [Optional stage 2](stage2_optional.md): additional optional questions for stage 2
 
 ## Linting
 
