@@ -12,9 +12,6 @@ Expected answer:
 ```
 'Excellent'
 ```
-----
-
-For this last section, we will now try to combine the data we have stored in the Review objects with the data from `products.json`.
 
 #### #Q2: Output the number of review objects for the product, 'All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Magenta'.
 
