@@ -68,7 +68,7 @@ We will now try to read the CSV files that contain the reviews. Once again, you 
 Careful, this one isn't in `review1.csv`. To get credit, make sure
 your code looks through all the CSV files to find the review.
 
-#### Question 8: What file contained the review with that id?
+#### Question 8: What file contained the review with id `28013`?
 
 ----
 
