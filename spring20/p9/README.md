@@ -37,6 +37,7 @@ Historically, P9 has been the hardest project. So make sure you give yourself am
 * [Stage 1](stage1.md): parse a mix of CSV and JSON files to get Review objects
 * [Optional stage 1](stage1_optional.md): additional optional questions for stage 1
 * [Stage 2](stage2.md): analyze the reviews of the Amazon products
+* [Optional stage 2](stage2_optional.md): additional optional questions for stage 2
 
 ## Linting
 

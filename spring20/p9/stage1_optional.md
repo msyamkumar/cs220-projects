@@ -1,5 +1,7 @@
 # Stage 1 OPTIONAL QUESTIONS
 
+These questions have been made optional due to the COVID-19 situation. These questions are not extra credit! We are leaving these as optional for you to get additional practice.
+
 ----
 
 #### #Q1: What is the review *title* of review id `69273`?
