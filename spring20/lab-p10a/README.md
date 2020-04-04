@@ -2,7 +2,7 @@
 
 In this lab, you'll learn three things:
 
-1. how to run the 301 linter
+1. how to run the linter
 2. how to time your code
 3. different ways to construct DataFrames
 
@@ -122,7 +122,7 @@ Each each cell, replace `# code to measure` with one of the following
 (in this order):
 
 ```python
-r = requests.get("https://tyler.caraza-harter.com/hello.txt")
+r = requests.get("https://raw.githubusercontent.com/msyamkumar/cs220-projects/master/spring20/lab-p10a/hello.txt")
 r.raise_for_status()
 data = r.text
 ```
@@ -168,7 +168,7 @@ def download(filename, url):
     return (str(filename) + " created!")
 ```
 
-Now call `download("hello.html", "https://tyler.caraza-harter.com/hello.html")`.
+Now call `download("hello.html", "https://raw.githubusercontent.com/msyamkumar/cs220-projects/master/spring20/lab-p10a/hello.html")`.
 You should be able to see `hello.html` in your Explorer/Finder.
 
 ### Relevance to P10

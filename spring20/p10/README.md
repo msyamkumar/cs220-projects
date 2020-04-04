@@ -4,14 +4,9 @@
 
 ## Clarifications/Corrections
 
-* Dec 2: Fixed small test.py bug as found in [this piazza post](https://piazza.com/class/jzkcu4am8lmc3?cid=828),
-thanks for finding it! You might want to re-download test.py if you are having issues with it.
-* Note: If you have experienced problems with the linter, please re-download
-a newer version [here](../../linter/lint.py).
-
 ## Introduction
 
-For your final CS 301 project, you're going to analyze the whole
+For your final CS 220 project, you're going to analyze the whole
 world!
 
 Specifically, you're going to study various statistics for 174
@@ -33,7 +28,7 @@ and you will also extract data from a snapshot of
 [this page](http://techslides.com/list-of-countries-and-capitals).
 
 First check these resources:
-* https://raw.githubusercontent.com/tylerharter/caraza-harter-com/master/tyler/cs301/fall19/data/countries.json
+* https://raw.githubusercontent.com/msyamkumar/cs220-projects/master/spring20/p10/countries.json
 * http://techslides.com/list-of-countries-and-capitals
 
 Some of the columns require a little extra explanation:
@@ -78,5 +73,6 @@ advice and feedback, please check out the [linting README](../../linter).
 
 ## The Stages
 
-* [Stage 1](stage1.md): scrape some data files and answer some geography questions
+* [Stage 1](stage1.md): Answer some geography questions
+* [Optional](optional1.md): few optional questions following stage1
 * [Stage 2](stage2.md): query a DB and generate some plots (not released yet!)
