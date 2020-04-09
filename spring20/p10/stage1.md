@@ -13,7 +13,7 @@ and store it in `countries.json`. Once you have created the file, create a Dataf
 
  Before you proceed, make sure that `countries.head()` displays the following:
 
- <img src="imgs/1-1.png" width="1000">
+ <img src="imgs/1-1.PNG" width="1000">
 
 #### Question 1: How many countries do we have in our dataset?
 

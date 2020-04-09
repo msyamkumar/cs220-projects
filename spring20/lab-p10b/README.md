@@ -180,7 +180,7 @@ array([[ 4.74371708, 12.00074986,  9.48743415],
 
 We'll use something called the *Least Squares Method* to find a fit
 line for our trees data (https://en.wikipedia.org/wiki/Least_squares).
-For CS 301, you only need to understand it at an intuitive level.
+For CS 220, you only need to understand it at an intuitive level.
 Imagine we attached a movable line to every point in our data, as in
 the following:
 
