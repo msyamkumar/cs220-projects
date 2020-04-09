@@ -26,7 +26,7 @@ Answer with a **scatter plot** with `death-rate` on the x-axis and `birth-rate` 
 
 These are the points:
 
-<img src="imgs/O2-8-1.PNG" width="400">
+<img src="imgs/O2-8-1.PNG" width="300">
 
 Write a query with to grab rows corresponding roughly to that
 rectangle to get the points.  In the output, `death-rate` should be
@@ -34,7 +34,7 @@ sorted low to high.
 
 **Expected output:**
 
-<img src="imgs/O2-8-2.PNG" width="300">
+<img src="imgs/O2-8-2.PNG" width="400">
 
 #### Question 9: What is the correlation between death rates and birth rates?
 
