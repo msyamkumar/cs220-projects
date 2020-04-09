@@ -139,7 +139,7 @@ Hint: `inverse infant-mortality` is defined as `1 / infant-mortality`
 
 <img src="imgs/2-27.PNG" width="400">
 
-#### Question 28: fit a `y = m * x + n` line to the scatter plot in question 38 using the least-squares method; what are the coefficients m and n?
+#### Question 28: fit a `y = m * x + n` line to the scatter plot in question 27 using the least-squares method; what are the coefficients m and n?
 
 For the regression line, first try copy/pasting this code into a notebook cell and running it to see what happens:
 
