@@ -71,32 +71,22 @@ questions = [
     Question(number=13, weight=1, format=TEXT_FORMAT),
     Question(number=14, weight=1, format=HTML_FORMAT),
     Question(number=15, weight=1, format=HTML_FORMAT),
-    Question(number=16, weight=1, format=TEXT_FORMAT),
-    Question(number=17, weight=1, format=TEXT_FORMAT),
-    Question(number=18, weight=1, format=TEXT_FORMAT),
-    Question(number=19, weight=1, format=TEXT_FORMAT),
-    Question(number=20, weight=1, format=TEXT_FORMAT),
     # stage 2
+    Question(number=16, weight=1, format=HTML_FORMAT),
+    Question(number=17, weight=1, format=PNG_FORMAT),
+    Question(number=18, weight=1, format=HTML_FORMAT),
+    Question(number=19, weight=1, format=PNG_FORMAT),
+    Question(number=20, weight=1, format=HTML_FORMAT),
     Question(number=21, weight=1, format=HTML_FORMAT),
     Question(number=22, weight=1, format=PNG_FORMAT),
-    Question(number=23, weight=1, format=HTML_FORMAT),
-    Question(number=24, weight=1, format=PNG_FORMAT),
-    Question(number=25, weight=1, format=HTML_FORMAT),
-    Question(number=26, weight=1, format=HTML_FORMAT),
+    Question(number=23, weight=1, format=PNG_FORMAT),
+    Question(number=24, weight=1, format=TEXT_FORMAT),
+    Question(number=25, weight=1, format=PNG_FORMAT),
+    Question(number=26, weight=1, format=PNG_FORMAT),
     Question(number=27, weight=1, format=PNG_FORMAT),
-    Question(number=28, weight=1, format=HTML_FORMAT),
-    Question(number=29, weight=1, format=PNG_FORMAT),
+    Question(number=28, weight=1, format=TEXT_FORMAT),
+    Question(number=29, weight=1, format=TEXT_FORMAT),
     Question(number=30, weight=1, format=PNG_FORMAT),
-    Question(number=31, weight=1, format=HTML_FORMAT),
-    Question(number=32, weight=1, format=TEXT_FORMAT),
-    Question(number=33, weight=1, format=PNG_FORMAT),
-    Question(number=34, weight=1, format=TEXT_FORMAT),
-    Question(number=35, weight=1, format=PNG_FORMAT),
-    Question(number=36, weight=1, format=PNG_FORMAT),
-    Question(number=37, weight=1, format=PNG_FORMAT),
-    Question(number=38, weight=1, format=PNG_FORMAT),
-    Question(number=39, weight=1, format=TEXT_FORMAT),
-    Question(number=40, weight=1, format=PNG_FORMAT)
 ]
 question_nums = set([q.number for q in questions])
 
@@ -300,14 +290,9 @@ expected_json = {
     "9": 520.8581822565817,
     "12": "Bolivia",
     "13": "Uruguay",
-    "16": 0,
-    "17": 0,
-    "18": 0,
-    "19": 0,
-    "20": 0,
-    "32": 0.3965086117752512,
-    "34": 0.8786946640591312,
-    "39": (1.8365703926233426e-06, 0.03916624252079352)
+    "24": 0.45232113250112843,
+    "29": (107087.18867997837, 1587.9379639672552),
+    "30": 55131.53230395644
         }
 
 def parse_df_html_table(html, question=None):
