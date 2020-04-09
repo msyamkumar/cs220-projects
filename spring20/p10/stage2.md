@@ -105,7 +105,7 @@ Answer with a **scatter plot** with `gdp-per-capita` on the x-axis and `net-migr
 
 <img src="imgs/2-23.PNG" width="400">
 
-#### Question 24: What is the correlation between GDP per capita and number of phones per capita?
+#### Question 24: What is the correlation between GDP per capita and net-migration?
 If you have a DataFrame `df`, then calling `df.corr()` will present a table showing the Pearson correlation between every pair of columns in df. A correlation of 1 is the max (so, for example, every column is correlated perfectly with itself). A high correlation between columns X and Y means that large X values tend to coincide with large Y values and small X values tend to coincide with small Y values. In some of the questions, you'll observe negative correlations (-1 being the smallest). This means that large X values tend to coincide with small Y values and vice versa.
 
 Does this correlation value coincide with the pattern you saw in question 23? 
