@@ -293,7 +293,7 @@ expected_json = {
     "13": "Uruguay",
     "24": 0.45232113250112843,
     "28": (6.482983154848297e-06, 0.013237849092120857),
-    "29": 0.33738700683453565
+    "29": 2.963955279079342
 }
 
 def parse_df_html_table(html, question=None):
@@ -543,7 +543,7 @@ def main():
     lint_msgs = list(lint_msgs)
     results["lint"] = [str(l) for l in lint_msgs]
 
-    functionality_score = 100.0 * passing / total
+    functionality_score = 150.0 * passing / total
     linting_score = min(10.0, len(lint_msgs))
     results['score'] = max(functionality_score - linting_score, 0.0)
 
@@ -561,7 +561,7 @@ def main():
             for msg in msgs:
                 print('    ' + str(msg))
 
-    print('\nTOTAL SCORE: %.2f%%' % results['score'])
+    print('\nTOTAL SCORE: %.1f/150.0' % results['score'])
     with open('result.json', 'w') as f:
         f.write(json.dumps(results, indent=2))
 
