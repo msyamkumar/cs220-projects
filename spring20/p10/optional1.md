@@ -1,3 +1,7 @@
+# OPTIONAL QUESTIONS
+
+These questions have been made optional due to the COVID-19 situation. These questions are not extra credit! We are leaving these as optional for you to get additional practice. You should attempt these questions after Stage 1.
+
 
 #### Question 1: What is the largest land-locked country in Africa?
 
@@ -27,9 +31,7 @@ Expected answer:
 *Format*: use the
  [describe](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.describe.html)
  function on a DataFrame that contains `birth-rate` and `death-rate`
- columns. You may include summary statistics for other columns in
- your output, as long as your summary table has stats for birth and
- death.
+ columns.
 
  <table border="1" class="dataframe">
    <thead>
@@ -86,7 +88,7 @@ Expected answer:
 
 
 
-#### Question 5 BeautifulSoup
+#### Question 5: BeautifulSoup
 Very often, you dont have data in nice json format like `capitals.json`. Instead data needs to be scraped from a webpage and requires some cleanup.
 This is a long but fun exercise where we will do the same by scraping this webpage: http://techslides.com/list-of-countries-and-capitals.
 Our `capitals.json` file was created from this same webpage.
