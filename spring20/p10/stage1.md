@@ -152,28 +152,4 @@ columns: `nearest` will contain the name of the nearest country and
  columns: `furthest` will contain the name of the furthest country and
  `distance` will contain the distance to that furthest country.
 
-That's it for Stage 1. Please attempt the [Optional1](optional1.md) for further practice. 
-
-
-
- <!-- #### (Optional Exercise) BeautifulSoup
- Very often, you dont have data in nice json format like `capitals.json`. Instead data needs to be scraped from a webpage and requires some cleanup.
- This is a fun exercise for the same where we will scrape this webpage: http://techslides.com/list-of-countries-and-capitals.
- Our `capitals.json` file was created from this same webpage.
- This page contains the table of all the countries and capitals with latitude and longitude in tabular format.
- You need to write the code to create `capitals.json` file from this table yourself.
- Start by installing BeautifulSoup using pip, as discussed in class.
-
- Then call `download('capitals.html', 'https://raw.githubusercontent.com/msyamkumar/cs220-projects/master/spring20/p10/techslides-snapshot.html')`
- to download the webpage. Note that this code is not downloading the
- original webpage, but a snapshot of it (this is to avoid creating
- excessive load on their servers).  You can open `capitals.html` and
- make sure that this page looks fine.
-
- Now do the following:
- * Read from `capitals.html` and use beautiful soup to convert the html text to soup.
- * Find the table containing the data (Hint: .find() or .find_all() methods can be used).
- * Find all the rows in the table (Note: rows are inside 'tr' html tag and data is in 'td' tag).
- * Create a dictionary containing country name, capital and location coordinate. Create a list of dictionaries for all the countries.
- * **Careful!** This web page has more countries than `countries.json`. We will ignore the countries that are not in that file. You need to filter and keep only the 174 countries whose names also appear in `countries.json`.
- * Save this list into file titled `capitals.json`. You can use json.dump() method. You file should look something like this. -->
+That's it for Stage 1. Please attempt the [Optional1](optional1.md) for further practice.

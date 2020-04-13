@@ -71,6 +71,7 @@ questions = [
     Question(number=13, weight=1, format=TEXT_FORMAT),
     Question(number=14, weight=1, format=HTML_FORMAT),
     Question(number=15, weight=1, format=HTML_FORMAT),
+
     # stage 2
     Question(number=16, weight=1, format=HTML_FORMAT),
     Question(number=17, weight=1, format=PNG_FORMAT),
@@ -293,7 +294,7 @@ expected_json = {
     "24": 0.45232113250112843,
     "28": (6.482983154848297e-06, 0.013237849092120857),
     "29": 0.33738700683453565
-        }
+}
 
 def parse_df_html_table(html, question=None):
     soup = BeautifulSoup(html, 'html.parser')
