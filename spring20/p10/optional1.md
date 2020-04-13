@@ -54,9 +54,8 @@ Expected answer:
  function on a DataFrame that contains `birth-rate` and `death-rate`
 
  columns. You may include summary statistics for other columns in
- your output, as long as your summary table has stats for birth and
- death. -->
- columns.
+ your output, as long as your summary table has stats for birth-rate and
+ death-rate.
 
  <table border="1" class="dataframe">
    <thead>
