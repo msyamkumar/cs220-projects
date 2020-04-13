@@ -121,17 +121,17 @@ Answer with a **scatter plot** with `gdp-per-capita` on the x-axis and `death-ra
 
 <img src="imgs/2-25.PNG" width="400">
 
-#### Question 26: What is the relationship between infant-mortality and GDP per capita?
+#### Question 26: What is the relationship between GDP per capita and infant-mortality?
 
-Answer with a **scatter plot** with `infant-mortality` on the x-axis and `gdp-per-capita` on the y-axis.
+Answer with a **scatter plot** with `gdp-per-capita` on the x-axis and `infant-mortality` on the y-axis.
 
 **Expected output:**
 
 <img src="imgs/2-26.PNG" width="400">
 
-#### Question 27: What is the relationship between inverse of infant-mortality and GDP per capita?
+#### Question 27: What is the relationship between GDP per capita and inverse of infant-mortality?
 
-Answer with a **scatter plot** with `inverse infant-mortality` on the x-axis and `gdp-per-capita` on the y-axis.
+Answer with a **scatter plot** with `gdp-per-capita` on the x-axis and `inverse infant-mortality` on the y-axis.
 
 Hint: `inverse infant-mortality` is defined as `1 / infant-mortality`
 
@@ -165,17 +165,17 @@ df.plot.line(x='x', y='fit', c='red', ax=ax)
 ```
 
 Then adapt the above code so that it uses your DataFrame (instead of
-df) and replaces "x" with `inverse infant-mortality` and "y" with `gdp-per-capita`. Answer with a **tuple** for coefficients `(m, n)`.:
+df) and replaces "x" with `gdp-per-capita` and "y" with `inverse infant-mortality`. Answer with a **tuple** for coefficients `(m, n)`.:
 
 **Expected output:**
 
-`(107087.18867997837, 1587.9379639672552)`
+`(6.482983154848297e-06, 0.013237849092120857)`
 
-#### Question 29: When `inverse infant-mortality = 0.5`, what is the expected value for `gdp-per-capita`?
+#### Question 29: When `gdp-per-capita = 50000`, what is the expected value for `inverse infant-mortality`?
 
 **Expected output:**
 
-`55131.53230395644`
+`0.33738700683453565`
 
 #### Question 30: plot the regression line to the scatter plot
 
@@ -184,3 +184,5 @@ To visualize how well the regression line fit the scatter points, draw a fit lin
 **Expected output:**
 
 <img src="imgs/2-30.PNG" width="400">
+
+That's it for Stage 2. Please attempt the [Optional2](optional2.md) for further practice. 

@@ -152,8 +152,7 @@ columns: `nearest` will contain the name of the nearest country and
  columns: `furthest` will contain the name of the furthest country and
  `distance` will contain the distance to that furthest country.
 
-
-
+That's it for Stage 1. Please attempt the [Optional1](optional1.md) for further practice. 
 
 
 
