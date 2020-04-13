@@ -171,11 +171,11 @@ df) and replaces "x" with `gdp-per-capita` and "y" with `inverse infant-mortalit
 
 `(6.482983154848297e-06, 0.013237849092120857)`
 
-#### Question 29: When `gdp-per-capita = 50000`, what is the expected value for `inverse infant-mortality`?
+#### Question 29: When `gdp-per-capita = 50000`, what is the expected value for `infant-mortality`?
 
 **Expected output:**
 
-`0.33738700683453565`
+`2.963955279079342`
 
 #### Question 30: plot the regression line to the scatter plot
 
