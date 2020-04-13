@@ -220,7 +220,7 @@ expected_json = {
             os.path.join('broken_file', 'others.json')], reverse=True),
     "28": 1,
     "29": 4995,
-    "30": -3.9407079451942573,
+    "30": -0.03940707945194257,
 }
 
 # find a comment something like this: #q10

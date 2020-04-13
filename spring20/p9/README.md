@@ -1,7 +1,7 @@
 # Project 9: Amazon Reviews
 
 ## Clarifications/Corrections/Hints:
-* None yet.
+* **(4/4/2020, 5:25 pm)** Bugs in data.zip and test.py fixed. Redownload if you have already downloaded.
 
 ## Introduction
 

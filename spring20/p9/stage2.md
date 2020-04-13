@@ -45,7 +45,7 @@ Answer with a scatter plot. The x-axis should represent the rating and the y-axi
 
 Your plot should look like this:
 
-<img src="q24.PNG" width="400">
+<img src="q18.PNG" width="400">
 
 Using this plot, can you infer the rating of a review given its text length? See if this pattern holds for title length as well. If not, look at the data and try to you explain why.
 
