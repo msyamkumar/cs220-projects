@@ -1,3 +1,4 @@
+
 # OPTIONAL QUESTIONS
 
 These questions have been made optional due to the COVID-19 situation. These questions are not extra credit! We are leaving these as optional for you to get additional practice. You should attempt these questions after Stage 1.
@@ -6,6 +7,11 @@ These questions have been made optional due to the COVID-19 situation. These que
 #### Question 1: What is the largest land-locked country in Africa?
 
 A "land-locked" country is one that has zero coastline. Largest is in terms of **area**.
+
+
+#### Question 2: What is the smallest coastal country in Asia?
+
+#### Question 3: What is the most populous coastal country in South America?
 
 Expected answer:
 ```
@@ -31,6 +37,10 @@ Expected answer:
 *Format*: use the
  [describe](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.describe.html)
  function on a DataFrame that contains `birth-rate` and `death-rate`
+
+ columns. You may include summary statistics for other columns in
+ your output, as long as your summary table has stats for birth and
+ death. -->
  columns.
 
  <table border="1" class="dataframe">
@@ -107,3 +117,4 @@ Now do the following:
 * **Careful!** This web page has more countries than `countries.json`. We will ignore the countries that are not in that file. You need to filter and keep only the 174 countries whose names also appear in `countries.json`.
 * Save this list into file titled `capitals_reconstructed.json`. You can use json.dump() method.
 * To check if all capitals are correct, go back to stage1 Q3 and use `capitals_reconstructed.json` instead of `capitals.json`. You should still get correct answer for Q3. (Make sure to change it back to `capitals.json` before submitting P10)
+

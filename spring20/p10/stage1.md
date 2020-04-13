@@ -13,7 +13,7 @@ and store it in `countries.json`. Once you have created the file, create a Dataf
 
  Before you proceed, make sure that `countries.head()` displays the following:
 
- <img src="imgs/1-1.png" width="1000">
+ <img src="imgs/1-1.PNG" width="1000">
 
 #### Question 1: How many countries do we have in our dataset?
 
@@ -152,6 +152,4 @@ columns: `nearest` will contain the name of the nearest country and
  columns: `furthest` will contain the name of the furthest country and
  `distance` will contain the distance to that furthest country.
 
-
-
-Stage 1 ends here. You can attempt [Optional questions](optional1.md) for more practice.
+That's it for Stage 1. Please attempt the [Optional1](optional1.md) for further practice.

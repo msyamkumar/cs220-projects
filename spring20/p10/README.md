@@ -74,5 +74,6 @@ advice and feedback, please check out the [linting README](../../linter).
 ## The Stages
 
 * [Stage 1](stage1.md): Answer some geography questions
-* [Optional](optional1.md): few optional questions following stage1
-* [Stage 2](stage2.md): query a DB and generate some plots (not released yet!)
+* [Optional1](optional1.md): few optional questions following stage1
+* [Stage 2](stage2.md): Query a DB and generate some plots 
+* [Optional2](optional2.md): few optional questions following stage2
