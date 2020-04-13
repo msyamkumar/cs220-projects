@@ -30,7 +30,7 @@ and store it in `capitals.json`. Create a DataFrame named `capitals` from this f
 
 <img src="imgs/1-2.PNG" width="300">
 
-**Note**: If you are feeling brave, instead of downloading the JSON file directly, download the html file with `download('capitals.html', 'https://raw.githubusercontent.com/msyamkumar/cs220-projects/master/spring20/p10/techslides-snapshot.html')` and parse it with Python to create `capitals.json`. Look up the Optional Exercises for Stage 1 for more hints.
+**Note**: If you are feeling brave, instead of downloading the JSON file directly, download the html file with `download('capitals.html', 'https://raw.githubusercontent.com/msyamkumar/cs220-projects/master/spring20/p10/techslides-snapshot.html')` and parse it with Python to create `capitals.json`. Look up the [Optional Exercises for Stage 1](optional1.md) for more details.
 
 Use `capitals` and `countries` dataframes to answer the following questions.
 
