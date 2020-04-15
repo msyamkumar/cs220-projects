@@ -1,6 +1,4 @@
 # Project 10: Geography, and the World Wide Web
-## Under Construction. Dont start working on it before release
-
 
 ## Clarifications/Corrections
 
