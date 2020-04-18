@@ -15,9 +15,9 @@ and store it in `countries.json`. Once you have created the file, create a Dataf
 
  <img src="imgs/1-1.PNG" width="1000">
 
-#### Question 1: How many countries do we have in our dataset?
+#### #Q1: How many countries do we have in our dataset?
 
-#### Question 2: what is the total population across all the countries in our dataset?
+#### #Q2: what is the total population across all the countries in our dataset?
 
 *Hint*: Review how to extract a single column as a Series from a
  DataFrame. You can add all the values in a Series with the `.sum()`
@@ -35,20 +35,20 @@ and store it in `capitals.json`. Create a DataFrame named `capitals` from this f
 Use `capitals` and `countries` dataframes to answer the following questions.
 
 
-#### Question 3: What are the capital names in `capitals.json`?
+#### #Q3: What are the capital names in `capitals.json`?
 
 Answer with an alphabetically-sorted Python list.
 
 
-#### Question 4: What is the capital of Italy?
+#### #Q4: What is the capital of Italy?
 
 *Hint*: you can use fancy indexing to extract the row where the
  `country` equals "Italy".  Then, extract the `capital` Series, from
  which you can grab the only value using next(iter(...))
 
-#### Question 5: Which country's capital is Brussels?
+#### #Q5: Which country's capital is Brussels?
 
-#### Question 6: Which 7 countries have the southern-most capitals?
+#### #Q6: Which 7 countries have the southern-most capitals?
 
 Produce a Python list of the 7, with southernmost first.
 
@@ -57,10 +57,10 @@ Produce a Python list of the 7, with southernmost first.
  [sort_values](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html)
  function.
 
-#### Question 7: Which 10 countries have the capitals closest to the North Pole?
+#### #Q7: Which 10 countries have the capitals closest to the North Pole?
 
 
-#### Question 8: What is the distance between Camp Randall Stadium and the Wisconsin State Capital?
+#### #Q8: What is the distance between Camp Randall Stadium and the Wisconsin State Capital?
 
 This isn't related to countries, but it's a good warmup for the next
 problems.  Your answer should be about 1.4339 miles.
@@ -84,11 +84,11 @@ If you decide to implement it yourself (it's fun!), here are some tips:
 * Remember that latitude and longitude are in degrees, but sin, cos, and other Python math functions usually expect radians.  Consider [math.radians](https://docs.python.org/3/library/math.html#math.radians)
 * This means that before you do anything with the long and latitudes make sure to convert them to radians as your FIRST STEP
 
-#### Question 9: What is the distance between Germany and Norway?
+#### #Q9: What is the distance between Germany and Norway?
 
 For the coordinates of a country, use its capital.
 
-#### Question 10: What are the distances between Switzerland, Netherlands and Spain?
+#### #Q10: What are the distances between Switzerland, Netherlands and Spain?
 
 Your result should be DataFrame with 3 rows (for each country) and 3
 columns (again for each country).  The value in each cell should be
@@ -98,7 +98,7 @@ column. For a general idea of what this should look like, open the
 between a country and itself, the table should should NaN (instead of
 0).
 
-#### Question 11: What is the distance between every pair of countries in the South American continent?
+#### #Q11: What is the distance between every pair of countries in the South American continent?
 
 Your result should be a table with 12 rows (for each country) and 12
 columns (again for each country).  The value in each cell should be
@@ -108,7 +108,7 @@ column.  For a general idea of what this should look like, open the
 between a country and itself, the table should should NaN (instead of
 0).
 
-#### Question 12: What is the most central country in the South American continent?
+#### #Q12: What is the most central country in the South American continent?
 
 This is the country that has the shortest average distance to other countries in South America.
 
@@ -121,11 +121,11 @@ This is the country that has the shortest average distance to other countries in
  you want just the index, you can use `s.index`. Both of these
  objects can readily be converted to lists.
 
-#### Question 13: What is the least central country in South America?
+#### #Q13: What is the least central country in South America?
 
 This one has the largest average distance to other countries.
 
-#### Question 14: How close is each country in South America to it's nearest neighbor?
+#### #Q14: How close is each country in South America to it's nearest neighbor?
 
 The answer should be in a table with countries as the index and two
 columns: `nearest` will contain the name of the nearest country and
@@ -148,7 +148,7 @@ columns: `nearest` will contain the name of the nearest country and
  idxmin, make sure your DataFrame contains only floats (use
  `df.astype(float)` if necessary).
 
-#### Question 15: How far is each country in South America to it's furthest neighbor?
+#### #Q15: How far is each country in South America to it's furthest neighbor?
 
  The answer should be in a table with countries as the index and two
  columns: `furthest` will contain the name of the furthest country and
