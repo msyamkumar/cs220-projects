@@ -11,5 +11,4 @@
 * There are 27 questions, each of which will be weighted 0.55 points.
 * Unlike projects, you will receive partial credit for a question as long as your code runs and produces an output for each question.
 * General hint: if you see a lot of hints / write up before a question, it is likely to be difficult question.
-world!
 * "test.py" will run lint.py and deduct points for linting errors. You will 0.1 points for each linting error. So check with lint.py before turning your work in. For more information about the linter as well as how to run the full linter to see all of the automatically generated advice and feedback, please check out the [linting README](../../linter).
