@@ -295,9 +295,9 @@ def grade_answers(cells):
 
 def main():
     # rerun everything
-    orig_notebook = 'main.ipynb'
+    orig_notebook = 'Final_Exam.ipynb'
     if len(sys.argv) > 2:
-        print("Usage: test.py main.ipynb")
+        print("Usage: test.py Final_Exam.ipynb")
         return
     elif len(sys.argv) == 2:
         orig_notebook = sys.argv[1]
