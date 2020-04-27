@@ -4,6 +4,8 @@
 
 ## This is an individual exam. Do not work with a partner! Only change "submitter" netid information. Good luck.
 
+## Project due date: 05/06/2020 11:59 PM
+
 * Download every file in this directory, except for "netflix_titles.html" (you will write code to download that).
 * You need to complete the questions in "Final_Exam.ipynb" and submit through the course website projects submission page.
 * Read the write up for each question carefully - you will see details about output format and hints in case of difficult questions.
