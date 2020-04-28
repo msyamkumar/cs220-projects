@@ -2,9 +2,9 @@
 
 ## Clarifications/Corrections
 
-**(4/27/2020) - 10:15 pm** Bug in `type_test.py` fixed. Redownload the file if you run into any errors.
+* **(4/27/2020) - 10:15 pm** Bug in `type_test.py` fixed. Redownload the file if you run into any errors.
 
-**(4/27/2020) - 10:15 pm** There is a typo in Q26 of the Final Exam. The question should read: Put continents on the x-axis and *total population* the y-axis.
+* **(4/27/2020) - 10:15 pm** There is a typo in Q26 of the Final Exam. The question should read: Put continents on the x-axis and *total population* the y-axis.
 
 ---
 
