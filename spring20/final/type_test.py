@@ -174,7 +174,7 @@ def check_cell_text(qnum, cell):
     if expected['type'] == 4:
         if len(expected['keys']) != len(actual):
             return "expected a dictionary with %d key/value pairs but found a dictionary with %d key/value pairs" % (len(expected['keys']), len(actual))
-        if list(actual.keys()) != expected['keys']:
+        if sorted(list(actual.keys())) != sorted(expected['keys']):
             missing_keys = set(expected['keys']) - set(actual.keys())
             return "missing %d keys such as '%s'" % (len(missing_keys), str(list(missing_keys)[0]))
         for i in range(len(expected['keys'])):
@@ -197,7 +197,7 @@ def check_cell_text(qnum, cell):
         for ele in actual:
             if len(expected['keys']) != len(ele):
                 return "expected a list of dictionaries with %d key/value pairs but found dictionaries with %d key/value pairs" % (expected['len'], len(ele))
-            if list(ele.keys()) != expected['keys']:
+            if sorted(list(ele.keys())) != sorted(expected['keys']):
                 missing_keys = set(expected['keys']) - set(ele.keys())
                 return "missing %d keys such as %s" % (len(missing_keys), str(list(missing_keys)[0]))
             for i in range(len(expected['keys'])):
