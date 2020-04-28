@@ -2,6 +2,12 @@
 
 ## Clarifications/Corrections
 
+**(4/27/2020) - 10:15 pm** Bug in `type_test.py` fixed. Redownload the file if you run into any errors.
+
+**(4/27/2020) - 10:15 pm** There is a typo in Q26 of the Final Exam. The question should read: Put continents on the x-axis and *total population* the y-axis.
+
+---
+
 ## This is an individual exam. Do not work with a partner! Only change "submitter" netid information. Good luck.
 
 ## Project due date: 05/06/2020 11:59 PM
