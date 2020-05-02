@@ -7,11 +7,48 @@ import sys
 import json
 import math
 import collections
-from collections import namedtuple
+from collections import namedtuple, defaultdict
 from bs4 import BeautifulSoup
-
 import nbconvert
 import nbformat
+
+try:
+    from lint import lint
+except ImportError:
+    err_msg = """Please download lint.py and place it in this directory for
+    the tests to run correctly. If you haven't yet looked at the linting module,
+    it is designed to help you improve your code so take a look at:
+    https://github.com/msyamkumar/cs220-projects/tree/master/linter"""
+    raise FileNotFoundError(err_msg)
+
+ALLOWED_LINT_ERRS = {
+  "E0102": "function-redefined",
+  "E0115": "non-local and global",
+  "E0601": "used-before-assignment",
+  "E0602": "undefined-variable",
+  "E1102": "not-callable",
+  "E1135": "unsupported-membership-test",
+  "W0101": "unreachable",
+  "W0104": "pointless-statement",
+  "W0105": "pointless-string-statement",
+  "W0107": "unnecessary-pass",
+  "W0143": "comparison-with-callable",
+  "W0301": "unnecessary-semicolon",
+  "W0311": "bad-indentation",
+  "W0401": "wildcard import",
+  "W0404": "reimported",
+  "W0611": "unused-import",
+  "W0613": "unused-argument",
+  "W0622": "redefined-builtin",
+  "W0631": "undefined-loop-variable",
+  "W0702": "bare-except",
+  "W0703": "broad-except",
+  "R0204": "redefined-variable-type",
+  "R1703": "simplifiable-if-statement",
+  "R1711": "useless-return",
+  "R1714": "consider-using-in",
+  "R1716": "chained-comparison",
+}
 
 PASS = 'TYPE CHECK PASSED'
 FAIL_STDERR = 'Program produced an error - please scroll up for more details.'
@@ -159,7 +196,6 @@ def check_cell_text(qnum, cell):
     expected = expected_json[str(qnum)]
 
     if expected['dtype'] != type(actual):
-        #if not (expected['dtype'] == float and type(actual) == int):
         return "expected an answer of type %s but found one of type %s" % (expected['dtype'].__name__, type(actual).__name__)
     if expected['type'] == 3:
         if expected['len'] != len(actual):
@@ -174,8 +210,8 @@ def check_cell_text(qnum, cell):
     if expected['type'] == 4:
         if len(expected['keys']) != len(actual):
             return "expected a dictionary with %d key/value pairs but found a dictionary with %d key/value pairs" % (len(expected['keys']), len(actual))
-        if sorted(list(actual.keys())) != sorted(expected['keys']):
-            missing_keys = set(expected['keys']) - set(actual.keys())
+        missing_keys = set(expected['keys']) - set(actual.keys())
+        if len(missing_keys) > 0:
             return "missing %d keys such as '%s'" % (len(missing_keys), str(list(missing_keys)[0]))
         for i in range(len(expected['keys'])):
             key = expected['keys'][i]
@@ -197,8 +233,8 @@ def check_cell_text(qnum, cell):
         for ele in actual:
             if len(expected['keys']) != len(ele):
                 return "expected a list of dictionaries with %d key/value pairs but found dictionaries with %d key/value pairs" % (expected['len'], len(ele))
-            if sorted(list(ele.keys())) != sorted(expected['keys']):
-                missing_keys = set(expected['keys']) - set(ele.keys())
+            missing_keys = set(expected['keys']) - set(ele.keys())
+            if len(missing_keys) > 0:
                 return "missing %d keys such as %s" % (len(missing_keys), str(list(missing_keys)[0]))
             for i in range(len(expected['keys'])):
                 key = expected['keys'][i]
@@ -320,6 +356,24 @@ def main():
     print("\nSummary:")
     for test in results:
         print("  Test %d: %s" % (test["test"], test["result"]))
+
+    # run linter and check only for allowed errors
+    lint_msgs = lint(orig_notebook, verbose=2, show=False)
+    lint_msgs = filter(lambda msg: msg.msg_id in ALLOWED_LINT_ERRS, lint_msgs)
+    lint_msgs = list(lint_msgs)
+
+    if len(lint_msgs) > 0:
+        msg_types = defaultdict(list)
+        for msg in lint_msgs:
+            msg_types[msg.category].append(msg)
+        print("\nLinting Summary:")
+        for msg_type, msgs in msg_types.items():
+            print('  ' + msg_type.title() + ' Messages:')
+            for msg in msgs:
+                print('    ' + str(msg))
+    else:
+        print("\nLinting Summary:")
+        print('  No linting errors!')
 
 
 if __name__ == '__main__':
