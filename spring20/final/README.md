@@ -6,6 +6,8 @@
 
 * **(4/27/2020) - 10:15 pm** There is a typo in Q26 of the Final Exam. The question should read: Put continents on the x-axis and *total population* the y-axis.
 
+* **(5/1/2020) - 10:10 pm** Linter added to `type_test.py`. Redownload the file.
+
 ---
 
 ## This is an individual exam. Do not work with a partner! Only change "submitter" netid information. Good luck.
