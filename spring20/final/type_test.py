@@ -57,6 +57,20 @@ QNUMS = 27
 
 question_nums = set(range(1, QNUMS + 1))
 
+# question types
+question_types = {
+-1: 'boolean',
+0: 'string',
+1: 'int',
+2: 'float',
+3: 'list',
+4: 'dict with key data',
+4.5: 'dict without key data',
+5: 'list of dicts',
+6: 'image',
+7: 'table'
+}
+
 expected_json = {
     "1": {'type': -1, 'dtype': bool},
     "2": {'type': -1, 'dtype': bool},
@@ -91,8 +105,7 @@ expected_files = {
     "7": ['cereal.csv'],
     "15": ['player_data.csv'],
     "19": ['netflix_titles.html'],
-    "22": [os.path.join('data', 'movies.csv'),
-            os.path.join('data', 'users', '1.json'),
+    "22": [os.path.join('data', 'users', '1.json'),
             os.path.join('data', 'users', '2.json'),
             os.path.join('data', 'users', '3.json'),
             os.path.join('data', 'users', '4.json'),
@@ -100,7 +113,9 @@ expected_files = {
             os.path.join('data', 'users', '6.json'),
             os.path.join('data', 'users', '7.json'),
             os.path.join('data', 'users', '8.json'),
+            os.path.join('data', 'users', '9.json'),
             os.path.join('data', 'users', '10.json')],
+    "23": [os.path.join('data', 'movies.csv')],
     "24": ['countries.db']
 }
 
@@ -231,6 +246,8 @@ def check_cell_text(qnum, cell):
         if expected['len'] != len(actual):
             return "expected a list with %d elements but found a list with %d elements" % (expected['len'], len(actual))
         for ele in actual:
+            if type(ele) != dict:
+                return "expected a list of dicts but found a %s in list" % (type(ele).__name__)
             if len(expected['keys']) != len(ele):
                 return "expected a list of dictionaries with %d key/value pairs but found dictionaries with %d key/value pairs" % (expected['len'], len(ele))
             missing_keys = set(expected['keys']) - set(ele.keys())
@@ -271,9 +288,9 @@ def diff_df_cells(actual_cells, expected_cells):
             columns.append(location[1])
     if len(columns) != len(expected_cells['col_names']):
         return 'expected %d columns but found %d' % (len(expected_cells['col_names']), len(columns))
-    if columns != expected_cells['col_names']:
-        missing_cols = list(set(expected_cells['col_names']) - set(columns))
-        return 'expected columns such as "%s"' % (missing_cols[0])
+    for i in range(len(columns)):
+        if columns[i] != expected_cells['col_names'][i]:
+            return 'expected column "%s" but found column "%s"' % (expected_cells['col_names'][i], columns[i])
     if len(rows) != expected_cells['rows']:
         return 'expected %d rows but found %d' % (expected_cells['rows'], len(rows))
     return PASS
@@ -296,7 +313,7 @@ def check_files(qnum):
         expected = expected_files[qnum]
         for file in expected:
             if not os.path.exists(file):
-                return 'File %s expected, but not found' % (file)
+                return 'File %s expected, but not found in that location' % (file)
     return PASS
 
 def check_cell(qnum, cell):
@@ -378,3 +395,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
