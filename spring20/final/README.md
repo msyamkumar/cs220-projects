@@ -8,6 +8,8 @@
 
 * **(5/1/2020) - 10:10 pm** Linter added to `type_test.py`. Redownload the file.
 
+* **(5/6/2020) - 3:55 pm** `type_test.py` updated with more descriptive error messages. Redownload only if you ran into any errors with the old version. Otherwise, it is not necessary to redownload.
+
 ---
 
 ## This is an individual exam. Do not work with a partner! Only change "submitter" netid information. Good luck.
