@@ -1,5 +1,5 @@
 ## Setup instructions
-(Some instructions might be missing here as I did the setup long time ago. Please add more steps if you do the setup again)
+Some instructions might be missing here as I did the setup long time ago. Please add more steps if you do the setup again
 
 ```
 sudo apt-get install docker git
