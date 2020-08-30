@@ -5,7 +5,7 @@ Some instructions might be missing here as I did the setup long time ago. Please
 sudo apt-get install docker git
 
 git clone https://github.com/msyamkumar/cs220-projects.git
-cd cs301-projects/dockerGrader
+cd cs220-projects/dockerGrader
 
 sudo docker build -t grader .
 pip install -r requirements.txt
